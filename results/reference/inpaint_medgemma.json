@@ -1,0 +1,2289 @@
+{
+ "summary": {
+  "model": "medgemma",
+  "n": 250,
+  "fill": "OpenCV Telea inpainting, radius 5",
+  "small": {
+   "excess_inpaint": [
+    0.12499988998766565,
+    -0.12500003441553162,
+    0.24999994558503016
+   ],
+   "excess_mean_cached": 0.062499968506559256,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": 0.00027684724942478306
+  },
+  "med": {
+   "excess_inpaint": [
+    0.3749998383819424,
+    -0.12499998440384985,
+    0.7500000672079246
+   ],
+   "excess_mean_cached": 0.6249999884806234,
+   "M_inpaint_rand": 0.1249999294263624,
+   "F_inpaint": -6.538005959377783e-05
+  },
+  "large": {
+   "excess_inpaint": [
+    1.3749999496516363,
+    0.5000001212426444,
+    2.1250000189995006
+   ],
+   "excess_mean_cached": 2.499999906377,
+   "M_inpaint_rand": 0.3749999947252871,
+   "F_inpaint": 0.000501132845982965
+  }
+ },
+ "rows": [
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.02077424999999999,
+   "excess_mean_cached": 4.1249999179002685,
+   "excess_inpaint": 7.374999941462418,
+   "M_inpaint_roi": 9.124999827063808,
+   "M_inpaint_rand": 1.7499998856013903,
+   "F_inpaint": 3.268633452113868
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.13582903,
+   "excess_mean_cached": 11.24999997729511,
+   "excess_inpaint": 2.7499999342236165,
+   "M_inpaint_roi": 4.374999997181616,
+   "M_inpaint_rand": 1.6250000629579997,
+   "F_inpaint": 0.0019944844193750593
+  },
+  {
+   "finding": "Infiltration",
+   "roi_area": 0.02723865,
+   "excess_mean_cached": -0.749999965177313,
+   "excess_inpaint": 0.24999988634151826,
+   "M_inpaint_roi": 0.7499999161352147,
+   "M_inpaint_rand": 0.5000000297936964,
+   "F_inpaint": 4.171975866995577e-06
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.006083599999999999,
+   "excess_mean_cached": -0.37499994302711404,
+   "excess_inpaint": 0.37499994548820936,
+   "M_inpaint_roi": 0.12499992326056564,
+   "M_inpaint_rand": -0.2500000222276437,
+   "F_inpaint": 0.002581335242579641
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.10261119000000002,
+   "excess_mean_cached": 2.124999961713006,
+   "excess_inpaint": 6.125000022078605,
+   "M_inpaint_roi": 0.7500000610809501,
+   "M_inpaint_rand": -5.374999960997655,
+   "F_inpaint": -1.03705103631596
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.023035979999999998,
+   "excess_mean_cached": -0.8749999535430124,
+   "excess_inpaint": -24.25000005168507,
+   "M_inpaint_roi": -23.875000059563497,
+   "M_inpaint_rand": 0.3749999921215732,
+   "F_inpaint": -0.5854697744676862
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.021945360000000004,
+   "excess_mean_cached": 0.37499996736341945,
+   "excess_inpaint": -4.125000026582587,
+   "M_inpaint_roi": -4.125000102285767,
+   "M_inpaint_rand": -7.570318061311809e-08,
+   "F_inpaint": 1.8041317326395259
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.0207788,
+   "excess_mean_cached": 9.375000107266601,
+   "excess_inpaint": 3.000000132220328,
+   "M_inpaint_roi": 8.124999945489346,
+   "M_inpaint_rand": 5.124999813269018,
+   "F_inpaint": -1.1475549296429985
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.01755468,
+   "excess_mean_cached": -0.3750000450986981,
+   "excess_inpaint": 0.1250000712154371,
+   "M_inpaint_roi": 0.5000001232236073,
+   "M_inpaint_rand": 0.3750000520081702,
+   "F_inpaint": 0.2222275448957074
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.0034287500000000064,
+   "excess_mean_cached": 0.8749999366016361,
+   "excess_inpaint": -0.37499988321114763,
+   "M_inpaint_roi": 0.0,
+   "M_inpaint_rand": 0.37499988321114763,
+   "F_inpaint": 0.0059710297498103415
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.05115266,
+   "excess_mean_cached": 4.374999884237293,
+   "excess_inpaint": 0.500000062102151,
+   "M_inpaint_roi": 2.125000087818073,
+   "M_inpaint_rand": 1.6250000257159218,
+   "F_inpaint": -0.13860647331725673
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.011817,
+   "excess_mean_cached": 0.6249999884806234,
+   "excess_inpaint": -1.1250000989884867,
+   "M_inpaint_roi": -1.0000001471986835,
+   "M_inpaint_rand": 0.12499995178980328,
+   "F_inpaint": 0.36888695201330535
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.0022657600000000016,
+   "excess_mean_cached": -0.12500003796448356,
+   "excess_inpaint": -0.3749999919371252,
+   "M_inpaint_roi": -0.3749999919371252,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": -0.006077888537409315
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.09029439999999998,
+   "excess_mean_cached": 16.24999994235595,
+   "excess_inpaint": 3.749999822428185,
+   "M_inpaint_roi": 3.874999912287878,
+   "M_inpaint_rand": 0.12500008985969302,
+   "F_inpaint": 0.019419214773250648
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.028034560000000007,
+   "excess_mean_cached": 0.8749999375706752,
+   "excess_inpaint": 1.0000001216939687,
+   "M_inpaint_roi": 0.6249999063117908,
+   "M_inpaint_rand": -0.37500021538217787,
+   "F_inpaint": -0.005562001835061281
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.07995672000000001,
+   "excess_mean_cached": 1.5000000928259825,
+   "excess_inpaint": -16.375000161454658,
+   "M_inpaint_roi": -16.49999991326692,
+   "M_inpaint_rand": -0.12499975181225942,
+   "F_inpaint": -1.5342487644121174
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.056416,
+   "excess_mean_cached": 15.249999911993037,
+   "excess_inpaint": 15.750000057788188,
+   "M_inpaint_roi": 15.249999996443893,
+   "M_inpaint_rand": -0.500000061344295,
+   "F_inpaint": 2.0917309184035595
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.011843429999999997,
+   "excess_mean_cached": 1.5000000581629909,
+   "excess_inpaint": 1.6249999370358346,
+   "M_inpaint_roi": 1.1249999824236578,
+   "M_inpaint_rand": -0.4999999546121767,
+   "F_inpaint": -0.00039439588344691856
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.015676379999999993,
+   "excess_mean_cached": 0.6249999535007884,
+   "excess_inpaint": 0.8749999812921647,
+   "M_inpaint_roi": -0.12499998475665386,
+   "M_inpaint_rand": -0.9999999660488186,
+   "F_inpaint": 0.08797826506711992
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.0065130000000000006,
+   "excess_mean_cached": 0.3749999788477272,
+   "excess_inpaint": -0.1250000331271508,
+   "M_inpaint_roi": -0.37500002850406666,
+   "M_inpaint_rand": -0.24999999537691586,
+   "F_inpaint": 0.0004015971997475276
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.06859254000000002,
+   "excess_mean_cached": 8.499999974369988,
+   "excess_inpaint": 4.9999997981272735,
+   "M_inpaint_roi": 5.624999885844868,
+   "M_inpaint_rand": 0.625000087717595,
+   "F_inpaint": 0.03816128250579693
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.029815559999999998,
+   "excess_mean_cached": 2.5000000190376648,
+   "excess_inpaint": 5.250000069879615,
+   "M_inpaint_roi": 4.3750000496314545,
+   "M_inpaint_rand": -0.8750000202481605,
+   "F_inpaint": -1.799840837736543
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.0045496500000000014,
+   "excess_mean_cached": 0.6250000178608435,
+   "excess_inpaint": 0.12499986945225672,
+   "M_inpaint_roi": 0.0,
+   "M_inpaint_rand": -0.12499986945225672,
+   "F_inpaint": 3.910064697265625e-05
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.008108160000000001,
+   "excess_mean_cached": 0.7500001314082176,
+   "excess_inpaint": -0.12500013561566092,
+   "M_inpaint_roi": -0.2500000762748602,
+   "M_inpaint_rand": -0.12499994065919928,
+   "F_inpaint": -0.005645297434625334
+  },
+  {
+   "finding": "Lung Opacity",
+   "roi_area": 0.01928507,
+   "excess_mean_cached": -0.250000017081474,
+   "excess_inpaint": -1.2499999578398668,
+   "M_inpaint_roi": -1.1249999048150467,
+   "M_inpaint_rand": 0.1250000530248201,
+   "F_inpaint": -0.00012146029547463801
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.07373613999999999,
+   "excess_mean_cached": 1.5000000352676788,
+   "excess_inpaint": -13.875000002251724,
+   "M_inpaint_roi": -14.624999991701786,
+   "M_inpaint_rand": -0.7499999894500631,
+   "F_inpaint": 0.007735320610004592
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.026808450000000004,
+   "excess_mean_cached": -0.25000010132852246,
+   "excess_inpaint": -0.37499996357863985,
+   "M_inpaint_roi": -0.6250000185406943,
+   "M_inpaint_rand": -0.25000005496205446,
+   "F_inpaint": -9.646252143191701e-05
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.16776585,
+   "excess_mean_cached": 17.625000056920776,
+   "excess_inpaint": 4.125000035265558,
+   "M_inpaint_roi": 3.9999999941262843,
+   "M_inpaint_rand": -0.12500004113927332,
+   "F_inpaint": 0.0008390967245759381
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.015910559999999997,
+   "excess_mean_cached": 13.500000207949594,
+   "excess_inpaint": 16.624999972693946,
+   "M_inpaint_roi": 16.875000028189234,
+   "M_inpaint_rand": 0.25000005549528925,
+   "F_inpaint": 0.055982798504196296
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.148617,
+   "excess_mean_cached": 2.1249998426554804,
+   "excess_inpaint": 12.874999969802786,
+   "M_inpaint_roi": 5.125000096655759,
+   "M_inpaint_rand": -7.749999873147027,
+   "F_inpaint": -2.4986176473776043
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.004689959999999999,
+   "excess_mean_cached": -2.750000004953073,
+   "excess_inpaint": -13.500000100301786,
+   "M_inpaint_roi": -13.25000010442335,
+   "M_inpaint_rand": 0.24999999587843735,
+   "F_inpaint": -0.7198907287711673
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.01499595000000001,
+   "excess_mean_cached": -1.0000000181173547,
+   "excess_inpaint": 0.12499978586615867,
+   "M_inpaint_roi": -0.3750000985488011,
+   "M_inpaint_rand": -0.4999998844149598,
+   "F_inpaint": -0.0006311786068255754
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.0009210599999999993,
+   "excess_mean_cached": -0.6249999441174232,
+   "excess_inpaint": 0.3750001094596538,
+   "M_inpaint_roi": 0.5000000512491525,
+   "M_inpaint_rand": 0.12499994178949869,
+   "F_inpaint": 0.006671326089137888
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.010141359999999999,
+   "excess_mean_cached": 0.2500000806078635,
+   "excess_inpaint": -1.4999999257449321,
+   "M_inpaint_roi": -1.375000005434753,
+   "M_inpaint_rand": 0.12499992031017904,
+   "F_inpaint": 0.5837269302011059
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.0022867299999999972,
+   "excess_mean_cached": -3.375000017214977,
+   "excess_inpaint": -0.8749998391440492,
+   "M_inpaint_roi": -0.7499998485161559,
+   "M_inpaint_rand": 0.12499999062789335,
+   "F_inpaint": -0.2748733661438231
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.0060888000000000105,
+   "excess_mean_cached": 2.5000000013394037,
+   "excess_inpaint": -6.249999890104523,
+   "M_inpaint_roi": -5.999999966802997,
+   "M_inpaint_rand": 0.24999992330152665,
+   "F_inpaint": 0.9343238413997357
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.019026900000000006,
+   "excess_mean_cached": 7.874999973502261,
+   "excess_inpaint": 13.374999961055327,
+   "M_inpaint_roi": 12.500000025178142,
+   "M_inpaint_rand": -0.8749999358771845,
+   "F_inpaint": -0.18159007358122103
+  },
+  {
+   "finding": "Infiltration",
+   "roi_area": 0.03813533,
+   "excess_mean_cached": 9.499999842295319,
+   "excess_inpaint": 12.999999972376681,
+   "M_inpaint_roi": 11.374999959273515,
+   "M_inpaint_rand": -1.6250000131031659,
+   "F_inpaint": -1.1738738002795301
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.009563400000000007,
+   "excess_mean_cached": 0.6250001795156798,
+   "excess_inpaint": -0.12499998440384985,
+   "M_inpaint_roi": -0.12499998440384985,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": 0.012103788093977386
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.07179326999999996,
+   "excess_mean_cached": 9.068459938532669e-08,
+   "excess_inpaint": -6.249999995522065,
+   "M_inpaint_roi": 1.7499999471133894,
+   "M_inpaint_rand": 7.999999942635454,
+   "F_inpaint": 0.005461763706430034
+  },
+  {
+   "finding": "Atelectasis",
+   "roi_area": 0.0081375,
+   "excess_mean_cached": 0.2500000291113107,
+   "excess_inpaint": 0.749999958546665,
+   "M_inpaint_roi": 0.9999999950618719,
+   "M_inpaint_rand": 0.25000003651520686,
+   "F_inpaint": 0.00017675429988628366
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.02153635999999999,
+   "excess_mean_cached": 1.6250000843047063,
+   "excess_inpaint": 0.5000000482884115,
+   "M_inpaint_roi": 0.49999998727557937,
+   "M_inpaint_rand": -6.101283211989994e-08,
+   "F_inpaint": -0.3266539670094364
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.047655819999999995,
+   "excess_mean_cached": 0.3749998727862458,
+   "excess_inpaint": 1.8750001267279668,
+   "M_inpaint_roi": 1.8750000650926193,
+   "M_inpaint_rand": -6.163534749248356e-08,
+   "F_inpaint": 0.025477393635694328
+  },
+  {
+   "finding": "Atelectasis",
+   "roi_area": 0.007124650000000005,
+   "excess_mean_cached": 0.624999932099076,
+   "excess_inpaint": 0.3749998383819424,
+   "M_inpaint_roi": 0.3749998383819424,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": -1.1918222327267365e-05
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.0060899800000000035,
+   "excess_mean_cached": 0.12499987775196786,
+   "excess_inpaint": -0.1250000927318915,
+   "M_inpaint_roi": 0.2500000032371652,
+   "M_inpaint_rand": 0.3750000959690567,
+   "F_inpaint": -0.0027665935496017117
+  },
+  {
+   "finding": "Infiltration",
+   "roi_area": 0.12621171999999997,
+   "excess_mean_cached": -0.5000000127385782,
+   "excess_inpaint": -0.5000001423288705,
+   "M_inpaint_roi": -1.125351740682845e-07,
+   "M_inpaint_rand": 0.5000000297936964,
+   "F_inpaint": 1.132389297708869e-05
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.001778160000000003,
+   "excess_mean_cached": 6.000000054996879,
+   "excess_inpaint": 10.1249999426662,
+   "M_inpaint_roi": 9.500000016875164,
+   "M_inpaint_rand": -0.6249999257910357,
+   "F_inpaint": 1.4670667846533159
+  },
+  {
+   "finding": "Atelectasis",
+   "roi_area": 0.006430590000000012,
+   "excess_mean_cached": 0.3749999103455455,
+   "excess_inpaint": -0.24999994034203787,
+   "M_inpaint_roi": -0.3750000092596668,
+   "M_inpaint_rand": -0.12500006891762894,
+   "F_inpaint": -0.0005561630237949086
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.07093328,
+   "excess_mean_cached": 0.7500000904780602,
+   "excess_inpaint": -0.2500001254337114,
+   "M_inpaint_roi": -1.1249999244693747,
+   "M_inpaint_rand": -0.8749997990356633,
+   "F_inpaint": 0.25395060659968216
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.0009638699999999957,
+   "excess_mean_cached": 0.1250000060159029,
+   "excess_inpaint": -0.8749999723591753,
+   "M_inpaint_roi": -0.37500007209938335,
+   "M_inpaint_rand": 0.4999999002597919,
+   "F_inpaint": 0.0672972564669676
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.025300000000000003,
+   "excess_mean_cached": 0.7500000515266727,
+   "excess_inpaint": -0.6249999082845079,
+   "M_inpaint_roi": 6.825603549032166e-08,
+   "M_inpaint_rand": 0.6249999765405434,
+   "F_inpaint": -7.152320904424414e-06
+  },
+  {
+   "finding": "Infiltration",
+   "roi_area": 0.030170999999999986,
+   "excess_mean_cached": 1.6249999076815413,
+   "excess_inpaint": 2.3749999311687677,
+   "M_inpaint_roi": 3.9999999903118457,
+   "M_inpaint_rand": 1.625000059143078,
+   "F_inpaint": 0.2461436346359523
+  },
+  {
+   "finding": "Enlarged PA",
+   "roi_area": 0.007820339999999993,
+   "excess_mean_cached": -8.789451655388802e-08,
+   "excess_inpaint": -0.49999997258693885,
+   "M_inpaint_roi": -0.24999996850499961,
+   "M_inpaint_rand": 0.25000000408193923,
+   "F_inpaint": 0.1187776794140527
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.007595419999999999,
+   "excess_mean_cached": 0.49999990793386395,
+   "excess_inpaint": 0.37500000930132593,
+   "M_inpaint_roi": 0.6250000351255665,
+   "M_inpaint_rand": 0.2500000258242405,
+   "F_inpaint": -0.048698212116567774
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.0015103199999999997,
+   "excess_mean_cached": -0.8750000112040537,
+   "excess_inpaint": 0.1249999626818461,
+   "M_inpaint_roi": 0.24999999786428084,
+   "M_inpaint_rand": 0.12500003518243474,
+   "F_inpaint": -0.018848997083924957
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.001050939999999996,
+   "excess_mean_cached": 1.000000049960569,
+   "excess_inpaint": 0.8750000477497561,
+   "M_inpaint_roi": 0.8750000477497561,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": 0.003329621507077707
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.04813498999999999,
+   "excess_mean_cached": 7.250000058962792,
+   "excess_inpaint": -0.7500001026097864,
+   "M_inpaint_roi": 0.499999925489349,
+   "M_inpaint_rand": 1.2500000280991355,
+   "F_inpaint": 0.0014168134818158583
+  },
+  {
+   "finding": "Atelectasis",
+   "roi_area": 0.006042399999999997,
+   "excess_mean_cached": -0.12499993491798733,
+   "excess_inpaint": 6.748945935441952e-08,
+   "M_inpaint_roi": 0.1250000195298835,
+   "M_inpaint_rand": 0.12499995204042413,
+   "F_inpaint": -1.1324155071434958e-06
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.008514359999999995,
+   "excess_mean_cached": -1.1249998673028525,
+   "excess_inpaint": -2.3749999616981388,
+   "M_inpaint_roi": -1.9999999414098486,
+   "M_inpaint_rand": 0.37500002028829016,
+   "F_inpaint": 0.9626650581717708
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.07272458999999998,
+   "excess_mean_cached": 1.12499993628196,
+   "excess_inpaint": 4.6250001405244285,
+   "M_inpaint_roi": 3.62499998242353,
+   "M_inpaint_rand": -1.0000001581008986,
+   "F_inpaint": -2.015316657233268
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.031206740000000014,
+   "excess_mean_cached": 8.000000048973694,
+   "excess_inpaint": 2.6249999391135344,
+   "M_inpaint_roi": 3.6249999523042042,
+   "M_inpaint_rand": 1.00000001319067,
+   "F_inpaint": 0.1972777176017866
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.047533639999999995,
+   "excess_mean_cached": 4.7500000231060096,
+   "excess_inpaint": 6.249999993314582,
+   "M_inpaint_roi": 7.625000049384643,
+   "M_inpaint_rand": 1.3750000560700615,
+   "F_inpaint": 2.9244914207152743
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.041558800000000014,
+   "excess_mean_cached": 5.249999965715507,
+   "excess_inpaint": -15.874999858339168,
+   "M_inpaint_roi": -14.999999968589554,
+   "M_inpaint_rand": 0.874999889749613,
+   "F_inpaint": -2.38866119960943
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.07289271,
+   "excess_mean_cached": 3.624999962753099,
+   "excess_inpaint": -10.250000107020103,
+   "M_inpaint_roi": -21.250000075417354,
+   "M_inpaint_rand": -10.999999968397251,
+   "F_inpaint": -1.717504282075165
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.01868049000000002,
+   "excess_mean_cached": 0.6249999570492335,
+   "excess_inpaint": 0.12500003059016507,
+   "M_inpaint_roi": 0.24999996001652747,
+   "M_inpaint_rand": 0.1249999294263624,
+   "F_inpaint": 1.0132418537978083e-05
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.009331530000000001,
+   "excess_mean_cached": 0.7500000078058608,
+   "excess_inpaint": 0.4999999013044576,
+   "M_inpaint_roi": 0.374999880172572,
+   "M_inpaint_rand": -0.12500002113188557,
+   "F_inpaint": -0.019143768996606525
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.06634037999999999,
+   "excess_mean_cached": 8.250000015603927,
+   "excess_inpaint": 1.5000000550515002,
+   "M_inpaint_roi": 2.750000021074011,
+   "M_inpaint_rand": 1.2499999660225107,
+   "F_inpaint": 0.5498831388492431
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.007899119999999999,
+   "excess_mean_cached": -0.12499987343537766,
+   "excess_inpaint": -0.12500006503373484,
+   "M_inpaint_roi": -0.25000009701687453,
+   "M_inpaint_rand": -0.1250000319831397,
+   "F_inpaint": -0.06659178752306083
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.07471617999999998,
+   "excess_mean_cached": 1.6250000120044135,
+   "excess_inpaint": -0.6249999989275707,
+   "M_inpaint_roi": 0.25000000934178956,
+   "M_inpaint_rand": 0.8750000082693603,
+   "F_inpaint": -0.04071224395439188
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.003439069999999997,
+   "excess_mean_cached": -0.374999788760344,
+   "excess_inpaint": 0.12499998996079098,
+   "M_inpaint_roi": 0.24999999514482552,
+   "M_inpaint_rand": 0.12500000518403453,
+   "F_inpaint": 0.0006652027918472164
+  },
+  {
+   "finding": "Lung Opacity",
+   "roi_area": 0.01042150000000001,
+   "excess_mean_cached": 7.875000026427417,
+   "excess_inpaint": 13.125000085410417,
+   "M_inpaint_roi": 14.374999992857163,
+   "M_inpaint_rand": 1.2499999074467456,
+   "F_inpaint": -0.8429687133885011
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.006744980000000001,
+   "excess_mean_cached": 0.624999842197437,
+   "excess_inpaint": 9.503368758601027e-08,
+   "M_inpaint_roi": -0.4999998927343423,
+   "M_inpaint_rand": -0.4999999877680299,
+   "F_inpaint": 0.03287786910437873
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.02987811999999999,
+   "excess_mean_cached": 1.375000043158999,
+   "excess_inpaint": 1.7500000066901809,
+   "M_inpaint_roi": 1.6249999056952245,
+   "M_inpaint_rand": -0.1250001009949564,
+   "F_inpaint": -1.4092469957378206
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.0005662799999999994,
+   "excess_mean_cached": -0.6249999598562503,
+   "excess_inpaint": 0.37500013016775746,
+   "M_inpaint_roi": -0.4999999724792694,
+   "M_inpaint_rand": -0.8750001026470269,
+   "F_inpaint": 0.0407593399815811
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.1541344,
+   "excess_mean_cached": 18.749999918795247,
+   "excess_inpaint": 5.625000025757011,
+   "M_inpaint_roi": 6.875000057378989,
+   "M_inpaint_rand": 1.250000031621978,
+   "F_inpaint": 0.013049228373008948
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.028395999999999998,
+   "excess_mean_cached": 2.4999999579969447,
+   "excess_inpaint": 1.250000196697835,
+   "M_inpaint_roi": 2.0000000358872,
+   "M_inpaint_rand": 0.749999839189365,
+   "F_inpaint": -0.471838424555461
+  },
+  {
+   "finding": "Atelectasis",
+   "roi_area": 0.009026999999999997,
+   "excess_mean_cached": 0.9999999140181277,
+   "excess_inpaint": 0.9999999675879199,
+   "M_inpaint_roi": 0.8750000170273342,
+   "M_inpaint_rand": -0.12499995056058566,
+   "F_inpaint": 0.0003121149347151686
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.007890610000000003,
+   "excess_mean_cached": 5.92611506533558e-08,
+   "excess_inpaint": -0.12500006654214957,
+   "M_inpaint_roi": 0.0,
+   "M_inpaint_rand": 0.12500006654214957,
+   "F_inpaint": -0.03727245330810547
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.0012603600000000031,
+   "excess_mean_cached": 17.50000017280762,
+   "excess_inpaint": 26.375000114328984,
+   "M_inpaint_roi": 26.12500002490392,
+   "M_inpaint_rand": -0.25000008942506646,
+   "F_inpaint": 0.406790896706001
+  },
+  {
+   "finding": "Lung Opacity",
+   "roi_area": 0.043171299999999996,
+   "excess_mean_cached": 0.8749999112881497,
+   "excess_inpaint": 3.0000000625335126,
+   "M_inpaint_roi": 2.2500000568743594,
+   "M_inpaint_rand": -0.7500000056591531,
+   "F_inpaint": 0.0008606841637668314
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.01246784000000001,
+   "excess_mean_cached": 0.3750000258360662,
+   "excess_inpaint": 0.24999992825993722,
+   "M_inpaint_roi": 0.24999992825993722,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": -0.054916069478530005
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.1607843,
+   "excess_mean_cached": 1.0000000304014218,
+   "excess_inpaint": 1.4999999437011091,
+   "M_inpaint_roi": 2.1250000596136367,
+   "M_inpaint_rand": 0.6250001159125276,
+   "F_inpaint": 6.50258389196523e-05
+  },
+  {
+   "finding": "Infiltration",
+   "roi_area": 0.028582080000000003,
+   "excess_mean_cached": 11.999999968787693,
+   "excess_inpaint": 8.124999986399033,
+   "M_inpaint_roi": 3.749999914227308,
+   "M_inpaint_rand": -4.375000072171724,
+   "F_inpaint": -0.07057820387696445
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.08300352,
+   "excess_mean_cached": 9.62499986322033,
+   "excess_inpaint": 0.25000008942506646,
+   "M_inpaint_roi": 0.875000044516236,
+   "M_inpaint_rand": 0.6249999550911696,
+   "F_inpaint": 8.104412550835539e-06
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.02924951999999999,
+   "excess_mean_cached": 2.4999999911605366,
+   "excess_inpaint": 4.250000111596808,
+   "M_inpaint_roi": 4.250000111596808,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": -1.2580955477127809
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.0046130400000000005,
+   "excess_mean_cached": 5.7794909302799624e-08,
+   "excess_inpaint": 0.37499986276218955,
+   "M_inpaint_roi": -8.386694005935169e-08,
+   "M_inpaint_rand": -0.3749999466291296,
+   "F_inpaint": -0.07896041870117188
+  },
+  {
+   "finding": "Other lesion",
+   "roi_area": 0.04333700000000001,
+   "excess_mean_cached": 0.24999999608541446,
+   "excess_inpaint": -1.4999999833124336,
+   "M_inpaint_roi": 9.607649964493703e-08,
+   "M_inpaint_rand": 1.5000000793889332,
+   "F_inpaint": -0.2432713508605957
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.09134400000000001,
+   "excess_mean_cached": 7.500000070939995,
+   "excess_inpaint": 3.6249998738378686,
+   "M_inpaint_roi": 6.624999975329468,
+   "M_inpaint_rand": 3.000000101491599,
+   "F_inpaint": 0.06223388584215749
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.0028737500000000056,
+   "excess_mean_cached": -0.7500000355864013,
+   "excess_inpaint": -4.499999926823776,
+   "M_inpaint_roi": -4.62500005925194,
+   "M_inpaint_rand": -0.12500013242816443,
+   "F_inpaint": 1.0339523634518848
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.06386772,
+   "excess_mean_cached": 1.750000197945988,
+   "excess_inpaint": -5.000000227354475,
+   "M_inpaint_roi": -12.12500009986151,
+   "M_inpaint_rand": -7.1249998725070345,
+   "F_inpaint": -2.2239272094208595
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.03978975,
+   "excess_mean_cached": 10.750000040269155,
+   "excess_inpaint": 9.7499999760161,
+   "M_inpaint_roi": 14.374999995810024,
+   "M_inpaint_rand": 4.625000019793923,
+   "F_inpaint": 0.6593197509870565
+  },
+  {
+   "finding": "Lung Opacity",
+   "roi_area": 0.010107240000000002,
+   "excess_mean_cached": 0.4999999423309056,
+   "excess_inpaint": -4.624999897751358,
+   "M_inpaint_roi": -5.124999939250665,
+   "M_inpaint_rand": -0.5000000414993069,
+   "F_inpaint": -0.2984069527332682
+  },
+  {
+   "finding": "Infiltration",
+   "roi_area": 0.027733200000000003,
+   "excess_mean_cached": 1.24999983476944,
+   "excess_inpaint": -4.625000008216837,
+   "M_inpaint_roi": 3.5000001114787747,
+   "M_inpaint_rand": 8.125000119695612,
+   "F_inpaint": 1.1574037888491704
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.021107400000000002,
+   "excess_mean_cached": 5.9999999291240735,
+   "excess_inpaint": 8.000000017125828,
+   "M_inpaint_roi": 7.125000052733717,
+   "M_inpaint_rand": -0.87499996439211,
+   "F_inpaint": 0.20062064112037462
+  },
+  {
+   "finding": "Mediastinal shift",
+   "roi_area": 0.05551364000000002,
+   "excess_mean_cached": -2.2499999619173834,
+   "excess_inpaint": 0.6249999389725494,
+   "M_inpaint_roi": 0.7500000075682651,
+   "M_inpaint_rand": 0.12500006859571577,
+   "F_inpaint": 0.0008369267551477932
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.023430660000000002,
+   "excess_mean_cached": 1.6249999682775922,
+   "excess_inpaint": 0.7500000672079246,
+   "M_inpaint_roi": 0.12499998354390751,
+   "M_inpaint_rand": -0.625000083664017,
+   "F_inpaint": -0.4566369298664963
+  },
+  {
+   "finding": "Other lesion",
+   "roi_area": 0.017584739999999998,
+   "excess_mean_cached": 0.24999996451403916,
+   "excess_inpaint": 0.6249999691611412,
+   "M_inpaint_roi": 2.3749999080792983,
+   "M_inpaint_rand": 1.749999938918157,
+   "F_inpaint": -0.17943909114642764
+  },
+  {
+   "finding": "Other lesion",
+   "roi_area": 0.030242320000000007,
+   "excess_mean_cached": -1.2499998672765078,
+   "excess_inpaint": -3.874999841726056,
+   "M_inpaint_roi": -3.49999996886167,
+   "M_inpaint_rand": 0.37499987286438596,
+   "F_inpaint": 1.7359795551439259
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.06861432000000002,
+   "excess_mean_cached": 2.1250002303288555,
+   "excess_inpaint": 1.1249999208875128,
+   "M_inpaint_roi": 0.6249999685985905,
+   "M_inpaint_rand": -0.49999995228892224,
+   "F_inpaint": -0.08787630966512339
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.02489520000000001,
+   "excess_mean_cached": 5.749999934620787,
+   "excess_inpaint": 18.499999925049025,
+   "M_inpaint_roi": 18.99999986471078,
+   "M_inpaint_rand": 0.4999999396617536,
+   "F_inpaint": 0.05801532195249237
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.026262940000000002,
+   "excess_mean_cached": 10.125000191303856,
+   "excess_inpaint": 18.499999915324686,
+   "M_inpaint_roi": 12.99999997511044,
+   "M_inpaint_rand": -5.499999940214247,
+   "F_inpaint": -0.7002131028205518
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.09785178000000001,
+   "excess_mean_cached": 4.624999977447574,
+   "excess_inpaint": 1.0000000590904765,
+   "M_inpaint_roi": 0.8750001257505762,
+   "M_inpaint_rand": -0.12499993333990034,
+   "F_inpaint": 2.074169422883187e-05
+  },
+  {
+   "finding": "Atelectasis",
+   "roi_area": 0.0020492999999999983,
+   "excess_mean_cached": 4.7500000771524515,
+   "excess_inpaint": 1.00000001319067,
+   "M_inpaint_roi": -0.249999978014376,
+   "M_inpaint_rand": -1.249999991205046,
+   "F_inpaint": 0.0014968281873797757
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.008067039999999992,
+   "excess_mean_cached": -0.5000000008323076,
+   "excess_inpaint": -0.6249999322342745,
+   "M_inpaint_roi": -0.8749999716018149,
+   "M_inpaint_rand": -0.25000003936754034,
+   "F_inpaint": 0.047894782854367435
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.02791043999999999,
+   "excess_mean_cached": 1.749999941523658,
+   "excess_inpaint": 2.0000000520400065,
+   "M_inpaint_roi": 2.87500005035708,
+   "M_inpaint_rand": 0.8749999983170733,
+   "F_inpaint": 0.7208926205403947
+  },
+  {
+   "finding": "Atelectasis",
+   "roi_area": 0.008070620000000002,
+   "excess_mean_cached": -0.3749999004975795,
+   "excess_inpaint": 0.0,
+   "M_inpaint_roi": 0.24999992824740147,
+   "M_inpaint_rand": 0.24999992824740147,
+   "F_inpaint": 0.00012391450579407604
+  },
+  {
+   "finding": "Other lesion",
+   "roi_area": 0.035604,
+   "excess_mean_cached": 0.24999987853972083,
+   "excess_inpaint": -2.1249999306626854,
+   "M_inpaint_roi": -1.7499999359373986,
+   "M_inpaint_rand": 0.3749999947252871,
+   "F_inpaint": -0.2617141742065718
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.0028520099999999994,
+   "excess_mean_cached": 8.87500005056907,
+   "excess_inpaint": 13.24999987905551,
+   "M_inpaint_roi": 13.87500002274238,
+   "M_inpaint_rand": 0.6250001436868704,
+   "F_inpaint": 0.2271625692598267
+  },
+  {
+   "finding": "Emphysema",
+   "roi_area": 0.28132499999999994,
+   "excess_mean_cached": 1.0000001378266843,
+   "excess_inpaint": 0.0,
+   "M_inpaint_roi": 4.499999914369015,
+   "M_inpaint_rand": 4.499999914369015,
+   "F_inpaint": 0.021379625496956073
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.005594399999999999,
+   "excess_mean_cached": 2.3750000483711045,
+   "excess_inpaint": 10.875000136556066,
+   "M_inpaint_roi": 1.3750000473430966,
+   "M_inpaint_rand": -9.50000008921297,
+   "F_inpaint": -0.6242956092710727
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.023749499999999993,
+   "excess_mean_cached": 0.7500000169173351,
+   "excess_inpaint": -15.87499984873914,
+   "M_inpaint_roi": -18.125000103936607,
+   "M_inpaint_rand": -2.2500002551974676,
+   "F_inpaint": -1.3129383509608132
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.0015806399999999995,
+   "excess_mean_cached": -6.289099641065832e-08,
+   "excess_inpaint": 0.1250000453720599,
+   "M_inpaint_roi": 0.1250000453720599,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": -0.0005711692102430277
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.021651890000000003,
+   "excess_mean_cached": -0.12500013101840768,
+   "excess_inpaint": -1.1249999644440365,
+   "M_inpaint_roi": -0.9999999971026572,
+   "M_inpaint_rand": 0.1249999673413793,
+   "F_inpaint": 0.1117933998776941
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.231579,
+   "excess_mean_cached": 1.5000000970781553,
+   "excess_inpaint": 1.2500001182922773,
+   "M_inpaint_roi": 2.3750001814268558,
+   "M_inpaint_rand": 1.1250000631345785,
+   "F_inpaint": 0.0033211470468774346
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.005384210000000006,
+   "excess_mean_cached": -0.6249999311037038,
+   "excess_inpaint": -1.1250001250637336,
+   "M_inpaint_roi": -1.625000159807728,
+   "M_inpaint_rand": -0.5000000347439943,
+   "F_inpaint": 0.8518050406022741
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.07055024999999998,
+   "excess_mean_cached": 9.49999989913256,
+   "excess_inpaint": 1.250000174023901,
+   "M_inpaint_roi": 1.75000005192347,
+   "M_inpaint_rand": 0.4999998778995689,
+   "F_inpaint": 0.00043722592801032073
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.05221363,
+   "excess_mean_cached": 1.749999920956057,
+   "excess_inpaint": 1.9999999624508238,
+   "M_inpaint_roi": 2.3749999848604535,
+   "M_inpaint_rand": 0.3750000224096297,
+   "F_inpaint": 0.0028734194393094502
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.0008017199999999997,
+   "excess_mean_cached": 0.2500000407166114,
+   "excess_inpaint": 0.12499998121263603,
+   "M_inpaint_roi": 0.2499999180563619,
+   "M_inpaint_rand": 0.12499993684372587,
+   "F_inpaint": 0.1778459158443011
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.006037500000000001,
+   "excess_mean_cached": -0.500000033812424,
+   "excess_inpaint": -0.7500000672100384,
+   "M_inpaint_roi": -0.8749999366054286,
+   "M_inpaint_rand": -0.1249998693953902,
+   "F_inpaint": 0.4583061333549079
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.07555103999999999,
+   "excess_mean_cached": 0.25000015364729933,
+   "excess_inpaint": 0.6250001088028938,
+   "M_inpaint_roi": 1.3750000778764182,
+   "M_inpaint_rand": 0.7499999690735244,
+   "F_inpaint": 2.1450100859962614e-06
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.028513079999999996,
+   "excess_mean_cached": -0.5000000771098474,
+   "excess_inpaint": -0.5000000502123605,
+   "M_inpaint_roi": 0.75000001287221,
+   "M_inpaint_rand": 1.2500000630845705,
+   "F_inpaint": 0.00020132039181852674
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.01999098,
+   "excess_mean_cached": 2.8749999176786574,
+   "excess_inpaint": 6.874999959177396,
+   "M_inpaint_roi": 7.125000037191359,
+   "M_inpaint_rand": 0.2500000780139633,
+   "F_inpaint": 0.15923351594010857
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.0034396999999999987,
+   "excess_mean_cached": -0.5000000528338493,
+   "excess_inpaint": -0.8749999554650749,
+   "M_inpaint_roi": -0.7499999567341469,
+   "M_inpaint_rand": 0.12499999873092804,
+   "F_inpaint": -0.02822390856267381
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.08483432000000003,
+   "excess_mean_cached": 14.375000028000803,
+   "excess_inpaint": 2.874999888278875,
+   "M_inpaint_roi": 2.4999999991303277,
+   "M_inpaint_rand": -0.37499988914854754,
+   "F_inpaint": 0.0023316578586847214
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.01194365999999999,
+   "excess_mean_cached": 0.5000000159600255,
+   "excess_inpaint": -0.49999999766530756,
+   "M_inpaint_roi": -0.49999999766530756,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": -0.14171618350708926
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.000777600000000003,
+   "excess_mean_cached": 1.3750000244203697,
+   "excess_inpaint": 0.7500000939741067,
+   "M_inpaint_roi": 0.8750000357636054,
+   "M_inpaint_rand": 0.12499994178949869,
+   "F_inpaint": 0.024144772968182862
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.07749945,
+   "excess_mean_cached": 9.124999962442983,
+   "excess_inpaint": 1.8750000908458198,
+   "M_inpaint_roi": 1.8750000270862923,
+   "M_inpaint_rand": -6.375952743553626e-08,
+   "F_inpaint": 0.00019630775170753604
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.003343050000000002,
+   "excess_mean_cached": 0.5000001817987876,
+   "excess_inpaint": -0.3749999933236037,
+   "M_inpaint_roi": -0.2500000089197538,
+   "M_inpaint_rand": 0.12499998440384985,
+   "F_inpaint": 0.0003475734873106262
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.018869149999999994,
+   "excess_mean_cached": 1.8749999431155544,
+   "excess_inpaint": 1.4999999320432398,
+   "M_inpaint_roi": 1.6249998146469729,
+   "M_inpaint_rand": 0.12499988260373307,
+   "F_inpaint": -0.33863485423224127
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.062377629999999996,
+   "excess_mean_cached": 0.9999998336198299,
+   "excess_inpaint": -0.124999891965766,
+   "M_inpaint_roi": 3.999999967206554,
+   "M_inpaint_rand": 4.12499985917232,
+   "F_inpaint": -1.625187900566333
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.005248319999999999,
+   "excess_mean_cached": 1.5000001043467992,
+   "excess_inpaint": 1.1250000798578306,
+   "M_inpaint_roi": 0.25000013495395024,
+   "M_inpaint_rand": -0.8749999449038803,
+   "F_inpaint": -0.023273608588223027
+  },
+  {
+   "finding": "Atelectasis",
+   "roi_area": 0.015133319999999994,
+   "excess_mean_cached": -0.12499992936634463,
+   "excess_inpaint": -0.12500007109800038,
+   "M_inpaint_roi": -0.2499999772482333,
+   "M_inpaint_rand": -0.12499990615023293,
+   "F_inpaint": -0.0001340134760479104
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.00469628,
+   "excess_mean_cached": 1.2499999548333838,
+   "excess_inpaint": 1.1249999397087658,
+   "M_inpaint_roi": 0.9999999470876455,
+   "M_inpaint_rand": -0.12499999262112027,
+   "F_inpaint": 0.44520056325221996
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.023864980000000004,
+   "excess_mean_cached": 0.4999998434719499,
+   "excess_inpaint": 0.24999999748764523,
+   "M_inpaint_roi": 0.12500011050901172,
+   "M_inpaint_rand": -0.12499988697863351,
+   "F_inpaint": -0.10251280604589397
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.0015016400000000011,
+   "excess_mean_cached": -3.374999953957623,
+   "excess_inpaint": 0.37500012903826097,
+   "M_inpaint_roi": 0.5000000678408796,
+   "M_inpaint_rand": 0.12499993880261862,
+   "F_inpaint": -0.10219596442820844
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.010430499999999999,
+   "excess_mean_cached": -2.4999999004714697,
+   "excess_inpaint": -1.1250000482369948,
+   "M_inpaint_roi": -1.2500000929706072,
+   "M_inpaint_rand": -0.12500004473361237,
+   "F_inpaint": 0.1776854061010873
+  },
+  {
+   "finding": "Lung Opacity",
+   "roi_area": 0.0032781600000000017,
+   "excess_mean_cached": 4.249999966120486,
+   "excess_inpaint": 2.875000012283474,
+   "M_inpaint_roi": 2.6250000371266804,
+   "M_inpaint_rand": -0.2499999751567934,
+   "F_inpaint": 0.0002939726143456055
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.00127984,
+   "excess_mean_cached": 7.375000128455765,
+   "excess_inpaint": 11.000000099662604,
+   "M_inpaint_roi": 11.250000231142732,
+   "M_inpaint_rand": 0.2500001314801281,
+   "F_inpaint": 2.4553503291052103
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.08239124000000002,
+   "excess_mean_cached": 14.124999875775556,
+   "excess_inpaint": 0.24999996799231639,
+   "M_inpaint_roi": 2.3749999940455826,
+   "M_inpaint_rand": 2.125000026053266,
+   "F_inpaint": 0.0018005207213818114
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.0018317999999999956,
+   "excess_mean_cached": 2.2500000010163124,
+   "excess_inpaint": -0.12499996379368028,
+   "M_inpaint_roi": -0.5000000428378009,
+   "M_inpaint_rand": -0.3750000790441206,
+   "F_inpaint": -0.0024939533205098857
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.13603615999999996,
+   "excess_mean_cached": -1.5754090121333775e-07,
+   "excess_inpaint": 0.12499997959386455,
+   "M_inpaint_roi": -1.625000058636406,
+   "M_inpaint_rand": -1.7500000382302705,
+   "F_inpaint": -0.567608046138392
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.0032823999999999987,
+   "excess_mean_cached": 0.5000000075816668,
+   "excess_inpaint": 0.49999999418763963,
+   "M_inpaint_roi": 0.49999999418763963,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": 0.0027665935917866587
+  },
+  {
+   "finding": "Mediastinal shift",
+   "roi_area": 0.008281999999999996,
+   "excess_mean_cached": -1.1250000693337743,
+   "excess_inpaint": -2.5000000366280255,
+   "M_inpaint_roi": -1.750000016068073,
+   "M_inpaint_rand": 0.7500000205599524,
+   "F_inpaint": -0.030916381761074696
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.02854781999999999,
+   "excess_mean_cached": 0.24999996406652913,
+   "excess_inpaint": 1.1249998881906222,
+   "M_inpaint_roi": 0.9999998048274632,
+   "M_inpaint_rand": -0.12500008336315904,
+   "F_inpaint": -1.3905710844058374
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.003096410000000002,
+   "excess_mean_cached": 4.749999976287479,
+   "excess_inpaint": 1.8749999760614546,
+   "M_inpaint_roi": 1.3750000282823702,
+   "M_inpaint_rand": -0.4999999477790844,
+   "F_inpaint": 0.004207052358802358
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.0597636,
+   "excess_mean_cached": 13.624999983389845,
+   "excess_inpaint": 4.4999999733894605,
+   "M_inpaint_roi": -0.7499999997284839,
+   "M_inpaint_rand": -5.249999973117944,
+   "F_inpaint": -0.057625697838210685
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.013170220000000003,
+   "excess_mean_cached": 5.250000225119339,
+   "excess_inpaint": 5.1250000128689175,
+   "M_inpaint_roi": 5.2499999466045955,
+   "M_inpaint_rand": 0.12499993373567797,
+   "F_inpaint": 0.037390631085969
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.06233259999999999,
+   "excess_mean_cached": -1.7500000968533636,
+   "excess_inpaint": -3.750000059996524,
+   "M_inpaint_roi": -0.9999999346580415,
+   "M_inpaint_rand": 2.7500001253384827,
+   "F_inpaint": -1.2314237914571722
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.0202927,
+   "excess_mean_cached": 1.8750000196805052,
+   "excess_inpaint": -6.499999866022305,
+   "M_inpaint_roi": -5.874999966100166,
+   "M_inpaint_rand": 0.6249998999221389,
+   "F_inpaint": -2.182954742719261
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.03440408999999998,
+   "excess_mean_cached": 0.6250000404615588,
+   "excess_inpaint": -2.87500008828002,
+   "M_inpaint_roi": -0.875000084421234,
+   "M_inpaint_rand": 2.000000003858786,
+   "F_inpaint": -1.8896454147446096
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.03627480000000002,
+   "excess_mean_cached": -4.749999899591605,
+   "excess_inpaint": -4.49999993767398,
+   "M_inpaint_roi": -4.499999851956386,
+   "M_inpaint_rand": 8.571759391173828e-08,
+   "F_inpaint": -1.471385148113022
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.004281269999999995,
+   "excess_mean_cached": 2.375000006327512,
+   "excess_inpaint": 3.500000056880687,
+   "M_inpaint_roi": 3.37499990452811,
+   "M_inpaint_rand": -0.12500015235257678,
+   "F_inpaint": 0.8464555754094689
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.019403020000000003,
+   "excess_mean_cached": -0.24999999931355177,
+   "excess_inpaint": 0.3749998383819424,
+   "M_inpaint_roi": 0.6249998788022211,
+   "M_inpaint_rand": 0.2500000404202787,
+   "F_inpaint": 3.224412281177535e-05
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.006638389999999998,
+   "excess_mean_cached": 2.8750000266987152,
+   "excess_inpaint": 1.2500000046917652,
+   "M_inpaint_roi": 1.375000030381253,
+   "M_inpaint_rand": 0.12500002568948787,
+   "F_inpaint": -0.3425972423912693
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.015318380000000001,
+   "excess_mean_cached": -0.12499978482401941,
+   "excess_inpaint": -0.7500001306654636,
+   "M_inpaint_roi": -1.2500002086912423,
+   "M_inpaint_rand": -0.5000000780257787,
+   "F_inpaint": 0.09875607698411137
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.0033966900000000004,
+   "excess_mean_cached": -0.6249998866306461,
+   "excess_inpaint": -0.1250000453720599,
+   "M_inpaint_roi": -0.6250000691682338,
+   "M_inpaint_rand": -0.5000000237961739,
+   "F_inpaint": 0.06223041652902239
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.13705799999999999,
+   "excess_mean_cached": 3.749999937423652,
+   "excess_inpaint": 3.250000024025815,
+   "M_inpaint_roi": 0.3750000185348288,
+   "M_inpaint_rand": -2.8750000054909863,
+   "F_inpaint": -0.8950066723317924
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.004421440000000002,
+   "excess_mean_cached": -0.875000047987919,
+   "excess_inpaint": 0.8749999715955576,
+   "M_inpaint_roi": 1.2499999507320094,
+   "M_inpaint_rand": 0.3749999791364518,
+   "F_inpaint": -0.3409779329245075
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.01402527999999999,
+   "excess_mean_cached": -0.62500004801724,
+   "excess_inpaint": -0.12499993858885894,
+   "M_inpaint_roi": -0.25000001807758565,
+   "M_inpaint_rand": -0.1250000794887267,
+   "F_inpaint": -0.0651443112650334
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.005966569999999992,
+   "excess_mean_cached": -0.24999989169883463,
+   "excess_inpaint": -0.49999993375479157,
+   "M_inpaint_roi": -0.8749998581847667,
+   "M_inpaint_rand": -0.3749999244299751,
+   "F_inpaint": 0.003071559754213027
+  },
+  {
+   "finding": "Other lesion",
+   "roi_area": 0.11508012000000004,
+   "excess_mean_cached": -1.0000001279462443,
+   "excess_inpaint": -0.37500003153740824,
+   "M_inpaint_roi": 0.9999998811216497,
+   "M_inpaint_rand": 1.374999912659058,
+   "F_inpaint": -0.1928407780844168
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.0046574999999999984,
+   "excess_mean_cached": -3.8749999940628976,
+   "excess_inpaint": -3.7499999934561976,
+   "M_inpaint_roi": -1.2500000139276102,
+   "M_inpaint_rand": 2.4999999795285874,
+   "F_inpaint": -0.3025493249579865
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.04046976000000003,
+   "excess_mean_cached": 1.1249999869721545,
+   "excess_inpaint": 0.5000001212426444,
+   "M_inpaint_roi": -0.12499993373567797,
+   "M_inpaint_rand": -0.6250000549783223,
+   "F_inpaint": 9.475442579947481e-06
+  },
+  {
+   "finding": "Other lesion",
+   "roi_area": 0.009554160000000006,
+   "excess_mean_cached": -1.249999901433378,
+   "excess_inpaint": -2.6249999771711217,
+   "M_inpaint_roi": -1.500000050429299,
+   "M_inpaint_rand": 1.124999926741823,
+   "F_inpaint": -0.17653324643634455
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.12443775999999997,
+   "excess_mean_cached": 15.874999900678256,
+   "excess_inpaint": 2.999999973985341,
+   "M_inpaint_roi": 3.875000128125487,
+   "M_inpaint_rand": 0.875000154140146,
+   "F_inpaint": 0.000501132845982965
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.0036800799999999996,
+   "excess_mean_cached": -0.24999999833258624,
+   "excess_inpaint": -0.3749999984422825,
+   "M_inpaint_roi": 1.0173572917437923e-07,
+   "M_inpaint_rand": 0.37500010017801166,
+   "F_inpaint": 0.003273862191582211
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.0017446399999999983,
+   "excess_mean_cached": -0.12500000401562028,
+   "excess_inpaint": 0.12499991052307458,
+   "M_inpaint_roi": 0.6249999076082062,
+   "M_inpaint_rand": 0.49999999708513165,
+   "F_inpaint": -0.3682401179146382
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.011759999999999996,
+   "excess_mean_cached": 3.124999894002636,
+   "excess_inpaint": -3.9999999834871893,
+   "M_inpaint_roi": -5.375000131872473,
+   "M_inpaint_rand": -1.3750001483852836,
+   "F_inpaint": 1.3839366036088165
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.005483519999999999,
+   "excess_mean_cached": -0.6249998293154384,
+   "excess_inpaint": -0.1250000021861286,
+   "M_inpaint_roi": 0.12500010067613765,
+   "M_inpaint_rand": 0.25000010286226626,
+   "F_inpaint": 1.7806886418724072e-06
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.01595924,
+   "excess_mean_cached": -1.3308905355557954e-07,
+   "excess_inpaint": 0.4999999686864811,
+   "M_inpaint_roi": -1.0000001209162903,
+   "M_inpaint_rand": -1.5000000896027714,
+   "F_inpaint": 0.0870961003453452
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.10101488000000003,
+   "excess_mean_cached": 16.499999916379693,
+   "excess_inpaint": 15.250000003741171,
+   "M_inpaint_roi": 15.499999960881919,
+   "M_inpaint_rand": 0.24999995714074785,
+   "F_inpaint": 0.6775040950897644
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.005043199999999994,
+   "excess_mean_cached": -0.12499990421328633,
+   "excess_inpaint": -3.1249998894424804,
+   "M_inpaint_roi": -0.124999970103711,
+   "M_inpaint_rand": 2.9999999193387694,
+   "F_inpaint": 0.03293651160458042
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.0008692499999999983,
+   "excess_mean_cached": 0.12499993863263015,
+   "excess_inpaint": 1.8750000103807114,
+   "M_inpaint_roi": 1.500000012000875,
+   "M_inpaint_rand": -0.37499999837983644,
+   "F_inpaint": 0.00789860307087215
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.001759379999999998,
+   "excess_mean_cached": 0.7500000965166604,
+   "excess_inpaint": 0.4999999936439874,
+   "M_inpaint_roi": 0.0,
+   "M_inpaint_rand": -0.4999999936439874,
+   "F_inpaint": -0.0006189346313476562
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.029688620000000023,
+   "excess_mean_cached": 1.5000000522575387,
+   "excess_inpaint": 0.12500017980363332,
+   "M_inpaint_roi": 0.12500017980363332,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": 0.005172147896534085
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.0019641600000000034,
+   "excess_mean_cached": 0.2499999299108282,
+   "excess_inpaint": 0.1250000169308887,
+   "M_inpaint_roi": 0.1250000169308887,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": -0.0027367114529077696
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.05164103999999999,
+   "excess_mean_cached": 2.499999926043344,
+   "excess_inpaint": 1.3749999496516363,
+   "M_inpaint_roi": 0.25000001807758565,
+   "M_inpaint_rand": -1.1249999315740506,
+   "F_inpaint": -0.05139278285117754
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.013363350000000005,
+   "excess_mean_cached": 0.3750000147629464,
+   "excess_inpaint": 0.3750000376379212,
+   "M_inpaint_roi": 0.12500007787119394,
+   "M_inpaint_rand": -0.2499999597667273,
+   "F_inpaint": -0.026779848523563743
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.005412229999999998,
+   "excess_mean_cached": -0.12499994276005832,
+   "excess_inpaint": -1.1250000217070166,
+   "M_inpaint_roi": -1.5000001793842532,
+   "M_inpaint_rand": -0.3750001576772366,
+   "F_inpaint": 0.2668802904584915
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.13137459999999998,
+   "excess_mean_cached": 11.62499992316063,
+   "excess_inpaint": 5.625000012785147,
+   "M_inpaint_roi": 7.000000022035515,
+   "M_inpaint_rand": 1.3750000092503676,
+   "F_inpaint": 0.008798940124556271
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.09646338,
+   "excess_mean_cached": 1.2499998839216664,
+   "excess_inpaint": -0.9999999083407758,
+   "M_inpaint_roi": -1.2499999798361898,
+   "M_inpaint_rand": -0.25000007149541403,
+   "F_inpaint": 0.2061643303442935
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.04341535,
+   "excess_mean_cached": 1.749999935120283,
+   "excess_inpaint": 3.1250000728627896,
+   "M_inpaint_roi": 3.0000001491238457,
+   "M_inpaint_rand": -0.12499992373894386,
+   "F_inpaint": -1.8337548012055995
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.008949069999999998,
+   "excess_mean_cached": -0.2500001090568196,
+   "excess_inpaint": -0.5000000237961739,
+   "M_inpaint_roi": -0.625000004410774,
+   "M_inpaint_rand": -0.12499998061460005,
+   "F_inpaint": 0.00013669840783592235
+  },
+  {
+   "finding": "Other lesion",
+   "roi_area": 0.05257800000000001,
+   "excess_mean_cached": -0.7499999006682865,
+   "excess_inpaint": -2.8749999575094374,
+   "M_inpaint_roi": -2.6249999762866576,
+   "M_inpaint_rand": 0.24999998122277978,
+   "F_inpaint": -1.7034232033507914
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.010632680000000002,
+   "excess_mean_cached": 6.750000000700525,
+   "excess_inpaint": 5.999999919789808,
+   "M_inpaint_roi": 5.624999926725485,
+   "M_inpaint_rand": -0.3749999930643231,
+   "F_inpaint": 0.12972134806922053
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.0032017000000000013,
+   "excess_mean_cached": -2.374999938055158,
+   "excess_inpaint": -4.374999943613728,
+   "M_inpaint_roi": -4.250000026337112,
+   "M_inpaint_rand": 0.1249999172766163,
+   "F_inpaint": -0.2531764087853104
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.06852953000000005,
+   "excess_mean_cached": 6.374999824845489,
+   "excess_inpaint": -0.3749999336429699,
+   "M_inpaint_roi": 0.12499998492797282,
+   "M_inpaint_rand": 0.4999999185709427,
+   "F_inpaint": -6.174275777226519e-05
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.06999416,
+   "excess_mean_cached": 17.999999900957654,
+   "excess_inpaint": 13.750000075600742,
+   "M_inpaint_roi": 15.875000041917435,
+   "M_inpaint_rand": 2.124999966316694,
+   "F_inpaint": 0.2561091100475492
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.006522389999999994,
+   "excess_mean_cached": 2.8749998531100402,
+   "excess_inpaint": 0.875000027913579,
+   "M_inpaint_roi": 0.7500000183558324,
+   "M_inpaint_rand": -0.1250000095577466,
+   "F_inpaint": -0.020028952006962086
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.06885946,
+   "excess_mean_cached": 3.9999999387125644,
+   "excess_inpaint": -1.124999927296722,
+   "M_inpaint_roi": -0.24999999163162379,
+   "M_inpaint_rand": 0.8749999356650981,
+   "F_inpaint": -0.00035171184571858305
+  },
+  {
+   "finding": "Other lesion",
+   "roi_area": 0.04315075999999999,
+   "excess_mean_cached": 2.499999906377,
+   "excess_inpaint": 3.0000000209153277,
+   "M_inpaint_roi": 0.24999987601869567,
+   "M_inpaint_rand": -2.750000144896632,
+   "F_inpaint": 0.26470154934240586
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.012970159999999994,
+   "excess_mean_cached": -0.374999964380029,
+   "excess_inpaint": -0.3750000650570282,
+   "M_inpaint_roi": -0.12499992957637396,
+   "M_inpaint_rand": 0.25000013548065425,
+   "F_inpaint": -0.16300261752265222
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.005876320000000001,
+   "excess_mean_cached": 0.25000007401341073,
+   "excess_inpaint": -0.12500007065355234,
+   "M_inpaint_roi": 0.12499999122677785,
+   "M_inpaint_rand": 0.2500000618803302,
+   "F_inpaint": -0.013002847260899841
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.10015932000000001,
+   "excess_mean_cached": 2.750000031920779,
+   "excess_inpaint": 1.9999998058827693,
+   "M_inpaint_roi": 2.6249999531938784,
+   "M_inpaint_rand": 0.6250001473111091,
+   "F_inpaint": 6.663441482146479e-05
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.022511399999999997,
+   "excess_mean_cached": 0.6249998015427698,
+   "excess_inpaint": 1.6250000247083314,
+   "M_inpaint_roi": 2.6249999891634372,
+   "M_inpaint_rand": 0.9999999644551059,
+   "F_inpaint": -0.0841747726713784
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.011559409999999996,
+   "excess_mean_cached": -0.25000007461727414,
+   "excess_inpaint": -0.8750000824920985,
+   "M_inpaint_roi": -0.624999986800379,
+   "M_inpaint_rand": 0.25000009569171944,
+   "F_inpaint": -3.05751999380987e-05
+  },
+  {
+   "finding": "Atelectasis",
+   "roi_area": 0.0013284799999999989,
+   "excess_mean_cached": 0.12499999596437128,
+   "excess_inpaint": -0.24999995226767702,
+   "M_inpaint_roi": 7.06352984991554e-08,
+   "M_inpaint_rand": 0.2500000229029755,
+   "F_inpaint": 0.0002597218845039606
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.0003968999999999986,
+   "excess_mean_cached": -0.5000000876924791,
+   "excess_inpaint": -3.125000031401558,
+   "M_inpaint_roi": -2.6249999812076634,
+   "M_inpaint_rand": 0.5000000501938944,
+   "F_inpaint": -1.5830397901557258
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.01550976000000001,
+   "excess_mean_cached": 8.249999920963479,
+   "excess_inpaint": 5.12499987306028,
+   "M_inpaint_roi": 3.2499998685793683,
+   "M_inpaint_rand": -1.8750000044809116,
+   "F_inpaint": 0.2846400459870262
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.005288949999999996,
+   "excess_mean_cached": 12.875000073803536,
+   "excess_inpaint": 12.125000056140701,
+   "M_inpaint_roi": 12.624999945329815,
+   "M_inpaint_rand": 0.4999998891891142,
+   "F_inpaint": 3.563458124018135
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.0016055199999999994,
+   "excess_mean_cached": -1.0000000229972317,
+   "excess_inpaint": -8.49999989269488,
+   "M_inpaint_roi": -8.374999969434315,
+   "M_inpaint_rand": 0.12499992326056564,
+   "F_inpaint": 1.363064736957142
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.05798616000000002,
+   "excess_mean_cached": 0.9999998302240916,
+   "excess_inpaint": -0.4999999113698337,
+   "M_inpaint_roi": 0.1250000922168777,
+   "M_inpaint_rand": 0.6250000035867114,
+   "F_inpaint": -0.6224805138233249
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.1140646,
+   "excess_mean_cached": 2.62499988884135,
+   "excess_inpaint": 5.999999899487623,
+   "M_inpaint_roi": 3.3749999806540956,
+   "M_inpaint_rand": -2.624999918833528,
+   "F_inpaint": -2.409575133543969
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.07307463,
+   "excess_mean_cached": 9.249999879446648,
+   "excess_inpaint": 3.125000021133271,
+   "M_inpaint_roi": 2.999999931273578,
+   "M_inpaint_rand": -0.12500008985969302,
+   "F_inpaint": 0.0099166154325445
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.00515508,
+   "excess_mean_cached": -1.500000093721504,
+   "excess_inpaint": -2.1250000493904966,
+   "M_inpaint_roi": -3.375000177521588,
+   "M_inpaint_rand": -1.2500001281310915,
+   "F_inpaint": -1.4031208202062677
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.08286351999999998,
+   "excess_mean_cached": 13.250000012860692,
+   "excess_inpaint": 4.125000086466075,
+   "M_inpaint_roi": 4.2500000779718885,
+   "M_inpaint_rand": 0.12499999150581331,
+   "F_inpaint": 0.007004627913083538
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.05056137,
+   "excess_mean_cached": 6.125000014852405,
+   "excess_inpaint": 0.12500013195761817,
+   "M_inpaint_roi": 1.1250000907335238,
+   "M_inpaint_rand": 0.9999999587759056,
+   "F_inpaint": 0.0007274070928808419
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.00459882,
+   "excess_mean_cached": 3.250000067661568,
+   "excess_inpaint": -1.875000041855146,
+   "M_inpaint_roi": -1.6249999863598568,
+   "M_inpaint_rand": 0.25000005549528925,
+   "F_inpaint": -0.3811606790662866
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.0022824,
+   "excess_mean_cached": -0.1250000066265189,
+   "excess_inpaint": 0.0,
+   "M_inpaint_roi": -0.1250000331271508,
+   "M_inpaint_rand": -0.1250000331271508,
+   "F_inpaint": 0.00263998176708391
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.0011889799999999977,
+   "excess_mean_cached": 2.4250336849718224e-08,
+   "excess_inpaint": -0.12499986674821706,
+   "M_inpaint_roi": -0.12499986674821706,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": 2.5664867226993238e-06
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.04734816000000001,
+   "excess_mean_cached": 1.124999963327511,
+   "excess_inpaint": 0.37499999777466364,
+   "M_inpaint_roi": 0.12499998061460005,
+   "M_inpaint_rand": -0.2500000171600636,
+   "F_inpaint": -0.010853624847518617
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.0180339,
+   "excess_mean_cached": 1.6250001282729976,
+   "excess_inpaint": -0.5000000907482658,
+   "M_inpaint_roi": -0.5000000907482658,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": -0.09240062331147314
+  },
+  {
+   "finding": "Lung Opacity",
+   "roi_area": 0.023483289999999987,
+   "excess_mean_cached": -1.766415458348547e-08,
+   "excess_inpaint": 0.3750000092596668,
+   "M_inpaint_roi": -0.12500004095269368,
+   "M_inpaint_rand": -0.5000000502123605,
+   "F_inpaint": -6.538005959377783e-05
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.021442680000000006,
+   "excess_mean_cached": 2.750000101651354,
+   "excess_inpaint": 1.1249999987234762,
+   "M_inpaint_roi": 1.6249999737811844,
+   "M_inpaint_rand": 0.4999999750577082,
+   "F_inpaint": 6.091185782963748e-05
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.00032522,
+   "excess_mean_cached": 0.5000000997444989,
+   "excess_inpaint": 1.499999930849322,
+   "M_inpaint_roi": 0.9999998869871902,
+   "M_inpaint_rand": -0.5000000438621317,
+   "F_inpaint": 0.00115404463529065
+  },
+  {
+   "finding": "Atelectasis",
+   "roi_area": 0.018314100000000007,
+   "excess_mean_cached": 0.2499999724373385,
+   "excess_inpaint": 0.3749998383819424,
+   "M_inpaint_roi": 0.4999999282416354,
+   "M_inpaint_rand": 0.12500008985969302,
+   "F_inpaint": 1.5495242848828569e-06
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.13269298,
+   "excess_mean_cached": 1.7500000734465324,
+   "excess_inpaint": 0.6249998581474774,
+   "M_inpaint_roi": 3.124999974728313,
+   "M_inpaint_rand": 2.5000001165808357,
+   "F_inpaint": 0.3487357290787996
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.007413629999999999,
+   "excess_mean_cached": -0.12500007514858447,
+   "excess_inpaint": 1.7500000156510014,
+   "M_inpaint_roi": 2.124999983743285,
+   "M_inpaint_rand": 0.37499996809228353,
+   "F_inpaint": -1.4371745057047418
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.005213600000000004,
+   "excess_mean_cached": 5.124999959930003,
+   "excess_inpaint": 5.875000029847718,
+   "M_inpaint_roi": 4.875000045873975,
+   "M_inpaint_rand": -0.9999999839737432,
+   "F_inpaint": -1.4177327498620915
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.011014919999999994,
+   "excess_mean_cached": 11.000000043246732,
+   "excess_inpaint": 6.375000063773584,
+   "M_inpaint_roi": 3.3749999905064545,
+   "M_inpaint_rand": -3.0000000732671293,
+   "F_inpaint": -0.16651391877730504
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.005095400000000006,
+   "excess_mean_cached": -2.243556611603026e-07,
+   "excess_inpaint": -0.12500015783074936,
+   "M_inpaint_roi": -0.12500015783074936,
+   "M_inpaint_rand": 0.0,
+   "F_inpaint": -0.013391749927798458
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.026092770000000008,
+   "excess_mean_cached": 0.9999998605765779,
+   "excess_inpaint": 1.2499999529076895,
+   "M_inpaint_roi": 2.1249999731949636,
+   "M_inpaint_rand": 0.8750000202872741,
+   "F_inpaint": 0.00031728679141378716
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.00040828000000000137,
+   "excess_mean_cached": -0.874999918130797,
+   "excess_inpaint": 0.1250000523531387,
+   "M_inpaint_roi": 0.12499996952283787,
+   "M_inpaint_rand": -8.283030084044185e-08,
+   "F_inpaint": -1.415712217137483e-05
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.09457968,
+   "excess_mean_cached": 5.249999980322339,
+   "excess_inpaint": 1.0000000786342014,
+   "M_inpaint_roi": 1.3750000122771713,
+   "M_inpaint_rand": 0.3749999336429699,
+   "F_inpaint": 0.0009920154647939823
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.15190574,
+   "excess_mean_cached": 11.249999947709053,
+   "excess_inpaint": 6.999999916437327,
+   "M_inpaint_roi": 8.749999943435316,
+   "M_inpaint_rand": 1.7500000269979896,
+   "F_inpaint": 0.08681045293272552
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.025711550000000007,
+   "excess_mean_cached": -0.5000001642927243,
+   "excess_inpaint": -0.750000038061156,
+   "M_inpaint_roi": 0.0,
+   "M_inpaint_rand": 0.750000038061156,
+   "F_inpaint": -0.17790309701175389
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.0257742,
+   "excess_mean_cached": 1.4999997791522999,
+   "excess_inpaint": 1.4999998665973422,
+   "M_inpaint_roi": -1.8992259320782523e-07,
+   "M_inpaint_rand": -1.5000000565199354,
+   "F_inpaint": 0.21465932729398482
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.006292799999999998,
+   "excess_mean_cached": 11.624999963251945,
+   "excess_inpaint": 15.249999993503778,
+   "M_inpaint_roi": 15.87499995036232,
+   "M_inpaint_rand": 0.6249999568585416,
+   "F_inpaint": 3.8381603382212384
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.005135899999999999,
+   "excess_mean_cached": -1.2499999871349878,
+   "excess_inpaint": 0.5000000139288261,
+   "M_inpaint_roi": 0.2500001314801281,
+   "M_inpaint_rand": -0.24999988244869797,
+   "F_inpaint": 0.040917802531920934
+  },
+  {
+   "finding": "Calcification",
+   "roi_area": 0.009222249999999993,
+   "excess_mean_cached": 0.2499999134720552,
+   "excess_inpaint": -2.9999999044271792,
+   "M_inpaint_roi": -1.9999999322987776,
+   "M_inpaint_rand": 0.9999999721284016,
+   "F_inpaint": -0.05810032618100141
+  },
+  {
+   "finding": "Other lesion",
+   "roi_area": 0.012559959999999995,
+   "excess_mean_cached": 0.7500001085353567,
+   "excess_inpaint": -1.125000056532463,
+   "M_inpaint_roi": -0.8749999979065011,
+   "M_inpaint_rand": 0.25000005862596186,
+   "F_inpaint": -0.007941892319558691
+  },
+  {
+   "finding": "Lung Opacity",
+   "roi_area": 0.0048929,
+   "excess_mean_cached": 0.24999987599391993,
+   "excess_inpaint": 0.12500007354431553,
+   "M_inpaint_roi": 0.12500000207949835,
+   "M_inpaint_rand": -7.146481717512643e-08,
+   "F_inpaint": 2.432565912396283e-05
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.017684099999999994,
+   "excess_mean_cached": 13.749999988109883,
+   "excess_inpaint": 11.87500005816663,
+   "M_inpaint_roi": 10.12500002726793,
+   "M_inpaint_rand": -1.7500000308987,
+   "F_inpaint": -0.14722332855231635
+  },
+  {
+   "finding": "Infiltration",
+   "roi_area": 0.032653600000000005,
+   "excess_mean_cached": 3.7499999658186134,
+   "excess_inpaint": 8.000000006967818,
+   "M_inpaint_roi": 10.875000028107722,
+   "M_inpaint_rand": 2.875000021139904,
+   "F_inpaint": 2.5653536508213617
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.008211060000000003,
+   "excess_mean_cached": 0.12499993744374649,
+   "excess_inpaint": -7.624999752912372,
+   "M_inpaint_roi": -7.499999814109754,
+   "M_inpaint_rand": 0.12499993880261862,
+   "F_inpaint": 2.8248588695243573
+  },
+  {
+   "finding": "Atelectasis",
+   "roi_area": 0.0014515199999999991,
+   "excess_mean_cached": -0.12499992288183925,
+   "excess_inpaint": 0.37499993160510314,
+   "M_inpaint_roi": 0.4999999394116248,
+   "M_inpaint_rand": 0.12500000780652165,
+   "F_inpaint": 0.0011632656644167036
+  },
+  {
+   "finding": "Infiltration",
+   "roi_area": 0.014407799999999998,
+   "excess_mean_cached": 6.24999980708184,
+   "excess_inpaint": 1.3749999917654474,
+   "M_inpaint_roi": 2.7500001099926834,
+   "M_inpaint_rand": 1.375000118227236,
+   "F_inpaint": -0.2654754470919798
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.0008908199999999993,
+   "excess_mean_cached": 1.1250000341124826,
+   "excess_inpaint": -6.380813255546514e-08,
+   "M_inpaint_roi": 0.5000001015966129,
+   "M_inpaint_rand": 0.5000001654047455,
+   "F_inpaint": -0.14956637047441812
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.012592800000000003,
+   "excess_mean_cached": 0.37499998206490837,
+   "excess_inpaint": -1.8749999157203607,
+   "M_inpaint_roi": -1.3749999279523308,
+   "M_inpaint_rand": 0.4999999877680299,
+   "F_inpaint": 0.00534348749376079
+  },
+  {
+   "finding": "Pleural effusion",
+   "roi_area": 0.010773,
+   "excess_mean_cached": 7.124999967942101,
+   "excess_inpaint": 5.000000028667245,
+   "M_inpaint_roi": 5.6250001089360495,
+   "M_inpaint_rand": 0.6250000802688049,
+   "F_inpaint": 0.7050371569887459
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.025021920000000007,
+   "excess_mean_cached": 8.250000255525801,
+   "excess_inpaint": 2.1249999532698567,
+   "M_inpaint_roi": 3.000000012664314,
+   "M_inpaint_rand": 0.8750000593944574,
+   "F_inpaint": 0.011703124669514002
+  },
+  {
+   "finding": "Aortic enlargement",
+   "roi_area": 0.05227199999999998,
+   "excess_mean_cached": 0.12500006192501978,
+   "excess_inpaint": -12.125000103410022,
+   "M_inpaint_roi": -18.12499995418921,
+   "M_inpaint_rand": -5.999999850779188,
+   "F_inpaint": -2.7232093376376305
+  },
+  {
+   "finding": "Infiltration",
+   "roi_area": 0.044177400000000006,
+   "excess_mean_cached": -0.8749999563968061,
+   "excess_inpaint": 3.4999999708628398,
+   "M_inpaint_roi": 0.1250000794887267,
+   "M_inpaint_rand": -3.374999891374113,
+   "F_inpaint": 0.004278427729092371
+  },
+  {
+   "finding": "Cardiomegaly",
+   "roi_area": 0.07076017000000001,
+   "excess_mean_cached": 2.500000074326211,
+   "excess_inpaint": 2.1250000189995006,
+   "M_inpaint_roi": 3.2500000877698607,
+   "M_inpaint_rand": 1.12500006877036,
+   "F_inpaint": 0.010581598481904132
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.020616119999999998,
+   "excess_mean_cached": -2.1250001013930975,
+   "excess_inpaint": -0.7500000149341979,
+   "M_inpaint_roi": -0.6249999191295448,
+   "M_inpaint_rand": 0.1250000958046531,
+   "F_inpaint": 0.3422344666729913
+  },
+  {
+   "finding": "Pulmonary fibrosis",
+   "roi_area": 0.004350830000000002,
+   "excess_mean_cached": 0.6249999574050085,
+   "excess_inpaint": -0.749999982434927,
+   "M_inpaint_roi": -0.8749999459212843,
+   "M_inpaint_rand": -0.12499996348635722,
+   "F_inpaint": 0.5342642954735934
+  },
+  {
+   "finding": "Consolidation",
+   "roi_area": 0.03187616,
+   "excess_mean_cached": 1.1250000172566228,
+   "excess_inpaint": 1.8750000004158238,
+   "M_inpaint_roi": 2.75000004493206,
+   "M_inpaint_rand": 0.875000044516236,
+   "F_inpaint": 0.003197929174824293
+  },
+  {
+   "finding": "ILD",
+   "roi_area": 0.015570689999999996,
+   "excess_mean_cached": 2.6249999336388585,
+   "excess_inpaint": 6.374999792529179,
+   "M_inpaint_roi": 6.374999915893865,
+   "M_inpaint_rand": 1.2336468513396426e-07,
+   "F_inpaint": -2.2889120354176367
+  },
+  {
+   "finding": "Nodule/Mass",
+   "roi_area": 0.0026073600000000004,
+   "excess_mean_cached": -1.1249999376000814,
+   "excess_inpaint": -0.9999999205471477,
+   "M_inpaint_roi": -1.3749999325635427,
+   "M_inpaint_rand": -0.375000012016395,
+   "F_inpaint": -0.4868535623053767
+  },
+  {
+   "finding": "Pleural thickening",
+   "roi_area": 0.007937280000000003,
+   "excess_mean_cached": -3.7493776083863395e-08,
+   "excess_inpaint": 0.12499999122677785,
+   "M_inpaint_roi": 0.0,
+   "M_inpaint_rand": -0.12499999122677785,
+   "F_inpaint": -0.06559379871519866
+  }
+ ]
+}

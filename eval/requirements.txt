@@ -1,0 +1,15 @@
+# Tested with Python 3.10, CUDA 12.4
+torch>=2.6
+transformers>=4.57       # Qwen3-VL / InternVL3.5 / Gemma-3 architectures; 5.x also works
+accelerate
+pillow
+numpy
+scipy
+pandas
+pydicom                  # scripts/: DICOM -> PNG
+pylibjpeg pylibjpeg-libjpeg   # DICOM decoding for VinDr-CXR
+matplotlib               # figures (occlusion maps)
+opencv-python-headless   # eval/controls/inpaint_fill.py (Telea inpainting)
+torchxrayvision          # eval/controls/lungfield.py (chest PSPNet lung masks); downloads weights on first use
+scikit-image             # used by torchxrayvision resizing
+python-docx              # optional: table export

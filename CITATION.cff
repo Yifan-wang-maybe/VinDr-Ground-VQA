@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use VinDr-Ground-VQA, please cite the paper below and the VinDr-CXR source dataset."
+title: "VinDr-Ground-VQA: a grounded, image-necessary chest X-ray VQA benchmark and the area-matched occlusion protocol"
+type: dataset
+authors:
+  - family-names: "Wang"
+    given-names: "Yifan"
+  # TODO: add co-authors in paper order
+version: "1.0"
+date-released: "2026-11-01"
+license: "see LICENSE"
+preferred-citation:
+  type: conference-paper
+  title: "VinDr-Ground-VQA: A Grounded Chest X-ray VQA Benchmark"   # TODO: exact title
+  authors:
+    - family-names: "Wang"
+      given-names: "Yifan"
+    # TODO: co-authors
+  collection-title: "Proceedings of the 6th Machine Learning for Health (ML4H) Symposium"
+  year: 2026
+references:
+  - type: article
+    title: "VinDr-CXR: An open dataset of chest X-rays with radiologist's annotations"
+    authors:
+      - family-names: "Nguyen"
+        given-names: "Ha Q."
+    journal: "Scientific Data"
+    year: 2022
+    doi: "10.1038/s41597-022-01498-w"
+  - type: data
+    title: "VinDr-CXR (version 1.0.0), PhysioNet"
+    url: "https://physionet.org/content/vindr-cxr/1.0.0/"

@@ -1,0 +1,217 @@
+finding_a,finding_b,n_a,n_b,n_cooccur,lift,n_abnormal_images
+Aortic enlargement,Atelectasis,3318,273,86,0.5194,5471
+Aortic enlargement,Calcification,3318,652,351,0.8877,5471
+Aortic enlargement,Cardiomegaly,3318,2625,2068,1.299,5471
+Aortic enlargement,Clavicle fracture,3318,29,23,1.3077,5471
+Aortic enlargement,Consolidation,3318,449,166,0.6096,5471
+Aortic enlargement,Edema,3318,13,6,0.761,5471
+Aortic enlargement,Emphysema,3318,84,48,0.9422,5471
+Aortic enlargement,Enlarged PA,3318,139,100,1.1862,5471
+Aortic enlargement,ILD,3318,618,282,0.7524,5471
+Aortic enlargement,Infiltration,3318,671,308,0.7569,5471
+Aortic enlargement,Lung Opacity,3318,1415,783,0.9124,5471
+Aortic enlargement,Lung cavity,3318,60,20,0.5496,5471
+Aortic enlargement,Lung cyst,3318,35,13,0.6124,5471
+Aortic enlargement,Mediastinal shift,3318,170,70,0.679,5471
+Aortic enlargement,Nodule/Mass,3318,1017,524,0.8496,5471
+Aortic enlargement,Other lesion,3318,1248,737,0.9737,5471
+Aortic enlargement,Pleural effusion,3318,1149,584,0.8381,5471
+Aortic enlargement,Pleural thickening,3318,2179,1373,1.039,5471
+Aortic enlargement,Pneumothorax,3318,114,36,0.5207,5471
+Aortic enlargement,Pulmonary fibrosis,3318,1838,962,0.863,5471
+Aortic enlargement,Rib fracture,3318,101,72,1.1754,5471
+Atelectasis,Calcification,273,652,47,1.4446,5471
+Atelectasis,Cardiomegaly,273,2625,57,0.4352,5471
+Atelectasis,Consolidation,273,449,69,3.0797,5471
+Atelectasis,Emphysema,273,84,6,1.4314,5471
+Atelectasis,Enlarged PA,273,139,2,0.2883,5471
+Atelectasis,ILD,273,618,42,1.362,5471
+Atelectasis,Infiltration,273,671,53,1.5829,5471
+Atelectasis,Lung Opacity,273,1415,112,1.5862,5471
+Atelectasis,Lung cavity,273,60,9,3.006,5471
+Atelectasis,Lung cyst,273,35,3,1.7177,5471
+Atelectasis,Mediastinal shift,273,170,76,8.9592,5471
+Atelectasis,Nodule/Mass,273,1017,57,1.1232,5471
+Atelectasis,Other lesion,273,1248,92,1.4773,5471
+Atelectasis,Pleural effusion,273,1149,132,2.3023,5471
+Atelectasis,Pleural thickening,273,2179,138,1.2692,5471
+Atelectasis,Pneumothorax,273,114,25,4.3948,5471
+Atelectasis,Pulmonary fibrosis,273,1838,150,1.6355,5471
+Atelectasis,Rib fracture,273,101,2,0.3968,5471
+Calcification,Cardiomegaly,652,2625,246,0.7864,5471
+Calcification,Clavicle fracture,652,29,2,0.5787,5471
+Calcification,Consolidation,652,449,35,0.6541,5471
+Calcification,Edema,652,13,2,1.2909,5471
+Calcification,Emphysema,652,84,4,0.3996,5471
+Calcification,Enlarged PA,652,139,15,0.9055,5471
+Calcification,ILD,652,618,91,1.2356,5471
+Calcification,Infiltration,652,671,39,0.4877,5471
+Calcification,Lung Opacity,652,1415,125,0.7413,5471
+Calcification,Lung cavity,652,60,7,0.979,5471
+Calcification,Lung cyst,652,35,7,1.6782,5471
+Calcification,Mediastinal shift,652,170,33,1.6289,5471
+Calcification,Nodule/Mass,652,1017,212,1.7492,5471
+Calcification,Other lesion,652,1248,198,1.3313,5471
+Calcification,Pleural effusion,652,1149,100,0.7303,5471
+Calcification,Pleural thickening,652,2179,288,1.1091,5471
+Calcification,Pneumothorax,652,114,5,0.368,5471
+Calcification,Pulmonary fibrosis,652,1838,272,1.2418,5471
+Calcification,Rib fracture,652,101,11,0.9139,5471
+Cardiomegaly,Clavicle fracture,2625,29,18,1.2936,5471
+Cardiomegaly,Consolidation,2625,449,125,0.5802,5471
+Cardiomegaly,Edema,2625,13,11,1.7635,5471
+Cardiomegaly,Emphysema,2625,84,17,0.4218,5471
+Cardiomegaly,Enlarged PA,2625,139,110,1.6494,5471
+Cardiomegaly,ILD,2625,618,184,0.6205,5471
+Cardiomegaly,Infiltration,2625,671,187,0.5808,5471
+Cardiomegaly,Lung Opacity,2625,1415,526,0.7748,5471
+Cardiomegaly,Lung cavity,2625,60,11,0.3821,5471
+Cardiomegaly,Lung cyst,2625,35,6,0.3573,5471
+Cardiomegaly,Mediastinal shift,2625,170,34,0.4168,5471
+Cardiomegaly,Nodule/Mass,2625,1017,305,0.6251,5471
+Cardiomegaly,Other lesion,2625,1248,530,0.8851,5471
+Cardiomegaly,Pleural effusion,2625,1149,372,0.6748,5471
+Cardiomegaly,Pleural thickening,2625,2179,893,0.8541,5471
+Cardiomegaly,Pneumothorax,2625,114,18,0.3291,5471
+Cardiomegaly,Pulmonary fibrosis,2625,1838,558,0.6327,5471
+Cardiomegaly,Rib fracture,2625,101,45,0.9286,5471
+Clavicle fracture,Consolidation,29,449,1,0.4202,5471
+Clavicle fracture,ILD,29,618,3,0.9158,5471
+Clavicle fracture,Infiltration,29,671,3,0.8435,5471
+Clavicle fracture,Lung Opacity,29,1415,7,0.9333,5471
+Clavicle fracture,Nodule/Mass,29,1017,3,0.5565,5471
+Clavicle fracture,Other lesion,29,1248,12,1.814,5471
+Clavicle fracture,Pleural effusion,29,1149,8,1.3135,5471
+Clavicle fracture,Pleural thickening,29,2179,13,1.1255,5471
+Clavicle fracture,Pulmonary fibrosis,29,1838,11,1.1291,5471
+Clavicle fracture,Rib fracture,29,101,5,9.3394,5471
+Consolidation,Edema,449,13,2,1.8746,5471
+Consolidation,Emphysema,449,84,3,0.4352,5471
+Consolidation,Enlarged PA,449,139,8,0.7013,5471
+Consolidation,ILD,449,618,69,1.3604,5471
+Consolidation,Infiltration,449,671,154,2.7965,5471
+Consolidation,Lung Opacity,449,1415,306,2.635,5471
+Consolidation,Lung cavity,449,60,19,3.8585,5471
+Consolidation,Lung cyst,449,35,4,1.3926,5471
+Consolidation,Mediastinal shift,449,170,35,2.5086,5471
+Consolidation,Nodule/Mass,449,1017,131,1.5695,5471
+Consolidation,Other lesion,449,1248,119,1.1619,5471
+Consolidation,Pleural effusion,449,1149,216,2.2906,5471
+Consolidation,Pleural thickening,449,2179,210,1.1743,5471
+Consolidation,Pneumothorax,449,114,29,3.0997,5471
+Consolidation,Pulmonary fibrosis,449,1838,201,1.3325,5471
+Consolidation,Rib fracture,449,101,11,1.3271,5471
+Edema,Emphysema,13,84,1,5.0101,5471
+Edema,Enlarged PA,13,139,4,12.1107,5471
+Edema,ILD,13,618,3,2.0429,5471
+Edema,Infiltration,13,671,5,3.136,5471
+Edema,Lung Opacity,13,1415,6,1.7845,5471
+Edema,Lung cyst,13,35,1,12.0242,5471
+Edema,Other lesion,13,1248,6,2.0233,5471
+Edema,Pleural effusion,13,1149,5,1.8314,5471
+Edema,Pleural thickening,13,2179,3,0.5794,5471
+Edema,Pulmonary fibrosis,13,1838,1,0.229,5471
+Emphysema,Enlarged PA,84,139,3,1.4057,5471
+Emphysema,ILD,84,618,10,1.0539,5471
+Emphysema,Infiltration,84,671,13,1.2619,5471
+Emphysema,Lung Opacity,84,1415,18,0.8285,5471
+Emphysema,Lung cavity,84,60,3,3.2565,5471
+Emphysema,Lung cyst,84,35,10,18.6088,5471
+Emphysema,Mediastinal shift,84,170,5,1.9156,5471
+Emphysema,Nodule/Mass,84,1017,18,1.1528,5471
+Emphysema,Other lesion,84,1248,29,1.5135,5471
+Emphysema,Pleural effusion,84,1149,29,1.6439,5471
+Emphysema,Pleural thickening,84,2179,52,1.5543,5471
+Emphysema,Pneumothorax,84,114,3,1.714,5471
+Emphysema,Pulmonary fibrosis,84,1838,43,1.5237,5471
+Emphysema,Rib fracture,84,101,3,1.9346,5471
+Enlarged PA,ILD,139,618,19,1.2101,5471
+Enlarged PA,Infiltration,139,671,16,0.9385,5471
+Enlarged PA,Lung Opacity,139,1415,45,1.2517,5471
+Enlarged PA,Lung cavity,139,60,2,1.312,5471
+Enlarged PA,Mediastinal shift,139,170,2,0.4631,5471
+Enlarged PA,Nodule/Mass,139,1017,28,1.0836,5471
+Enlarged PA,Other lesion,139,1248,59,1.8608,5471
+Enlarged PA,Pleural effusion,139,1149,27,0.9249,5471
+Enlarged PA,Pleural thickening,139,2179,49,0.8851,5471
+Enlarged PA,Pneumothorax,139,114,1,0.3453,5471
+Enlarged PA,Pulmonary fibrosis,139,1838,38,0.8137,5471
+Enlarged PA,Rib fracture,139,101,1,0.3897,5471
+ILD,Infiltration,618,671,155,2.045,5471
+ILD,Lung Opacity,618,1415,152,0.951,5471
+ILD,Lung cavity,618,60,15,2.2132,5471
+ILD,Lung cyst,618,35,9,2.2764,5471
+ILD,Mediastinal shift,618,170,21,1.0936,5471
+ILD,Nodule/Mass,618,1017,126,1.0968,5471
+ILD,Other lesion,618,1248,150,1.064,5471
+ILD,Pleural effusion,618,1149,142,1.0941,5471
+ILD,Pleural thickening,618,2179,245,0.9954,5471
+ILD,Pneumothorax,618,114,9,0.6989,5471
+ILD,Pulmonary fibrosis,618,1838,261,1.2571,5471
+ILD,Rib fracture,618,101,9,0.7889,5471
+Infiltration,Lung Opacity,671,1415,385,2.2184,5471
+Infiltration,Lung cavity,671,60,33,4.4844,5471
+Infiltration,Lung cyst,671,35,7,1.6307,5471
+Infiltration,Mediastinal shift,671,170,44,2.1103,5471
+Infiltration,Nodule/Mass,671,1017,120,0.9621,5471
+Infiltration,Other lesion,671,1248,181,1.1825,5471
+Infiltration,Pleural effusion,671,1149,228,1.6179,5471
+Infiltration,Pleural thickening,671,2179,335,1.2535,5471
+Infiltration,Pneumothorax,671,114,11,0.7867,5471
+Infiltration,Pulmonary fibrosis,671,1838,431,1.9119,5471
+Infiltration,Rib fracture,671,101,18,1.4531,5471
+Lung Opacity,Lung cavity,1415,60,30,1.9332,5471
+Lung Opacity,Lung cyst,1415,35,13,1.4361,5471
+Lung Opacity,Mediastinal shift,1415,170,91,2.0697,5471
+Lung Opacity,Nodule/Mass,1415,1017,406,1.5435,5471
+Lung Opacity,Other lesion,1415,1248,500,1.5491,5471
+Lung Opacity,Pleural effusion,1415,1149,555,1.8676,5471
+Lung Opacity,Pleural thickening,1415,2179,726,1.2882,5471
+Lung Opacity,Pneumothorax,1415,114,53,1.7976,5471
+Lung Opacity,Pulmonary fibrosis,1415,1838,683,1.4368,5471
+Lung Opacity,Rib fracture,1415,101,41,1.5695,5471
+Lung cavity,Lung cyst,60,35,6,15.6314,5471
+Lung cavity,Mediastinal shift,60,170,10,5.3637,5471
+Lung cavity,Nodule/Mass,60,1017,13,1.1656,5471
+Lung cavity,Other lesion,60,1248,20,1.4613,5471
+Lung cavity,Pleural effusion,60,1149,18,1.4285,5471
+Lung cavity,Pleural thickening,60,2179,35,1.4646,5471
+Lung cavity,Pneumothorax,60,114,1,0.7999,5471
+Lung cavity,Pulmonary fibrosis,60,1838,42,2.0836,5471
+Lung cavity,Rib fracture,60,101,3,2.7084,5471
+Lung cyst,Mediastinal shift,35,170,4,3.678,5471
+Lung cyst,Nodule/Mass,35,1017,6,0.9222,5471
+Lung cyst,Other lesion,35,1248,16,2.004,5471
+Lung cyst,Pleural effusion,35,1149,13,1.7686,5471
+Lung cyst,Pleural thickening,35,2179,18,1.2913,5471
+Lung cyst,Pneumothorax,35,114,8,10.9694,5471
+Lung cyst,Pulmonary fibrosis,35,1838,23,1.9561,5471
+Lung cyst,Rib fracture,35,101,1,1.5477,5471
+Mediastinal shift,Nodule/Mass,170,1017,36,1.1392,5471
+Mediastinal shift,Other lesion,170,1248,64,1.6504,5471
+Mediastinal shift,Pleural effusion,170,1149,94,2.6328,5471
+Mediastinal shift,Pleural thickening,170,2179,101,1.4917,5471
+Mediastinal shift,Pneumothorax,170,114,14,3.9522,5471
+Mediastinal shift,Pulmonary fibrosis,170,1838,98,1.7159,5471
+Mediastinal shift,Rib fracture,170,101,3,0.9559,5471
+Nodule/Mass,Other lesion,1017,1248,340,1.4656,5471
+Nodule/Mass,Pleural effusion,1017,1149,224,1.0488,5471
+Nodule/Mass,Pleural thickening,1017,2179,448,1.106,5471
+Nodule/Mass,Pneumothorax,1017,114,19,0.8966,5471
+Nodule/Mass,Pulmonary fibrosis,1017,1838,437,1.279,5471
+Nodule/Mass,Rib fracture,1017,101,15,0.7989,5471
+Other lesion,Pleural effusion,1248,1149,378,1.4422,5471
+Other lesion,Pleural thickening,1248,2179,639,1.2856,5471
+Other lesion,Pneumothorax,1248,114,52,1.9996,5471
+Other lesion,Pulmonary fibrosis,1248,1838,536,1.2784,5471
+Other lesion,Rib fracture,1248,101,45,1.9532,5471
+Pleural effusion,Pleural thickening,1149,2179,865,1.8902,5471
+Pleural effusion,Pneumothorax,1149,114,66,2.7567,5471
+Pleural effusion,Pulmonary fibrosis,1149,1838,523,1.3549,5471
+Pleural effusion,Rib fracture,1149,101,28,1.32,5471
+Pleural thickening,Pneumothorax,2179,114,65,1.4316,5471
+Pleural thickening,Pulmonary fibrosis,2179,1838,1053,1.4384,5471
+Pleural thickening,Rib fracture,2179,101,52,1.2927,5471
+Pneumothorax,Pulmonary fibrosis,114,1838,40,1.0444,5471
+Pneumothorax,Rib fracture,114,101,4,1.9006,5471
+Pulmonary fibrosis,Rib fracture,1838,101,43,1.2673,5471

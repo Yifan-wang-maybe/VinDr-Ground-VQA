@@ -1,0 +1,42 @@
+{
+ "medgemma": {
+  "vision_tokens_median": 259,
+  "range": [
+   259,
+   259
+  ],
+  "tokens_at_0.3pct": 0.78,
+  "tokens_at_1.7pct": 4.4,
+  "tokens_at_6.6pct": 17.1
+ },
+ "lingshu": {
+  "vision_tokens_median": 1112,
+  "range": [
+   1075,
+   1371
+  ],
+  "tokens_at_0.3pct": 3.34,
+  "tokens_at_1.7pct": 18.9,
+  "tokens_at_6.6pct": 73.4
+ },
+ "qwen3vl": {
+  "vision_tokens_median": 866,
+  "range": [
+   802,
+   1026
+  ],
+  "tokens_at_0.3pct": 2.6,
+  "tokens_at_1.7pct": 14.7,
+  "tokens_at_6.6pct": 57.2
+ },
+ "internvl35": {
+  "vision_tokens_median": 3331,
+  "range": [
+   2563,
+   3331
+  ],
+  "tokens_at_0.3pct": 9.99,
+  "tokens_at_1.7pct": 56.6,
+  "tokens_at_6.6pct": 219.8
+ }
+}

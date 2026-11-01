@@ -1,0 +1,61 @@
+# Data schema
+
+All files are JSON Lines (one object per line), UTF-8. Boxes are **normalized** `[x0, y0, x1, y1]` in
+[0, 1] on the preprocessed PNG (longest side 1,024 px); `data/dims.json` gives the original DICOM
+`(H, W)` per `image_id` if you need DICOM pixel coordinates.
+
+## `train.jsonl` / `val.jsonl` / `test.jsonl` — the benchmark (102,072 QA; 81,656 / 9,652 / 10,764)
+
+| field | type | description |
+|---|---|---|
+| `qa_id` | str | unique id |
+| `image_id` | str | VinDr-CXR image id → `<images>/<image_id>.png` |
+| `source` | str | `"vindr-cxr"` |
+| `split` | str | `train` / `val` / `test`. `test` = the official VinDr-CXR test images; `val` = 10% of official-train images, image-level, seed 0 |
+| `finding` | str | one of the 22 VinDr-CXR findings |
+| `question` | str | natural-language question (language-model paraphrase where available; see `enhancements`) |
+| `question_template` | str | deterministic templated question — the API-free core |
+| `question_variants` | list[str] | further paraphrases (may be empty) |
+| `answer` | str | `Yes` / `No` (presence); `the highlighted region` (localization); finding name (open) |
+| `answer_type` | str | `presence` / `localization` / `open` |
+| `answer_nl` | str or null | natural anatomical location for localization rows (language-model generated) |
+| `roi_box` | list or null | consensus evidence box for positives; null for negatives |
+| `roi_area` | float or null | box area as a fraction of the image |
+| `roi_appropriate` | bool or null | language-model (VLM) judgement that the box tightly covers the finding; **auxiliary — see the datasheet** |
+| `roi_reason` | str or null | short reason for that judgement |
+| `rad_agreement` | int or null | number of radiologists (of 3) contributing to the consensus box (train/val only; official test annotations are a 5-reader consensus without reader ids) |
+| `enhancements` | list[str] | which language-model layers touched the row: `fable5_paraphrase`, `nl_localization`, `appropriateness_checked` |
+
+Presence questions are exactly Yes/No balanced within every split; every negative is drawn from an
+image unanimously annotated as having no finding of that type. Blind (no-image) accuracy of all
+evaluated models is 0.49–0.50.
+
+## `hardset_v1.jsonl` — co-occurrence-controlled sets D1/D2 (14,359 rows)
+
+Same fields as above plus:
+
+| field | type | description |
+|---|---|---|
+| `subset` | str | `hard_pos_isolated` (queried finding is the only annotated abnormality), `hard_pos_correlated` (a frequently co-occurring finding is also present), `hard_neg` (queried finding absent, a correlated finding present) |
+| `context_findings` | list[str] | other findings annotated on the image |
+| `n_context` | int | their count |
+| `pair_lift` | float or null | association-rule lift between the queried finding and the (strongest) context finding; hard negatives were built at lift ≥ 1.5 with ≥ 30 co-occurrences |
+
+## `hardset_unrelated_v1.jsonl` — unrelated-context negatives (4,740 rows)
+
+Queried finding absent; an *unrelated* finding (lift ≤ 0.9, ≥ 100 occurrences) present. Field
+`context_y` names it. Used for the normal → unrelated → correlated false-positive comparison.
+
+## `hardset_weakband_lift1.2-1.5.jsonl` — sensitivity set
+
+Same construction as `hardset_v1.jsonl` with the correlated cutoff lowered to lift ≥ 1.2; the band
+1.2 ≤ lift < 1.5 is the "weak association" level in the threshold-sensitivity analysis.
+
+## `cooccurrence_lift.csv`, `finding_counts.json`
+
+Pairwise co-occurrence counts and lift for all finding pairs over the 5,471 box-annotated abnormal
+images of VinDr-CXR; lift(a|b) = P(a|b) / P(a) (symmetric in a, b).
+
+## `dims.json`
+
+`image_id → [H, W]` of the original DICOM.

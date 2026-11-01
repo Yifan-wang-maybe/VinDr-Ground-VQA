@@ -1,0 +1,6060 @@
+{
+ "summary": {
+  "model": "lingshu",
+  "source": "BoKelvin/GEMeX-ThinkVG train parquet, <answer> starting Yes/No, file order",
+  "first399_bare": {
+   "n": 399,
+   "acc": 0.8070175438596491,
+   "acc_wilson": [
+    0.7654406786968103,
+    0.8427388141857518
+   ],
+   "balanced_acc": 0.6450782333135274,
+   "blind_yes_rate": 0.09774436090225563,
+   "gold_yes_rate": 0.2556390977443609,
+   "majority_baseline": 0.7443609022556391,
+   "median_margin": -2.874999876747726
+  },
+  "first399_suffix": {
+   "n": 399,
+   "acc": 0.7543859649122807,
+   "acc_wilson": [
+    0.7098550122305481,
+    0.7940651390150034
+   ],
+   "balanced_acc": 0.5324816795405031,
+   "blind_yes_rate": 0.03007518796992481,
+   "gold_yes_rate": 0.2556390977443609,
+   "majority_baseline": 0.7443609022556391,
+   "median_margin": -2.2500000320684985
+  },
+  "first1000_bare": {
+   "n": 1000,
+   "acc": 0.805,
+   "acc_wilson": [
+    0.779295278311453,
+    0.828370313550849
+   ],
+   "balanced_acc": 0.657910414417098,
+   "blind_yes_rate": 0.126,
+   "gold_yes_rate": 0.251,
+   "majority_baseline": 0.749,
+   "median_margin": -2.7500000334563164
+  },
+  "first1000_suffix": {
+   "n": 1000,
+   "acc": 0.765,
+   "acc_wilson": [
+    0.7377368880995521,
+    0.790234855649661
+   ],
+   "balanced_acc": 0.5424683110016543,
+   "blind_yes_rate": 0.032,
+   "gold_yes_rate": 0.251,
+   "majority_baseline": 0.749,
+   "median_margin": -2.2500000320684985
+  }
+ },
+ "rows": [
+  {
+   "question": "Are there any signs of pleural effusion in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8750000088124192,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the cardiac contours normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": 0.12499998121263603
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the cardiac silhouette described as abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is the cardiac silhouette abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Are there any signs of respiratory distress in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any pleural effusion observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.62500008324146,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Does the CXR show any focal consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -3.50000004798601,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there any evidence of pleural thickening in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there any indication of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Does this CXR show any signs of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the cardiomediastinal silhouette within normal limits?",
+   "gold": "yes",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.7499999604430576
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the heart size normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is a large effusion seen in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of pneumonia in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Is there any sign of pneumothorax observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Are the lungs clear in the CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -0.499999989054659,
+   "mg_blind_suffix": -0.7499999604430576
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Are the bibasilar opacities consistent with a severe condition?",
+   "gold": "no",
+   "mg_blind_bare": 0.2499999180563619,
+   "mg_blind_suffix": -0.12500001040080833
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.249999961379358,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Is there any indication of fluid accumulation in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.50000004798601,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there any indication of cardiac enlargement in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Are there any infiltrates present in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is the mediastinal silhouette abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.5000000381794287,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there any pleural effusion present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.6250001276349277,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there any evidence of a left pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -3.7499999735387033,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged?",
+   "gold": "no",
+   "mg_blind_bare": -1.124999921018066,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Has the right-sided pleural effusion been present in prior studies?",
+   "gold": "yes",
+   "mg_blind_bare": -0.499999989054659,
+   "mg_blind_suffix": -0.999999894117281
+  },
+  {
+   "question": "Is there a large pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is the left lung clear on this X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.1250000115884717,
+   "mg_blind_suffix": -0.4999998907832192
+  },
+  {
+   "question": "Are there any signs of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there evidence of pneumothorax present?",
+   "gold": "no",
+   "mg_blind_bare": -2.8750000088124192,
+   "mg_blind_suffix": -2.1250000404899776
+  },
+  {
+   "question": "Are there signs of effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.874999962466111,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Are there any signs of active disease in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -4.250000034957421,
+   "mg_blind_suffix": -2.6249998566251445
+  },
+  {
+   "question": "Is there evidence of pulmonary nodules in the right upper lung zone?",
+   "gold": "yes",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there any evidence of pulmonary disease in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.000000029947047,
+   "mg_blind_suffix": -2.2500001027576437
+  },
+  {
+   "question": "Is there any evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the lung volumes normal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 0.6249999371819359,
+   "mg_blind_suffix": -0.749999897351545
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there evidence of chronic pulmonary infiltrates in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is the heart size abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Are there any signs of respiratory distress evident in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there any pleural effusion noted in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Does this CXR show any signs of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is the cardiomediastinal silhouette normal?",
+   "gold": "yes",
+   "mg_blind_bare": 0.500000040406036,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there evidence of significant pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.3749999120833287,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of pulmonary edema on this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are there moderate bilateral pleural effusions present?",
+   "gold": "yes",
+   "mg_blind_bare": -0.5000000873261085,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there evidence of cardiac device placement in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there any indication of atelectasis in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is the right pleural effusion significant in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 0.25000001089665325,
+   "mg_blind_suffix": 0.0
+  },
+  {
+   "question": "Has the left costophrenic angle improved since the last radiograph?",
+   "gold": "no",
+   "mg_blind_bare": -1.6250000629073573,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Does the CXR show any pleural abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there pleural effusion observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249998566251445,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.8750000271224616,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Are there pleural effusions present in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is there any pleural effusion or pneumothorax demonstrated in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Are there any abnormalities in the cardiac contours?",
+   "gold": "no",
+   "mg_blind_bare": -2.4999999108837447,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the cardiac contours abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500001500030167,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Does this CXR show signs of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the hilar contours normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.249999902466047,
+   "mg_blind_suffix": 0.4999999681019472
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there focal consolidation observed in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.874999876747726,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does the CXR show any signs of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.7500001500030167
+  },
+  {
+   "question": "Is there any evidence of acute osseous abnormalities in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -3.3750000209522657
+  },
+  {
+   "question": "Is the pulmonary vasculature normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.25000001089665325,
+   "mg_blind_suffix": -0.37500005938532793
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the hilar contours normal according to the CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.49999989579785326,
+   "mg_blind_suffix": -0.12500001040080833
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Does the CXR show any acute osseous abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -3.124999899310192
+  },
+  {
+   "question": "Is there evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is the endotracheal tube positioned below the carina?",
+   "gold": "no",
+   "mg_blind_bare": -1.6250000629073573,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is there evidence of significant changes in the left lower lobe?",
+   "gold": "no",
+   "mg_blind_bare": -0.6249999557617334,
+   "mg_blind_suffix": -0.12500001040080833
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Does the CXR present any signs of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -2.874999876747726,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is the Dobbhoff tube positioned correctly in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -0.12499987531899401,
+   "mg_blind_suffix": -0.12500001040080833
+  },
+  {
+   "question": "Is there evidence of congestive heart failure (CHF) in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.2499999712819712,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the heart size considered enlarged in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is the heart size within normal limits?",
+   "gold": "no",
+   "mg_blind_bare": 0.25000001089665325,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Is there any indication of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Does the CXR show evidence of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750001298212147,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there focal consolidation present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any indication of pneumonia in the right lung?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is the left lower lobe showing signs of volume loss?",
+   "gold": "yes",
+   "mg_blind_bare": -1.124999921018066,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are the lungs largely unchanged compared to previous evaluations?",
+   "gold": "yes",
+   "mg_blind_bare": 2.375000052992398,
+   "mg_blind_suffix": -0.12500001040080833
+  },
+  {
+   "question": "Is the Dobbhoff tube positioned correctly?",
+   "gold": "no",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": 0.3750000310849219
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Does this CXR show any acute osseous abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -2.3750001131779843,
+   "mg_blind_suffix": -3.3750000209522657
+  },
+  {
+   "question": "Does the CXR indicate the presence of a central venous catheter?",
+   "gold": "yes",
+   "mg_blind_bare": -1.874999962466111,
+   "mg_blind_suffix": -1.5000000381794287
+  },
+  {
+   "question": "Is atelectasis present in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -0.999999975128387,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there any evidence of a nasogastric tube placement in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.874999876747726,
+   "mg_blind_suffix": -3.50000004798601
+  },
+  {
+   "question": "Is the atelectasis in the right lung base increasing?",
+   "gold": "yes",
+   "mg_blind_bare": -0.499999989054659,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Does the left lung show any change in pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -1.6250000629073573,
+   "mg_blind_suffix": -0.999999894117281
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there evidence of interstitial edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249998566251445,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does this CXR show signs of atelectasis?",
+   "gold": "yes",
+   "mg_blind_bare": -0.999999975128387,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there any evidence of new parenchymal opacities in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.1250000404899776,
+   "mg_blind_suffix": -3.2500000154055857
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does the CXR show any new findings?",
+   "gold": "no",
+   "mg_blind_bare": -1.7499999946628706,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Does the CXR show evidence of consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Are the bilateral effusions new in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -0.749999897351545,
+   "mg_blind_suffix": -1.374999884998249
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any consolidation observed in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.749999894337021,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there a pacemaker present in the chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -1.6250001385817054,
+   "mg_blind_suffix": -1.6249999872330148
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Does this CXR show signs of pulmonary edema?",
+   "gold": "no",
+   "mg_blind_bare": -1.375000002868714,
+   "mg_blind_suffix": -0.8749999494326108
+  },
+  {
+   "question": "Are pleural effusions observed in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any large pleural effusion observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.50000004798601,
+   "mg_blind_suffix": -3.249999919329086
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged?",
+   "gold": "yes",
+   "mg_blind_bare": -1.124999921018066,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is the heart size considered abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.4999999108837447
+  },
+  {
+   "question": "Is there evidence of a significant pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8750000088124192,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are there any acute osseous abnormalities observed?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -3.250000111482095
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there a pleural effusion noted on this X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -1.874999962466111,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is the heart size within normal limits?",
+   "gold": "yes",
+   "mg_blind_bare": 0.25000001089665325,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the heart enlarged in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is there evidence of pleural effusion in both lungs?",
+   "gold": "yes",
+   "mg_blind_bare": -2.249999961379358,
+   "mg_blind_suffix": -2.1249999157240853
+  },
+  {
+   "question": "Is the right lower lobe affected by pneumonia?",
+   "gold": "yes",
+   "mg_blind_bare": -0.3749999726610801,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Are the mediastinal contours abnormal?",
+   "gold": "no",
+   "mg_blind_bare": -1.8750000596338887,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size considered abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.4999999108837447
+  },
+  {
+   "question": "Is there any pleural effusion observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.62500008324146,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Are the cardiomediastinal contours changing?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -3.2500000154055857
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the mediastinal contour normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.749999928184019,
+   "mg_blind_suffix": -0.3749998859368398
+  },
+  {
+   "question": "Is there any evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Is the heart size normal based on this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Is there evidence of a large effusion or pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.749999894337021,
+   "mg_blind_suffix": -3.250000111482095
+  },
+  {
+   "question": "Is the endotracheal tube positioned correctly?",
+   "gold": "yes",
+   "mg_blind_bare": 0.8749998766611731,
+   "mg_blind_suffix": 0.12499998121263603
+  },
+  {
+   "question": "Is the endotracheal tube tip appropriately positioned?",
+   "gold": "yes",
+   "mg_blind_bare": -0.7499999604430576,
+   "mg_blind_suffix": -0.999999975128387
+  },
+  {
+   "question": "Is there any significant change in the appearance of the heart and lungs?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Are there any new findings in the lungs based on this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -0.6249999557617334,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Is there any indication of a change in the right lower lobe consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -1.1250000128156785,
+   "mg_blind_suffix": -1.6250001385817054
+  },
+  {
+   "question": "Is there any visible complication associated with the PICC line in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -2.4999999108837447
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.8750000271224616,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is the left lung affected by any abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -1.2499999712819712,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the left lung clear in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 0.749999928184019,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there any sign of pulmonary edema on the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.2499999712819712,
+   "mg_blind_suffix": -2.4999999108837447
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there any pleural effusion present in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the left lung completely clear in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -0.9999998131061815
+  },
+  {
+   "question": "Is there evidence of atelectasis in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is the cardiac silhouette normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.3749999491536545,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there any indication of an acute respiratory issue in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the endotracheal tube positioned correctly?",
+   "gold": "yes",
+   "mg_blind_bare": 0.8749998766611731,
+   "mg_blind_suffix": 0.12499998121263603
+  },
+  {
+   "question": "Is the right lung clear in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 0.500000040406036,
+   "mg_blind_suffix": 0.12499998121263603
+  },
+  {
+   "question": "Is the heart size enlarged?",
+   "gold": "yes",
+   "mg_blind_bare": -1.7499999946628706,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there a significant pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is the diaphragm well visualized in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 1.3749999928112515,
+   "mg_blind_suffix": 0.9999998819228398
+  },
+  {
+   "question": "Is there evidence of pleural fluid in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.874999876747726,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is the left lung affected by any abnormalities in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -0.3749999726610801,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is cardiomegaly observed in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -3.000000029947047,
+   "mg_blind_suffix": -1.6249999872330148
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the right lung base showing signs of fluid accumulation?",
+   "gold": "yes",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Does the CXR show a Dobbhoff tube?",
+   "gold": "yes",
+   "mg_blind_bare": -1.6250000629073573,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does the CXR indicate any abnormalities in the cardiovascular region?",
+   "gold": "yes",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -1.6249999872330148
+  },
+  {
+   "question": "Is there evidence of pneumothoraces in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Does this CXR show signs of pulmonary edema?",
+   "gold": "yes",
+   "mg_blind_bare": -1.375000002868714,
+   "mg_blind_suffix": -0.8749999494326108
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is the left lung clear and well expanded?",
+   "gold": "yes",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": 0.0
+  },
+  {
+   "question": "Is there evidence of pleural effusion on this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any indication of lung collapse in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there evidence of pulmonary edema in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Are there any visible medical devices in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -4.374999986103011,
+   "mg_blind_suffix": -3.7500000527403916
+  },
+  {
+   "question": "Is there evidence of significant pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -1.7499999946628706
+  },
+  {
+   "question": "Is the hyperlucency at the right base indicative of a pathological process?",
+   "gold": "yes",
+   "mg_blind_bare": -0.7500000866260945,
+   "mg_blind_suffix": -0.7500000235345741
+  },
+  {
+   "question": "Is there evidence of pleural effusion on the left side?",
+   "gold": "yes",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is the endotracheal tube positioned appropriately?",
+   "gold": "no",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.3749998859368398
+  },
+  {
+   "question": "Is there evidence of atelectasis in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is the endotracheal tube positioned below the carina?",
+   "gold": "no",
+   "mg_blind_bare": -1.6250000629073573,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is there evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is the left lung clear according to the CXR findings?",
+   "gold": "yes",
+   "mg_blind_bare": 0.6249999371819359,
+   "mg_blind_suffix": 0.12499998121263603
+  },
+  {
+   "question": "Are there any signs of pleural involvement in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Are there any signs of acute osseous abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -3.3750000209522657
+  },
+  {
+   "question": "Is the compression fracture of T9 vertebral body acute?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500001027576437,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the cardiac silhouette described as abnormal?",
+   "gold": "no",
+   "mg_blind_bare": -2.1250000404899776,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Does the CXR show any abnormalities in the trachea?",
+   "gold": "yes",
+   "mg_blind_bare": -3.124999899310192,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does the trachea deviate to the right?",
+   "gold": "no",
+   "mg_blind_bare": -1.6250001385817054,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is the trachea deviated to the right?",
+   "gold": "no",
+   "mg_blind_bare": -1.375000002868714,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Are there signs of consolidation in the lung fields?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -3.124999899310192
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Are the reticulonodular opacities more prominent on the right side?",
+   "gold": "no",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Are the lungs clear in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 0.9999998819228398,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there any evidence of pneumothorax on this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.0000001047715084,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Are the lungs clear in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.12499998121263603,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there any sign of pleural effusion in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.4999999246213394,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there a right pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there evidence of atelectasis in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -1.874999962466111,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is the left lower lung zone showing signs of pneumonia?",
+   "gold": "yes",
+   "mg_blind_bare": -1.874999962466111,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there opacification noted in the right lower lung zone?",
+   "gold": "yes",
+   "mg_blind_bare": -1.874999962466111,
+   "mg_blind_suffix": -2.1250000404899776
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Does this CXR show any signs of pneumonia?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -1.6249999872330148
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Are there larger pleural effusions present in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there a larger pleural effusion present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.2499999712819712,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Are there any new lung parenchymal abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the heart size larger than normal?",
+   "gold": "no",
+   "mg_blind_bare": -1.375000002868714,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged?",
+   "gold": "no",
+   "mg_blind_bare": -1.124999921018066,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged?",
+   "gold": "no",
+   "mg_blind_bare": -1.124999921018066,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are there any rib fractures noted in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Are the mediastinal contours normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.499999872617799,
+   "mg_blind_suffix": 0.12499998121263603
+  },
+  {
+   "question": "Is there any evidence of lung nodules or masses in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Does this CXR indicate the presence of pleural effusions?",
+   "gold": "no",
+   "mg_blind_bare": -1.2499999712819712,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Does the CXR show any evidence of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there a pneumothorax identified in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -1.6250001385817054
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the mediastinal contours normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.6249999371819359,
+   "mg_blind_suffix": -0.12500001040080833
+  },
+  {
+   "question": "Is there any evidence of pathology in the observed regions of this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.7499999946628706,
+   "mg_blind_suffix": -2.2500001027576437
+  },
+  {
+   "question": "Does the CXR show any signs of pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -2.3749999529753985
+  },
+  {
+   "question": "Is there a large pleural effusion present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there evidence of pulmonary edema in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Are the osseous structures showing any abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -1.874999962466111,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Is there any evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Are the hilar contours normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.249999902466047,
+   "mg_blind_suffix": 0.4999999681019472
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are the hilar contours normal?",
+   "gold": "yes",
+   "mg_blind_bare": 0.6249999371819359,
+   "mg_blind_suffix": -0.999999894117281
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of large pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does the CXR show signs of vascular congestion?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999157240853,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is the cardiac silhouette within normal limits?",
+   "gold": "yes",
+   "mg_blind_bare": 0.12499998121263603,
+   "mg_blind_suffix": -0.9999998131061815
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the heart size abnormal in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there any indication of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.8750000271224616,
+   "mg_blind_suffix": -2.6249998566251445
+  },
+  {
+   "question": "Is the endotracheal tube placement appropriate?",
+   "gold": "yes",
+   "mg_blind_bare": 0.500000040406036,
+   "mg_blind_suffix": -0.12500007794172235
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does the CXR show any focal consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -3.50000004798601,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the size of the heart considered normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -0.12499994285989889,
+   "mg_blind_suffix": -0.9999998131061815
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any indication of a pneumothorax in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any evidence of chronic lung disease in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.874999962466111,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Are there any abnormalities observed in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.50000004798601,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is the skeletal structure of the patient normal according to the CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 1.1250000889916478,
+   "mg_blind_suffix": 0.6249998733737953
+  },
+  {
+   "question": "Does the CXR show signs of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is the right hemidiaphragm free of air?",
+   "gold": "yes",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.12500001040080833
+  },
+  {
+   "question": "Is there any mention of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any sign of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.125000068884622,
+   "mg_blind_suffix": -3.0000001047715084
+  },
+  {
+   "question": "Is pulmonary edema observed in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is there any presence of pleural effusion in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.874999876747726,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Are there any acute osseous abnormalities present?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -3.3750000209522657
+  },
+  {
+   "question": "Is any pneumothorax observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the pulmonary vasculature abnormal in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any indication of a pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.8750000088124192
+  },
+  {
+   "question": "Is the heart size considered normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.6250000009900725,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Are there any signs of respiratory conditions in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there any evidence of pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -4.125000009294581,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is the heart size abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any evidence of focal consolidation in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.999999955122592
+  },
+  {
+   "question": "Is there any evidence of focal consolidation in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.999999955122592
+  },
+  {
+   "question": "Is there a large pleural effusion present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there any indication of pleural effusion or pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -3.125000068884622
+  },
+  {
+   "question": "Are there any acute osseous abnormalities seen in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -3.2500000154055857
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of focal consolidation in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.000000029947047,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Is there a large pleural effusion present?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the heart size considered normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.6250000009900725,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any acute osseous abnormality detected?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -3.2500000154055857
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does this X-ray indicate the presence of pleural effusion?",
+   "gold": "yes",
+   "mg_blind_bare": -1.499999971397057,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there evidence of atelectasis in the right lung?",
+   "gold": "yes",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the ET and NG tube currently in place?",
+   "gold": "no",
+   "mg_blind_bare": 0.749999928184019,
+   "mg_blind_suffix": 0.4999999681019472
+  },
+  {
+   "question": "Is there a pleural effusion present in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.1249999157240853,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Are there any signs of pulmonary vascular congestion in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.3750001131779843,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is the tortuosity of the descending thoracic aorta a new finding?",
+   "gold": "no",
+   "mg_blind_bare": -1.2499999712819712,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there any pleural effusion identified in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.000000029947047,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Are the hilar contours normal in this X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.4999999790145584,
+   "mg_blind_suffix": -0.12500001040080833
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the heart size abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there any evidence of lung disease in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Does this chest X-ray show any abnormalities in the cardiac region?",
+   "gold": "no",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there any pleural effusion visible in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Are there any acute osseous abnormalities observed in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3749999120833287,
+   "mg_blind_suffix": -3.2500000154055857
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.8750000271224616,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any evidence of free air under the diaphragm?",
+   "gold": "no",
+   "mg_blind_bare": -4.4999999334167455,
+   "mg_blind_suffix": -3.625000013346213
+  },
+  {
+   "question": "Does this CXR show pleural effusion?",
+   "gold": "yes",
+   "mg_blind_bare": -1.1250000128156785,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there evidence of atelectasis in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Does the CXR show any hilar abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.1249999157240853
+  },
+  {
+   "question": "Is there evidence of pleural effusion on this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the size of the right pleural effusion stable compared to previous evaluations?",
+   "gold": "no",
+   "mg_blind_bare": -0.999999894117281,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the heart size within normal limits according to this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.0000000561394997,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there any evidence of free air below the right hemidiaphragm?",
+   "gold": "no",
+   "mg_blind_bare": -4.375000060087129,
+   "mg_blind_suffix": -3.499999986303673
+  },
+  {
+   "question": "Are there any abnormalities noted in the lung fields?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.874999876747726
+  },
+  {
+   "question": "Is there a presence of pneumothorax in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Are the granulomas in this CXR considered to be stable?",
+   "gold": "yes",
+   "mg_blind_bare": 2.00000007898925,
+   "mg_blind_suffix": 0.0
+  },
+  {
+   "question": "Is there evidence of pleural effusion on this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does this chest X-ray show any focal consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are there any signs of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.7499999735387033,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size within normal limits?",
+   "gold": "yes",
+   "mg_blind_bare": 0.25000001089665325,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Is there any evidence of pneumonia on this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any indication of new pulmonary nodules in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.5000000924170513
+  },
+  {
+   "question": "Does this CXR show any signs of consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is the nodular opacity in the right upper lung zone stable?",
+   "gold": "yes",
+   "mg_blind_bare": -0.6250000671178713,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Are there any signs of severe heart enlargement in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there a pneumothorax present in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there evidence of a large pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.000000029947047,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there any evidence of lung disease in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Does this chest X-ray show pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -0.8749999494326108,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Is there evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Are there any focal opacities suggestive of pneumonia?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there any pleural effusion observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.62500008324146,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there any evidence of free air in the abdominal cavity in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -4.125000009294581,
+   "mg_blind_suffix": -3.3750000209522657
+  },
+  {
+   "question": "Are there any signs of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any pleural effusion observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.62500008324146,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Does the CXR show any focal opacity in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there any lobar consolidation present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.000000029947047,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the thoracic aorta straight in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.499999971397057,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Are there any large effusions present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -3.7500000527403916
+  },
+  {
+   "question": "Is there evidence of pleural effusion in the right lung?",
+   "gold": "yes",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there any pleural effusion present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does the CXR show any signs of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.7500001500030167
+  },
+  {
+   "question": "Is there any evidence of pleural disease in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6250000623293213,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Are there any pleural effusions present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.249999919329086,
+   "mg_blind_suffix": -3.125000068884622
+  },
+  {
+   "question": "Is the lung appearance normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.6250000009900725,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any evidence of lung disease in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there a noted abnormality in the spine?",
+   "gold": "yes",
+   "mg_blind_bare": -0.7499999604430576,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there any evidence of lung disease present?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -1.374999884998249
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the cardiac silhouette of normal size?",
+   "gold": "no",
+   "mg_blind_bare": -1.2499999712819712,
+   "mg_blind_suffix": -0.7499999604430576
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Does the CXR show any pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -2.3750001131779843,
+   "mg_blind_suffix": -2.874999876747726
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of large effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -3.2500000154055857
+  },
+  {
+   "question": "Are the lungs described as clear in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.2499999712819712,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there any evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Is there any large effusion observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.4999999246213394,
+   "mg_blind_suffix": -3.3750000209522657
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does the CXR indicate any focal consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is the heart size considered enlarged in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is the left pleural effusion described as large?",
+   "gold": "no",
+   "mg_blind_bare": -1.375000002868714,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the size of the heart within normal limits?",
+   "gold": "yes",
+   "mg_blind_bare": -0.2499999202944152,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any indication of pneumonia on this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.8750000596338887,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the pleural effusion on the right side large?",
+   "gold": "no",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.7499999604430576
+  },
+  {
+   "question": "Is there a large pleural effusion present in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the heart size normal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does this CXR show any abnormalities in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the heart size normal?",
+   "gold": "yes",
+   "mg_blind_bare": 0.49999989579785326,
+   "mg_blind_suffix": -0.7500000235345741
+  },
+  {
+   "question": "Are the pleural surfaces clear?",
+   "gold": "yes",
+   "mg_blind_bare": 0.4999999681019472,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.6250001276349277,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is the patient intubated?",
+   "gold": "yes",
+   "mg_blind_bare": -1.124999921018066,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is the heart size normal based on this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Are there any signs of severe pulmonary congestion?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.249999961379358,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Are there any signs of pleural effusion or pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.4999999246213394,
+   "mg_blind_suffix": -3.3750000209522657
+  },
+  {
+   "question": "Are there any abnormalities seen in the lungs on this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500001500030167,
+   "mg_blind_suffix": -2.1250000404899776
+  },
+  {
+   "question": "Is the cardiac region normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.1250000115884717,
+   "mg_blind_suffix": -0.2499999202944152
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Does the CXR show any complications?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the patient receiving any form of nutritional support indicated by the CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.874999962466111,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is there evidence of new parenchymal opacity in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.8750000596338887,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Does the CXR indicate the presence of a pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -2.4999999108837447,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Are there any new parenchymal opacities observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.8749998652983424,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does the CXR show any signs of heart enlargement?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Are the hilar structures normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.6250001276349277,
+   "mg_blind_suffix": 0.7500000408049831
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size within normal limits?",
+   "gold": "no",
+   "mg_blind_bare": 0.25000001089665325,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size considered abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.4999999108837447
+  },
+  {
+   "question": "Does the cardiac silhouette show any abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -3.749999894337021,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there evidence of a large pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.000000029947047,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is the endotracheal tube positioned below the carina?",
+   "gold": "no",
+   "mg_blind_bare": -1.6250000629073573,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Are there any signs of pleural disease in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Does this CXR suggest any significant abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -1.7499999946628706,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Are the lungs free of any focal consolidation?",
+   "gold": "yes",
+   "mg_blind_bare": -2.1250000404899776,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there a pneumothorax present in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there any evidence of pneumothorax on this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.0000001047715084,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Are the lung fields clear in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.749999928184019,
+   "mg_blind_suffix": 0.0
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged?",
+   "gold": "yes",
+   "mg_blind_bare": -1.124999921018066,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Are the opacities more severe on the right side compared to the left?",
+   "gold": "yes",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.12500001040080833
+  },
+  {
+   "question": "Is there evidence of large pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is the consolidation more prominent in the right lung compared to the left?",
+   "gold": "yes",
+   "mg_blind_bare": -0.6249999557617334,
+   "mg_blind_suffix": -0.7499999604430576
+  },
+  {
+   "question": "Is there evidence of focal consolidation in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -2.8750000088124192,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Does the CXR show any abnormalities in the heart size?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there evidence of a large pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.000000029947047,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is the endotracheal tube positioned correctly?",
+   "gold": "yes",
+   "mg_blind_bare": 0.8749998766611731,
+   "mg_blind_suffix": 0.12499998121263603
+  },
+  {
+   "question": "Does the CXR show any remaining tubes?",
+   "gold": "yes",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there evidence of larger pleural effusions in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is a pneumothorax observed in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is the right lung clear of abnormalities?",
+   "gold": "yes",
+   "mg_blind_bare": 0.999999794213532,
+   "mg_blind_suffix": -0.2500000733621724
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the hilar contours normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 1.1250000115884717,
+   "mg_blind_suffix": 0.0
+  },
+  {
+   "question": "Is the patient experiencing pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -0.4999998907832192,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is the size of the heart within normal limits?",
+   "gold": "yes",
+   "mg_blind_bare": -0.2499999202944152,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any sign of pleural effusion in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.749999894337021,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is the cardiac silhouette normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 0.6250000009900725,
+   "mg_blind_suffix": -0.2500000733621724
+  },
+  {
+   "question": "Is there any focal consolidation present in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is the heart size considered normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.6250000009900725,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any sign of pneumothorax on this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.4999999246213394,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are there any signs of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there any pleural effusion present in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there evidence of atelectasis in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -1.874999962466111,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Does this CXR show any signs of pulmonary edema?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is there any free air beneath the right hemi-diaphragm?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Are there large effusions observed in the chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.874999876747726,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are there any abnormalities observed in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.50000004798601,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is the tip of the endotracheal tube in an appropriate position?",
+   "gold": "yes",
+   "mg_blind_bare": -1.6250000629073573,
+   "mg_blind_suffix": -0.5000000873261085
+  },
+  {
+   "question": "Are there any signs of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.7499999735387033,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there evidence of pleural effusion on this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any abnormality detected in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -0.7500000235345741,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is this CXR suggestive of pneumonia?",
+   "gold": "no",
+   "mg_blind_bare": -1.1250000128156785,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there any pulmonary vascular congestion present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Does the CXR show any osseous abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -2.249999961379358,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the cardiac size within normal limits?",
+   "gold": "yes",
+   "mg_blind_bare": -0.12499994285989889,
+   "mg_blind_suffix": -0.999999894117281
+  },
+  {
+   "question": "Is this patient healthy?",
+   "gold": "yes",
+   "mg_blind_bare": 0.7500000408049831,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Does the CXR present pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there any evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Are there pleural effusions noted in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does the patient have a hernia?",
+   "gold": "yes",
+   "mg_blind_bare": -0.499999989054659,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Are there any signs of pleural effusion in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.8750000271224616,
+   "mg_blind_suffix": -3.749999894337021
+  },
+  {
+   "question": "Is there any abnormality seen in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -2.3750001131779843,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Does the CXR indicate the presence of pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -1.499999971397057,
+   "mg_blind_suffix": -0.999999894117281
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the cardiac silhouette abnormal in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -1.874999962466111,
+   "mg_blind_suffix": -0.4999998907832192
+  },
+  {
+   "question": "Are there any abnormalities present in the hilar regions?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is pneumothorax present in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is there any pleural effusion observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.62500008324146,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is the mediastinal silhouette normal?",
+   "gold": "no",
+   "mg_blind_bare": 0.12499998121263603,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does this patient show signs of pulmonary edema?",
+   "gold": "no",
+   "mg_blind_bare": -1.375000002868714,
+   "mg_blind_suffix": -0.3749998859368398
+  },
+  {
+   "question": "Is there evidence of pneumonia in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there evidence of significant pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3749999120833287,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Does the CXR show signs of pulmonary edema?",
+   "gold": "no",
+   "mg_blind_bare": -2.5000000924170513,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Are there any pleural effusions observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -3.2500000154055857
+  },
+  {
+   "question": "Is the central line appropriately sited according to the CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.12499998121263603,
+   "mg_blind_suffix": 0.3749999491536545
+  },
+  {
+   "question": "Are there any signs of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size within normal limits?",
+   "gold": "yes",
+   "mg_blind_bare": 0.25000001089665325,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Are there any signs of acute pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.125000068884622,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there any evidence of pleural effusions in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.8750000088124192
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size within normal limits?",
+   "gold": "yes",
+   "mg_blind_bare": 0.25000001089665325,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Does the CXR show any pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -2.3750001131779843,
+   "mg_blind_suffix": -2.874999876747726
+  },
+  {
+   "question": "Is the heart size normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Are the hilar contours normal?",
+   "gold": "yes",
+   "mg_blind_bare": 0.6249999371819359,
+   "mg_blind_suffix": -0.999999894117281
+  },
+  {
+   "question": "Is there any evidence of fluid in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there any evidence of acute osseous abnormalities in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -3.3750000209522657
+  },
+  {
+   "question": "Does this CXR indicate the presence of pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -1.1250000128156785,
+   "mg_blind_suffix": -0.7499999604430576
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any abnormality in the right lung?",
+   "gold": "no",
+   "mg_blind_bare": -0.499999989054659,
+   "mg_blind_suffix": -0.8750000924167235
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.8750000271224616,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is the opacity in the bilateral lung indicative of pneumonia?",
+   "gold": "yes",
+   "mg_blind_bare": -1.1250000128156785,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there any opacity observed in the left lower lobe?",
+   "gold": "yes",
+   "mg_blind_bare": -1.6250001385817054,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Was the left PICC line still present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -0.749999897351545,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Does this CXR show any signs of pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999157240853,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is the placement of the NG tube appropriate as per this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 1.1250000115884717,
+   "mg_blind_suffix": -0.12500001040080833
+  },
+  {
+   "question": "Is there evidence of pulmonary vascular congestion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.375000002868714,
+   "mg_blind_suffix": -0.7500000235345741
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is the cardiomegaly described as worsening?",
+   "gold": "no",
+   "mg_blind_bare": -0.6249999557617334,
+   "mg_blind_suffix": -0.7499999604430576
+  },
+  {
+   "question": "Are there any signs of lung pathology in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Do the lungs show signs of consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.2500001027576437
+  },
+  {
+   "question": "Is there evidence of pulmonary hypertension in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.6250000629073573,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Are lung volumes normal in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": 0.749999928184019,
+   "mg_blind_suffix": -0.7499999604430576
+  },
+  {
+   "question": "Is there any evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Has the previously seen effusion at the left base resolved?",
+   "gold": "yes",
+   "mg_blind_bare": 0.49999989579785326,
+   "mg_blind_suffix": -0.12500007794172235
+  },
+  {
+   "question": "Is there evidence of frank pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.7500000527403916,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the cardiac silhouette normal in size?",
+   "gold": "no",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Is there a large pleural effusion observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is the aorta normal in appearance on this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 0.3750000310849219,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there evidence of acute lung pathology in the upper lung fields?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Does the CXR show signs of pulmonary congestion?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does the CXR show signs of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is the heart size normal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Are the cardiomediastinal contours stable?",
+   "gold": "yes",
+   "mg_blind_bare": 1.4999999790145584,
+   "mg_blind_suffix": -0.3749998859368398
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Has the right-sided pleural effusion improved?",
+   "gold": "yes",
+   "mg_blind_bare": -0.749999897351545,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there a pneumothorax present in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there evidence of pleural effusion on the left side?",
+   "gold": "yes",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is the heart size normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.6250001276349277,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Are the bilateral parenchymal opacities constant in extent?",
+   "gold": "yes",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -1.6250001385817054
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is the heart size within normal limits?",
+   "gold": "no",
+   "mg_blind_bare": 0.25000001089665325,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.249999961379358,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Are there any signs of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does this CXR show signs of pulmonary edema?",
+   "gold": "yes",
+   "mg_blind_bare": -1.375000002868714,
+   "mg_blind_suffix": -0.8749999494326108
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is a pleural effusion present?",
+   "gold": "yes",
+   "mg_blind_bare": -1.499999971397057,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Is there any pleural effusion noted in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there evidence of focal consolidation in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -2.8750000088124192,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Does the CXR show any signs of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.7500001500030167
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are the pulmonary vasculature and hilar contours normal?",
+   "gold": "yes",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there evidence of a new large consolidation in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.6250000623293213,
+   "mg_blind_suffix": -1.6250001385817054
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Are the cardiac and mediastinal silhouettes normal?",
+   "gold": "yes",
+   "mg_blind_bare": 0.3750000310849219,
+   "mg_blind_suffix": -0.24999999682829088
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does this CXR show signs of consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -1.375000002868714,
+   "mg_blind_suffix": -0.999999894117281
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the cardiac silhouette abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Does the CXR show evidence of thoracic kyphosis?",
+   "gold": "yes",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Are the lungs grossly clear in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there any pulmonary vascular congestion noted in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does the CXR show evidence of pleural effusion?",
+   "gold": "yes",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is the heart size within normal limits on this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.2499999712819712,
+   "mg_blind_suffix": -0.4999998907832192
+  },
+  {
+   "question": "Are bilateral effusions present in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.6249999872330148,
+   "mg_blind_suffix": -1.6250001385817054
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Are the pleural effusions larger on the left side?",
+   "gold": "yes",
+   "mg_blind_bare": 0.3749999491536545,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Is there evidence of new parenchymal opacities in the lung?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Are the lung volumes increased compared to the previous radiograph?",
+   "gold": "yes",
+   "mg_blind_bare": -1.2500000753022997,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Are the bilateral pleural effusions changing in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -0.8750000209246646,
+   "mg_blind_suffix": -1.7499999946628706
+  },
+  {
+   "question": "Has the patient's condition improved since the last examination?",
+   "gold": "yes",
+   "mg_blind_bare": 1.1250000115884717,
+   "mg_blind_suffix": 0.6249999371819359
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is the nasogastric tube in the correct position?",
+   "gold": "yes",
+   "mg_blind_bare": -0.4999998907832192,
+   "mg_blind_suffix": 0.25000001089665325
+  },
+  {
+   "question": "Is there any abnormality detected in the mediastinum?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is the right pleural effusion large?",
+   "gold": "no",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the hila in this CXR showing any abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -2.1250000404899776,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Is there evidence of acute lung pathology in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Are the cardiac structures normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.7500000405036478,
+   "mg_blind_suffix": 0.500000040406036
+  },
+  {
+   "question": "Is there any indication of a hiatal hernia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Are there any pleural effusions present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.249999919329086,
+   "mg_blind_suffix": -3.125000068884622
+  },
+  {
+   "question": "Is the heart size considered abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.4999999108837447
+  },
+  {
+   "question": "Are the lungs clear in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.12499998121263603,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Are the hilar contours normal?",
+   "gold": "yes",
+   "mg_blind_bare": 0.6249999371819359,
+   "mg_blind_suffix": -0.999999894117281
+  },
+  {
+   "question": "Is there evidence of acute cardiopulmonary disease in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is thyroid enlargement likely based on this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.7499999735387033,
+   "mg_blind_suffix": -3.499999986303673
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there any indication of vascular congestion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8750000088124192,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the cardiac silhouette abnormal in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -1.874999962466111,
+   "mg_blind_suffix": -0.4999998907832192
+  },
+  {
+   "question": "Is there any evidence of consolidation in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Does this CXR show any signs of pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999157240853,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Are there any acute osseous abnormalities demonstrated?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -3.250000111482095
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -4.625000041801755,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Are there any notable abnormalities in the lungs as seen in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.6249999872330148,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there any pleural effusion visible in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Is the heart size abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is the pulmonary edema severe in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -0.2499999202944152,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there any new consolidation present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.3749999529753985,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Does this CXR suggest significant pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -1.1250001046132994
+  },
+  {
+   "question": "Is there any evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Does the CXR show large pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Are the lungs clear in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.12499998121263603,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does the CXR show any abnormalities in lung expansion?",
+   "gold": "no",
+   "mg_blind_bare": -1.499999971397057,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Are there any acute osseous abnormalities noted?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -3.4999999246213394
+  },
+  {
+   "question": "Is there pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the heart enlarged in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is there evidence of a large pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.000000029947047,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there any pleural effusion present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the cardiac silhouette normal in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": 0.6250000009900725,
+   "mg_blind_suffix": -0.2500000733621724
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there a consolidation observed in the lungs?",
+   "gold": "yes",
+   "mg_blind_bare": -2.249999961379358,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there a significant pleural effusion on the right side?",
+   "gold": "yes",
+   "mg_blind_bare": -1.499999971397057,
+   "mg_blind_suffix": -1.4999999046146901
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -4.625000041801755,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Does the CXR show any focal consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -3.50000004798601,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size normal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does the CXR indicate any focal consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is focal consolidation present in the CXR findings?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500001027576437,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there any pleural effusion present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does the CXR indicate the presence of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -1.6250001385817054
+  },
+  {
+   "question": "Does the CXR suggest a possibility of consolidation?",
+   "gold": "yes",
+   "mg_blind_bare": -0.7499999604430576,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there evidence of pleural effusion on the right side?",
+   "gold": "yes",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there evidence of a pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged?",
+   "gold": "no",
+   "mg_blind_bare": -1.124999921018066,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does the CXR show signs of a pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is there evidence of heart enlargement in this X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -3.125000068884622,
+   "mg_blind_suffix": -1.6249999872330148
+  },
+  {
+   "question": "Is the lung field clear?",
+   "gold": "yes",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.24999999682829088
+  },
+  {
+   "question": "Is the endotracheal tube positioned correctly?",
+   "gold": "yes",
+   "mg_blind_bare": 0.8749998766611731,
+   "mg_blind_suffix": 0.12499998121263603
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the pulmonary vascularity abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Are the pulmonary vascular structures normal?",
+   "gold": "yes",
+   "mg_blind_bare": 0.9999998819228398,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are there any acute osseous abnormalities noted in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750001298212147,
+   "mg_blind_suffix": -3.499999986303673
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does the CXR show any signs of heart enlargement?",
+   "gold": "yes",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is there evidence of heart failure in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Does the CXR show signs of atelectasis?",
+   "gold": "yes",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are the lungs clear in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.12499998121263603,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Are the hilar contours normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.249999902466047,
+   "mg_blind_suffix": 0.4999999681019472
+  },
+  {
+   "question": "Is there any evidence of congestive heart failure (CHF) in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is there any significant abnormality in the cardiac region?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there any evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Are the lungs free of any focal consolidation?",
+   "gold": "yes",
+   "mg_blind_bare": -2.1250000404899776,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Are there signs of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the cardiac silhouette normal?",
+   "gold": "yes",
+   "mg_blind_bare": -0.24999999682829088,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Are there any signs of pleural effusion or pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.4999999246213394,
+   "mg_blind_suffix": -3.3750000209522657
+  },
+  {
+   "question": "Is there any indication of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the cardiomediastinal silhouette normal?",
+   "gold": "yes",
+   "mg_blind_bare": 0.500000040406036,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the cardiac silhouette abnormal?",
+   "gold": "no",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Are there any focal consolidations noted in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.4999999246213394,
+   "mg_blind_suffix": -3.4999999246213394
+  },
+  {
+   "question": "Is there evidence of pleural effusion on this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the PICC line positioned correctly according to the CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.749999928184019,
+   "mg_blind_suffix": 1.1250000115884717
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of a pleural effusion?",
+   "gold": "yes",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -1.7499999946628706
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the atelectasis observed in both lower lobes?",
+   "gold": "yes",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.7499999604430576
+  },
+  {
+   "question": "Are there any large effusions present in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -3.624999943450971
+  },
+  {
+   "question": "Is the cardiomediastinal silhouette enlarged?",
+   "gold": "yes",
+   "mg_blind_bare": -1.6250000629073573,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there any consolidation present in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.4999999246213394,
+   "mg_blind_suffix": -2.999999955122592
+  },
+  {
+   "question": "Is there any evidence of infection in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Is the cardiac silhouette abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there evidence of a large mass in the left upper lobe?",
+   "gold": "yes",
+   "mg_blind_bare": -2.2500001027576437,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Are there any pleural effusions present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.249999919329086,
+   "mg_blind_suffix": -3.125000068884622
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is the left upper lobe mass increasing in density?",
+   "gold": "no",
+   "mg_blind_bare": -1.2499999712819712,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is there a mass observed in the left upper lung zone?",
+   "gold": "yes",
+   "mg_blind_bare": -1.2500000753022997,
+   "mg_blind_suffix": -1.124999921018066
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there any significant abnormality in the right lung?",
+   "gold": "no",
+   "mg_blind_bare": -1.4999999046146901,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is a mass observed in the left upper lung zone?",
+   "gold": "yes",
+   "mg_blind_bare": -0.7500000235345741,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any clear evidence of active disease in the lungs?",
+   "gold": "yes",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Are the bilateral pleural effusions changing?",
+   "gold": "no",
+   "mg_blind_bare": 0.12499998121263603,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is the mitral valve replacement in the correct position according to the CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.4999999681019472,
+   "mg_blind_suffix": 0.8750000754364786
+  },
+  {
+   "question": "Is there evidence of pleural effusion in the right lung?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is the heart size normal in this patient?",
+   "gold": "no",
+   "mg_blind_bare": 0.749999928184019,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is the endotracheal tube inappropriately positioned?",
+   "gold": "no",
+   "mg_blind_bare": -1.8750000596338887,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Are there any signs of pulmonary vascular congestion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is the endotracheal tube positioned correctly in the second image?",
+   "gold": "yes",
+   "mg_blind_bare": -0.6249999557617334,
+   "mg_blind_suffix": -0.2499999202944152
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged?",
+   "gold": "no",
+   "mg_blind_bare": -1.124999921018066,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does the cardiac silhouette appear enlarged in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -0.8749999494326108
+  },
+  {
+   "question": "Are there any signs of lung disease in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.1249999157240853
+  },
+  {
+   "question": "Is the heart size normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.6250001276349277,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Are there any signs of pulmonary vascular congestion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there any acute osseous abnormality detected in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -3.2500000154055857
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any focal consolidation observed in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -2.8750000088124192
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the lung volumes normal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 0.6249999371819359,
+   "mg_blind_suffix": -0.749999897351545
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is the heart size within normal limits?",
+   "gold": "no",
+   "mg_blind_bare": 0.25000001089665325,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Are there any signs of pneumothorax in this image?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there any evidence of lobar consolidation in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.624999943450971,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is the heart enlarged in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the lungs clear of any abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": 0.3749999491536545,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there evidence of effusion in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are the lungs free of confluent consolidation?",
+   "gold": "yes",
+   "mg_blind_bare": -0.24999999682829088,
+   "mg_blind_suffix": -0.12500001040080833
+  },
+  {
+   "question": "Is there any evidence of focal infiltrate in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are the lungs clear in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 0.9999998819228398,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any indication of lung disease in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is the heart enlarged in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is the heart size normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there any evidence of lobar consolidation in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.624999943450971,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there a presence of free air below the right hemidiaphragm?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500001500030167,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there any abnormality observed in the bilateral lung fields?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Does the CXR show signs of cardiomegaly?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Are there any clear abnormalities in the bilateral lung fields?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is the heart size normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.6250001276349277,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are there any focal opacities observed in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any sign of lung abnormality in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.250000179322639,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Does the CXR show signs of pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does the cardiac silhouette appear abnormal?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Does the CXR show any focal consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -3.50000004798601,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are there any signs of significant lung collapse?",
+   "gold": "no",
+   "mg_blind_bare": -3.8750000271224616,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there any evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Is the heart size considered normal on this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -0.499999989054659,
+   "mg_blind_suffix": -0.37500005938532793
+  },
+  {
+   "question": "Does this CXR show signs of atelectasis?",
+   "gold": "yes",
+   "mg_blind_bare": -0.999999975128387,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in the left lung?",
+   "gold": "yes",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.4999999108837447
+  },
+  {
+   "question": "Are bilateral pleural effusions present in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.6250000629073573,
+   "mg_blind_suffix": -0.8750000924167235
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the heart size normal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is the cardiac silhouette normal in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -0.3749999726610801,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does the CXR show signs of atelectasis?",
+   "gold": "yes",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is the heart size normal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged?",
+   "gold": "no",
+   "mg_blind_bare": -1.124999921018066,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there any evidence of pleural effusions in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.8750000088124192
+  },
+  {
+   "question": "Are the lungs healthy based on this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 1.249999902466047,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the lungs clear in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 0.9999998819228398,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Are there any signs of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -3.250000111482095
+  },
+  {
+   "question": "Are the opacities in the right lower lung zone indicative of acute issues?",
+   "gold": "no",
+   "mg_blind_bare": -1.6249999872330148,
+   "mg_blind_suffix": -0.7499999604430576
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the right lung base opacity worsening?",
+   "gold": "no",
+   "mg_blind_bare": -0.8750000924167235,
+   "mg_blind_suffix": -1.124999921018066
+  },
+  {
+   "question": "Is there any pleural effusion observed in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.62500008324146,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there any abnormality in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -1.375000002868714,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is the heart size normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -4.4999999334167455,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Does the CXR show any pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -2.3750001131779843,
+   "mg_blind_suffix": -2.874999876747726
+  },
+  {
+   "question": "Is there evidence of CHF in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.1250000128156785,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is the heart enlarged in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size within normal limits according to the CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -0.7499998342600366,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Are there any signs of pleural effusion or pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.4999999246213394,
+   "mg_blind_suffix": -3.3750000209522657
+  },
+  {
+   "question": "Is there any abnormality in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -1.375000002868714,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is the heart size enlarged in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Are there any visible abnormalities in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.125000068884622,
+   "mg_blind_suffix": -2.249999961379358
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there a pneumothorax observed in the chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -1.5000000381794287
+  },
+  {
+   "question": "Is there any evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Does this CXR show pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -1.1250000128156785,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size abnormal in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is the heart size normal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there evidence of pneumothorax in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there any evidence of pulmonary edema on this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any evidence of acute pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.4999999108837447
+  },
+  {
+   "question": "Is the PICC line in the correct anatomical position?",
+   "gold": "yes",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": 0.500000040406036
+  },
+  {
+   "question": "Is there a pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.999999955122592,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the heart size considered normal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 0.6250000009900725,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Does the CXR show signs of atelectasis?",
+   "gold": "yes",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there evidence of a large pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is bibasilar atelectasis indicated in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -1.375000002868714,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there evidence of atelectasis in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Does this CXR show a pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Does the CXR show any signs of pulmonary edema?",
+   "gold": "no",
+   "mg_blind_bare": -3.0000001047715084,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the heart size within normal limits?",
+   "gold": "no",
+   "mg_blind_bare": 0.25000001089665325,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Does the CXR indicate any consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the pulmonary vascular structures dilated?",
+   "gold": "no",
+   "mg_blind_bare": -0.24999999682829088,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Does the CXR show evidence of a pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is the right lung clear on this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.12500008641446125,
+   "mg_blind_suffix": 0.49999989579785326
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Are the heart contours stable in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 2.2499999907177526,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there any pleural effusion visualized in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.62500008324146,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the cardiac silhouette findings stable according to the CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 1.7500000405036478,
+   "mg_blind_suffix": 0.25000001089665325
+  },
+  {
+   "question": "Is there any pleural effusion visualized in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.62500008324146,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does the CXR show signs of acute osseous findings?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the heart size normal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Does this CXR show evidence of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Are there small bilateral pleural effusions observed?",
+   "gold": "yes",
+   "mg_blind_bare": -0.999999894117281,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there any sign of pulmonary consolidation in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Does this CXR indicate the presence of pneumonia?",
+   "gold": "no",
+   "mg_blind_bare": -2.1250000404899776,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Is the cardiac silhouette normal in size according to this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.8749999760488307,
+   "mg_blind_suffix": -0.12500001040080833
+  },
+  {
+   "question": "Are the cardiac contours abnormal in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.375000002868714
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are there any signs of respiratory distress observable in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there any sign of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.125000068884622,
+   "mg_blind_suffix": -3.0000001047715084
+  },
+  {
+   "question": "Is there evidence of pneumonia in the chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -1.6250000629073573,
+   "mg_blind_suffix": -0.7500000235345741
+  },
+  {
+   "question": "Is there evidence of pleural effusion on the X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -2.5000000924170513,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is the cardiac silhouette normal in size?",
+   "gold": "no",
+   "mg_blind_bare": 0.0,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Are there any effusions present in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged?",
+   "gold": "yes",
+   "mg_blind_bare": -1.124999921018066,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there significant pleural effusion present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is the mediastinal contour normal?",
+   "gold": "yes",
+   "mg_blind_bare": 0.3749999491536545,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Does this CXR indicate the presence of a large pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -1.6250000629073573,
+   "mg_blind_suffix": -0.999999894117281
+  },
+  {
+   "question": "Is there pleural effusion present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999781070295,
+   "mg_blind_suffix": -2.1250000404899776
+  },
+  {
+   "question": "Is the cardiac silhouette unchanged according to the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -0.499999989054659,
+   "mg_blind_suffix": -0.7499999604430576
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.249999961379358,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Are there any acute skeletal abnormalities present?",
+   "gold": "no",
+   "mg_blind_bare": -3.000000029947047,
+   "mg_blind_suffix": -2.999999955122592
+  },
+  {
+   "question": "Are there any signs of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the mediastinal silhouette normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 0.500000040406036,
+   "mg_blind_suffix": -0.5000000873261085
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size considered abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.4999999108837447
+  },
+  {
+   "question": "Are there any signs of lung consolidation in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there any evidence of right pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.0000001047715084,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Is the left lung abnormal in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": 0.12499998121263603,
+   "mg_blind_suffix": 0.25000001089665325
+  },
+  {
+   "question": "Is there any evidence of a pneumothorax in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -4.250000034957421,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the lung fields clear in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.749999928184019,
+   "mg_blind_suffix": 0.0
+  },
+  {
+   "question": "Are there any signs of complications related to the chest tube in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.1250000404899776,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is the right chest tube correctly positioned?",
+   "gold": "yes",
+   "mg_blind_bare": 0.9999998819228398,
+   "mg_blind_suffix": 0.3750000310849219
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the mediastinal contours abnormal?",
+   "gold": "no",
+   "mg_blind_bare": -1.8750000596338887,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is the heart size normal in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": 1.6250001276349277,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Are there any pleural effusions noted in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -3.50000004798601
+  },
+  {
+   "question": "Is there any indication of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Are there any concerning skeletal findings noted in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there any pleural effusion seen in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.125000068884622,
+   "mg_blind_suffix": -2.999999955122592
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Is there evidence of a pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.625000013346213,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there a large pleural effusion observed?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is the ET tube positioned correctly?",
+   "gold": "no",
+   "mg_blind_bare": 0.6249999371819359,
+   "mg_blind_suffix": 0.2499999180563619
+  },
+  {
+   "question": "Is there any pneumothorax noted in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.3750000209522657,
+   "mg_blind_suffix": -3.125000068884622
+  },
+  {
+   "question": "Is the heart size considered abnormal in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.50000004798601,
+   "mg_blind_suffix": -1.5000000381794287
+  },
+  {
+   "question": "Are there any clear lung areas in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -0.8750000209246646,
+   "mg_blind_suffix": -1.6250001385817054
+  },
+  {
+   "question": "Is there evidence of pneumonia in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Does this CXR show evidence of pneumothorax?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there any acute bony abnormality observed in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.4999999246213394,
+   "mg_blind_suffix": -3.250000111482095
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.8750000271224616,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is the endotracheal tube positioned correctly?",
+   "gold": "no",
+   "mg_blind_bare": 0.8749998766611731,
+   "mg_blind_suffix": 0.12499998121263603
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the endotracheal tube positioned correctly?",
+   "gold": "yes",
+   "mg_blind_bare": 0.8749998766611731,
+   "mg_blind_suffix": 0.12499998121263603
+  },
+  {
+   "question": "Is there any evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the heart size abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.7500000334563164,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there any evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Does this CXR show any focal consolidation?",
+   "gold": "no",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is there evidence of a right pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there any focal consolidation observed in the lungs?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the hilar contours normal in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 1.249999902466047,
+   "mg_blind_suffix": 0.4999999681019472
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the mediastinal contours abnormal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.6249998566251445,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there any pleural effusion present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are there any signs of pneumothorax in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -4.374999986103011,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Are the pleural effusions noted in this CXR small?",
+   "gold": "yes",
+   "mg_blind_bare": -0.12500001040080833,
+   "mg_blind_suffix": -0.999999894117281
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Does the CXR show pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does this CXR show any signs of pleural effusion?",
+   "gold": "no",
+   "mg_blind_bare": -2.1249999157240853,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there any indication of focal consolidation in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are the cardiac structures normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 1.4999999790145584,
+   "mg_blind_suffix": -0.24999999682829088
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the right lung free of significant abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": 0.749999928184019,
+   "mg_blind_suffix": 0.25000001089665325
+  },
+  {
+   "question": "Does the CXR indicate the presence of a left pleural effusion?",
+   "gold": "yes",
+   "mg_blind_bare": -1.2499999712819712,
+   "mg_blind_suffix": -0.6249998444056079
+  },
+  {
+   "question": "Is there evidence of left lower lobe collapse on the X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": -2.000000012896364,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is the right lung entirely clear of abnormalities?",
+   "gold": "no",
+   "mg_blind_bare": -0.3749999726610801,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is there evidence of atelectasis in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -1.7500000804131357
+  },
+  {
+   "question": "Is the heart size normal in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 1.2499999707741178,
+   "mg_blind_suffix": -0.8750000209246646
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there a pleural effusion observed in the left lower lung zone?",
+   "gold": "yes",
+   "mg_blind_bare": -2.2500000320684985,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is the pacemaker's position stable?",
+   "gold": "yes",
+   "mg_blind_bare": 1.3749999928112515,
+   "mg_blind_suffix": 0.0
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Is the heart size within normal limits?",
+   "gold": "no",
+   "mg_blind_bare": 0.25000001089665325,
+   "mg_blind_suffix": -0.6249999557617334
+  },
+  {
+   "question": "Are there any signs of current pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -3.1249999840974034
+  },
+  {
+   "question": "Is there evidence of large pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Is focal consolidation present in the bilateral lung fields?",
+   "gold": "no",
+   "mg_blind_bare": -2.8750000088124192,
+   "mg_blind_suffix": -2.8749999427800703
+  },
+  {
+   "question": "Is there a significant effusion in the right lung?",
+   "gold": "no",
+   "mg_blind_bare": -2.6250000623293213,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is there any evidence of congestive heart failure (CHF) in the CXR?",
+   "gold": "no",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -1.6250000629073573
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the interstitium normal in this chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": 0.6249998733737953,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there any evidence of pulmonary edema in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.1249999781070295
+  },
+  {
+   "question": "Has the size of the left pleural effusion increased compared to previous studies?",
+   "gold": "no",
+   "mg_blind_bare": -0.3749999726610801,
+   "mg_blind_suffix": -0.2500000733621724
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Does the CXR show any signs of significant right-sided heart enlargement?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -2.375000033076688
+  },
+  {
+   "question": "Is there pneumothorax present in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.8749999427800703,
+   "mg_blind_suffix": -2.500000001650394
+  },
+  {
+   "question": "Is there evidence of pulmonary edema in the CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -1.7500000804131357,
+   "mg_blind_suffix": -1.499999971397057
+  },
+  {
+   "question": "Is there pleural fluid present in the left lower lung zone?",
+   "gold": "yes",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -2.1249999157240853
+  },
+  {
+   "question": "Is there any change in the position of the right-sided PICC line?",
+   "gold": "no",
+   "mg_blind_bare": -0.6249999557617334,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -4.125000009294581,
+   "mg_blind_suffix": -2.3750001131779843
+  },
+  {
+   "question": "Are the pleural effusions larger than before?",
+   "gold": "yes",
+   "mg_blind_bare": 1.8750000102493556,
+   "mg_blind_suffix": -1.4999999046146901
+  },
+  {
+   "question": "Is there any evidence of pulmonary congestion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.6249999594772278,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Is the pigtail catheter in the correct position?",
+   "gold": "yes",
+   "mg_blind_bare": 0.3750000310849219,
+   "mg_blind_suffix": 0.0
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the cardiac silhouette normal in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": 0.3749999491536545,
+   "mg_blind_suffix": -0.499999989054659
+  },
+  {
+   "question": "Is there evidence of pleural effusion in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -3.1249999840974034,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Is the cardiac silhouette enlarged?",
+   "gold": "yes",
+   "mg_blind_bare": -1.124999921018066,
+   "mg_blind_suffix": -1.7500001661634084
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Is there evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.9999999749883792,
+   "mg_blind_suffix": -2.6250000623293213
+  },
+  {
+   "question": "Does the CXR show any signs of cardiomegaly?",
+   "gold": "yes",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -2.2500000320684985
+  },
+  {
+   "question": "Does this chest X-ray show pleural effusions?",
+   "gold": "yes",
+   "mg_blind_bare": -1.2499999712819712,
+   "mg_blind_suffix": -1.2499999712819712
+  },
+  {
+   "question": "Is the heart size within the normal range?",
+   "gold": "no",
+   "mg_blind_bare": -0.12499994285989889,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there evidence of heart enlargement in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": -2.375000033076688,
+   "mg_blind_suffix": -2.000000012896364
+  },
+  {
+   "question": "Are there signs of fluid accumulation in the lungs?",
+   "gold": "yes",
+   "mg_blind_bare": -2.000000123001888,
+   "mg_blind_suffix": -1.7499999946628706
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  },
+  {
+   "question": "Are there signs of pneumothorax in the chest X-ray?",
+   "gold": "no",
+   "mg_blind_bare": -3.2500000154055857,
+   "mg_blind_suffix": -1.874999962466111
+  },
+  {
+   "question": "Is there any evidence of pneumothorax in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.874999937375194,
+   "mg_blind_suffix": -3.000000029947047
+  },
+  {
+   "question": "Are the lungs clear in this CXR?",
+   "gold": "yes",
+   "mg_blind_bare": 0.12499998121263603,
+   "mg_blind_suffix": -0.3749999726610801
+  },
+  {
+   "question": "Is there any sign of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -2.500000001650394,
+   "mg_blind_suffix": -2.6249999594772278
+  },
+  {
+   "question": "Are the lungs clear in this chest X-ray?",
+   "gold": "yes",
+   "mg_blind_bare": 0.9999998819228398,
+   "mg_blind_suffix": -1.1250000128156785
+  },
+  {
+   "question": "Is there any evidence of pleural effusion in this CXR?",
+   "gold": "no",
+   "mg_blind_bare": -3.499999986303673,
+   "mg_blind_suffix": -2.7500000334563164
+  }
+ ]
+}

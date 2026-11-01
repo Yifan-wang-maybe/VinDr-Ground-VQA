@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.png
+*.jpg
+*.dcm
+*.dicom
+data/images/
+results/mine/
+# label files are distributed via Zenodo (see data/README_DOWNLOAD.md)
+data/train.jsonl
+data/val.jsonl
+data/test.jsonl
+data/hardset_v1.jsonl
+data/hardset_unrelated_v1.jsonl
+data/hardset_weakband_lift1.2-1.5.jsonl

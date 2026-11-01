@@ -1,0 +1,27 @@
+{
+ "n_abnormal_images": 5471,
+ "finding_counts": {
+  "Lung Opacity": 1415,
+  "Nodule/Mass": 1017,
+  "Infiltration": 671,
+  "Consolidation": 449,
+  "Pulmonary fibrosis": 1838,
+  "ILD": 618,
+  "Aortic enlargement": 3318,
+  "Cardiomegaly": 2625,
+  "Pleural thickening": 2179,
+  "Other lesion": 1248,
+  "Pleural effusion": 1149,
+  "Calcification": 652,
+  "Enlarged PA": 139,
+  "Lung cavity": 60,
+  "Atelectasis": 273,
+  "Lung cyst": 35,
+  "Mediastinal shift": 170,
+  "Pneumothorax": 114,
+  "Emphysema": 84,
+  "Clavicle fracture": 29,
+  "Rib fracture": 101,
+  "Edema": 13
+ }
+}
