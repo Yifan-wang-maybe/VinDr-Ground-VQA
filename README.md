@@ -107,7 +107,7 @@ Each script in `eval/controls/` reuses the cached release run and adds one or tw
 ## Language-model fields
 
 `question` paraphrases, `answer_nl` and `roi_appropriate`/`roi_reason` were produced by a language
-model (`enhancements` marks each row). The deterministic core — `question_template`, `answer`,
+model — Anthropic `claude-fable-5`, August 2026 (`enhancements` marks each row). The deterministic core — `question_template`, `answer`,
 `roi_box`, splits, hard sets — needs no API and is what every number above uses, except the §5.3
 stratification by `roi_appropriate`. Treat `roi_appropriate` as an auxiliary flag (83.6% positive);
 see `DATASHEET.md` for its provenance.

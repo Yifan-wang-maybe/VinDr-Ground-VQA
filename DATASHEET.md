@@ -30,13 +30,13 @@ Deterministic pipeline (`scripts/build_vqa.py`, `finalize_release.py`, `build_ha
 `build_unrelated_set.py`) from the VinDr-CXR annotation CSVs; images converted with
 `scripts/dicom_to_png.py` (VOI-LUT, MONOCHROME1 inversion, 8-bit, longest side 1,024). Negatives are
 drawn only from images all readers marked normal, which removes Yes/No contradictions. A language-model
-layer (Claude, August 2026) added question paraphrases and natural-language locations from text inputs
-only, and a box-appropriateness flag (`roi_appropriate`, `roi_reason`) produced from image crops with
-the box drawn. Every row records which layers touched it (`enhancements`).
+layer — Anthropic `claude-fable-5`, run 10–12 August 2026 (prompts in `fable5_qa.py` / `fable5_pass.py` of the build
+code) — added question paraphrases and natural-language locations from text inputs only, and a
+box-appropriateness flag (`roi_appropriate`, `roi_reason`) produced from image crops with the box drawn. Every row records which layers touched it (`enhancements`).
 
 ## Provenance of language-model fields and data-use note
 Text fields were generated from finding names, boxes and templates — no pixels left the machine. The
-`roi_appropriate` flag involved sending image crops to a commercial API; PhysioNet's guidance names
+`roi_appropriate` flag involved sending image crops to the Anthropic API (`claude-fable-5`); PhysioNet's guidance names
 the vendor as acceptable for credentialed data and (since 2025) requires zero data retention. We
 recommend treating the flag as auxiliary; a 150-crop blind human audit protocol is included in the
 paper's supplement. The deterministic core reproduces every headline number without this field.
