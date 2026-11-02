@@ -10,7 +10,7 @@ precise. None changes a reported number.
    area changes. Correct wording: "M_rand uses one size-matched placement per case (seed = case index);
    in the resize experiment we average five placements at each target area." The operator-sensitivity
    table (mean / blur / black / inpainting) refills the *same* single placement, so it varies only the fill.
-   A direct k = 1 vs k = 5 check is reported in `results/k1_vs_k5.md`.
+   A direct k = 1 vs k = 5 check on 300 cases per model (`results/k1_vs_k5.md`) finds the tertile medians unchanged: paired k1 − k5 differences of +0.03 / −0.00 / +0.02 nats (MedGemma) and +0.00 / −0.00 / +0.02 (Lingshu), all CIs including zero; per case the single placement is noisier (median |Δ| 0.33 / 0.15 nats).
 
 2. **Definition of "correlated positives" (§5.4.1, Table 2).** The D1 positive group is "the queried
    finding annotated together with at least one other finding" — any association strength (median maximum
