@@ -16,7 +16,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 MODELS = ["medgemma", "lingshu", "internvl35", "qwen3vl", "medgemma27b", "lingshu32b", "qwen3vl30b", "gemma3", "qwen25vl"]
 NICE = {"medgemma": "MedGemma-4b", "lingshu": "Lingshu-7B", "internvl35": "InternVL3.5-8B", "qwen3vl": "Qwen3-VL-8B",
         "medgemma27b": "MedGemma-27B", "lingshu32b": "Lingshu-32B", "qwen3vl30b": "Qwen3-VL-30B", "gemma3": "Gemma-3-4b (base)", "qwen25vl": "Qwen2.5-VL-7B (base)"}
-CUTS = [("band 1.2–1.5", 1.2, 1.5), ("≥1.5 (paper)", 1.5, None), ("≥2.0", 2.0, None), ("≥2.5", 2.5, None)]
+CUTS = [("all co-present (paper §5.4, no cutoff)", 0.0, None), ("band 1.2–1.5", 1.2, 1.5), ("≥1.5 (paper §5.5 cutoff)", 1.5, None), ("≥2.0", 2.0, None), ("≥2.5", 2.5, None)]
 UCUTS = [("≤0.9 (paper)", 0.9), ("≤0.7", 0.7)]
 rng = np.random.default_rng(0); B = 10000
 
@@ -86,11 +86,11 @@ for m in MODELS:
         elif ratio != ratio: rtxt = "n/a"
         else: rtxt = f"{ratio:.1f}×"
         pivot54.setdefault(NICE[m], {})[cname] = f"{f(cor_ex[0])} ({rtxt})"
-        pivot55.setdefault(NICE[m], {})[cname] = f(entry["unrel"]["≤0.9 (paper)"]["inc_corr_minus_unrel"][0], 3)
+        pivot55.setdefault(NICE[m], {})[cname] = f(entry["unrel"]["≤0.9 (paper)"]["inc_corr_minus_unrel"][0], 3) if lo > 0 else "(D2 built at ≥1.5)"
     out[m] = res
 
 L = ["# E4b — §5.4 / §5.5 under alternative co-occurrence thresholds", "",
-     "Stricter correlated cutoffs are subsets of the released hard set; the 1.2–1.5 band is a separately built set. Isolated positives and the normal baseline do not depend on the cutoff. CIs: bootstrap over cases (10,000). Collapse = isolated excess / correlated excess.", "",
+     "Note on definitions: the paper's §5.4 correlated positives are ALL positives with at least one co-present finding (n=1,350; no lift cutoff — the stored pair_lift is the maximum lift to a co-present finding), whereas the §5.5 hard negatives were built at lift ≥ 1.5. Columns re-threshold the stored pair_lift; stricter cutoffs are subsets; the 1.2–1.5 band is a separately built set. Isolated positives and the normal baseline do not depend on the cutoff. CIs: bootstrap over cases (10,000). Collapse = isolated excess / correlated excess.", "",
      "## Pivot A — §5.4 correlated-positive excess (isolated excess in parentheses as a ratio; '>100×' when the correlated excess is ≤ 0.01)", "",
      "Isolated excess per model: " + "; ".join(f"{NICE[m]} {f(out[m]['iso_excess'][0])}" for m in MODELS if not isinstance(out.get(m), str)) + ".", "",
      "| model | " + " | ".join(c[0] for c in CUTS) + " |", "|---|" + "---|" * len(CUTS)]

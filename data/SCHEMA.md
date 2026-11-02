@@ -36,10 +36,10 @@ Same fields as above plus:
 
 | field | type | description |
 |---|---|---|
-| `subset` | str | `hard_pos_isolated` (queried finding is the only annotated abnormality), `hard_pos_correlated` (a frequently co-occurring finding is also present), `hard_neg` (queried finding absent, a correlated finding present) |
+| `subset` | str | `hard_pos_isolated` (the queried finding is the only annotated abnormality on the image); `hard_pos_correlated` (at least one other finding is annotated on the image — **no lift threshold is applied to positives**; capped at 150 images per finding, 9 findings qualify); `hard_neg` (queried finding absent, a correlated finding present: lift ≥ 1.5 with ≥ 30 co-occurrences) |
 | `context_findings` | list[str] | other findings annotated on the image |
 | `n_context` | int | their count |
-| `pair_lift` | float or null | association-rule lift between the queried finding and the (strongest) context finding; hard negatives were built at lift ≥ 1.5 with ≥ 30 co-occurrences |
+| `pair_lift` | float or null | for `hard_pos_correlated`: the **maximum** pairwise lift between the queried finding and any co-present finding (median 1.44; 39% ≥ 1.5; 7% < 1.0) — stored for re-slicing, not used for selection; for `hard_neg`: the lift of the (queried, context) pair, ≥ 1.5 by construction |
 
 ## `hardset_unrelated_v1.jsonl` — unrelated-context negatives (4,740 rows)
 

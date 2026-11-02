@@ -19,7 +19,9 @@ VinDr-Ground-VQA pairs lesion-level consensus boxes with questions whose answer 
 - **Boxes:** per (image, finding) one consensus box from greedy IoU clustering (threshold 0.3) of the
   radiologists' boxes; normalized to the preprocessed PNG; median area 1.3% of the image; the number of
   contributing readers is stored (`rad_agreement`, train/val).
-- **Hard sets:** D1 isolated vs correlated positives (675 / 1,350 used in the paper), D2 correlated hard
+- **Hard sets:** D1 isolated positives (675; the queried finding is the only annotated abnormality) vs
+  co-occurring positives (1,350; at least one other finding annotated, any association strength — the
+  maximum pairwise lift is stored per row, median 1.44, 39% ≥ 1.5; capped at 150 per finding), D2 correlated hard
   negatives (lift ≥ 1.5, ≥ 30 co-occurrences, ≤ 200 per pair), unrelated-context negatives (lift ≤ 0.9,
   ≤ 60 per pair), and a weak-association band set (1.2 ≤ lift < 1.5) for sensitivity analysis.
 - **Splits:** official VinDr test images form `test`; `val` is 10% of official-train images, image-level,
