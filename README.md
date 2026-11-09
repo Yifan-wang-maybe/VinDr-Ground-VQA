@@ -6,12 +6,12 @@
 
 *Does a medical vision–language model actually **use** the radiologist-marked evidence when it answers —<br>or the text prior, or whatever else happens to be on the film?*
 
-[![ML4H 2026](https://img.shields.io/badge/ML4H%202026-paper-6f42c1)](CITATION.cff)
-[![Labels on Zenodo](https://img.shields.io/badge/labels-Zenodo%20DOI%20pending-lightgrey)](data/README_DOWNLOAD.md)
-[![Code: MIT](https://img.shields.io/badge/code-MIT-green)](LICENSE)
-[![Labels: CC BY-NC 4.0](https://img.shields.io/badge/labels-CC%20BY--NC%204.0-blue)](LICENSE)
-[![Python 3.10](https://img.shields.io/badge/python-3.10-blue)](eval/requirements.txt)
-[![Models evaluated](https://img.shields.io/badge/models%20evaluated-9-orange)](results/leaderboard.csv)
+[![ML4H 2026](docs/badges/ml4h.svg)](CITATION.cff)
+[![Labels on Zenodo](docs/badges/zenodo.svg)](data/README_DOWNLOAD.md)
+[![Code: MIT](docs/badges/mit.svg)](LICENSE)
+[![Labels: CC BY-NC 4.0](docs/badges/ccbync.svg)](LICENSE)
+[![Python 3.10](docs/badges/python.svg)](eval/requirements.txt)
+[![Models evaluated](docs/badges/models.svg)](results/leaderboard.csv)
 
 <img src="docs/figures/excess_by_tertile.png" width="96%">
 
