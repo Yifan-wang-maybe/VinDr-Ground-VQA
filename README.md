@@ -1,72 +1,117 @@
+<a name="top"></a>
 <div align="center">
 
-# VinDr-Ground-VQA
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/banner_dark.png">
+  <img src="docs/figures/banner_light.png" alt="VinDr-Ground-VQA — a grounded chest X-ray VQA benchmark with an area-matched occlusion control" width="100%">
+</picture>
 
-### A Grounded Chest X-ray VQA Benchmark with an Area-Matched Occlusion Control
+<br>
 
 *Does a medical vision–language model actually **use** the radiologist-marked evidence when it answers —<br>or the text prior, or whatever else happens to be on the film?*
 
-[![ML4H 2026](docs/badges/ml4h.svg)](CITATION.cff)
-[![Labels on Zenodo](docs/badges/zenodo.svg)](data/README_DOWNLOAD.md)
-[![Code: MIT](docs/badges/mit.svg)](LICENSE)
-[![Labels: CC BY-NC 4.0](docs/badges/ccbync.svg)](LICENSE)
-[![Python 3.10](docs/badges/python.svg)](eval/requirements.txt)
-[![Models evaluated](docs/badges/models.svg)](results/leaderboard.csv)
+<p>
+<a href="#paper"><img src="docs/badges/ml4h.svg" alt="ML4H 2026"></a>
+<a href="data/README_DOWNLOAD.md"><img src="docs/badges/zenodo.svg" alt="labels on Zenodo"></a>
+<a href="LICENSE"><img src="docs/badges/mit.svg" alt="code: MIT"></a>
+<a href="LICENSE"><img src="docs/badges/ccbync.svg" alt="labels: CC BY-NC 4.0"></a>
+<a href="eval/requirements.txt"><img src="docs/badges/python.svg" alt="python 3.10"></a>
+<a href="#leaderboard"><img src="docs/badges/models.svg" alt="9 models evaluated"></a>
+</p>
+<p>
+<img src="docs/badges/questions.svg" alt="102,072 questions">
+<img src="docs/badges/radiographs.svg" alt="8,434 radiographs">
+<img src="docs/badges/findings.svg" alt="22 findings">
+<img src="docs/badges/boxes.svg" alt="lesion-level evidence boxes">
+</p>
 
-<img src="docs/figures/excess_by_tertile.png" width="96%">
-
-<sub>Evidence-specific reliance (excess over an area-matched random control) grows with the size of the evidence region and is near zero for small findings — in every model, from 4B to 32B. Medians with 95% paired-bootstrap CIs, n = 1,000 positives per model.</sub>
+<p>
+<a href="#paper"><b>📄 Paper</b></a> &nbsp;·&nbsp;
+<a href="#protocol"><b>🎬 Protocol</b></a> &nbsp;·&nbsp;
+<a href="#results"><b>📈 Results</b></a> &nbsp;·&nbsp;
+<a href="#leaderboard"><b>🏆 Leaderboard</b></a> &nbsp;·&nbsp;
+<a href="#data"><b>🗂️ Data</b></a> &nbsp;·&nbsp;
+<a href="#quickstart"><b>🚀 Quick start</b></a> &nbsp;·&nbsp;
+<a href="#scoring"><b>🧠 Scoring</b></a> &nbsp;·&nbsp;
+<a href="#cite"><b>📝 Cite</b></a>
+</p>
 
 </div>
 
----
+> [!TIP]
+> **TL;DR** — VinDr-Ground-VQA pairs every positive chest-X-ray question with a **lesion-level radiologist box** and an **image-necessary matched negative**, then measures grounding as the occlusion effect of that box **in excess of a size-matched random region**. Across nine models from 4B to 32B:
+> - 🎯 only **13–22 %** of a model's image-driven belief comes from the annotated evidence (**0–8 %** on small findings);
+> - 🧩 **correlated context substitutes for direct evidence** — the evidence effect collapses 3–5× while detection is unchanged;
+> - 🩺 the **medically tuned** models carry the largest co-occurrence false-positive increment at every scale tested.
 
-## 🔭 VinDr-Ground-VQA at a glance
+## ✨ Highlights
 
-1. **A benchmark where the image is necessary.** 102,072 questions on 8,434 VinDr-CXR radiographs and 22 findings. Every positive carries a **lesion-level radiologist consensus box** (median 1.3% of the image — 18× tighter than organ-scale grounded sets), and every "Yes" has a matched, image-necessary "No": **blind accuracy of every tested model is 0.49–0.50.**
-2. **An instrument, not just a score.** Mask the evidence box, mask a **size-matched random region that avoids every annotated finding**, and take the difference. On organ-scale boxes the raw occlusion effect is *not* evidence-specific; the area-matched control is what makes grounding measurable — and it survives a full control ladder (placement, texture, lung-field, mirror, four fills, k placements).
-3. **A diagnosis.** Only **13–22%** of a model's image-driven belief comes from the annotated evidence (0–8% on small findings); **correlated context substitutes for direct evidence** (3–5× collapse with detection unchanged); and the medically tuned models carry the largest **co-occurrence false-positive increment** at every scale tested.
+<table align="center">
+<tr>
+<td width="33%" valign="top">
 
+### 🗂️ A benchmark where the image is necessary
+**102,072** questions on **8,434** VinDr-CXR radiographs and **22** findings. Every positive carries a lesion-level radiologist **consensus box** — median **1.3 %** of the image, ~18× tighter than organ-scale grounded sets — and every "Yes" has a matched, image-necessary "No": **blind accuracy of every tested model is 0.49–0.50.**
+
+</td>
+<td width="33%" valign="top">
+
+### 🔬 An instrument, not just a score
+Mask the evidence box, mask a **size-matched random region that avoids every annotated finding**, and take the difference. On organ-scale boxes the raw occlusion effect is *not* evidence-specific; the area-matched control is what makes grounding measurable — and it survives a full control ladder (placement, texture, lung field, mirror, four fills, *k* placements).
+
+</td>
+<td width="33%" valign="top">
+
+### 🩻 A diagnosis of today's models
+Grounding is **budget-stable but weak**, context substitutes for evidence, and medical fine-tuning buys accuracy without buying grounding. Every number is reproducible from the released labels with one command per model, and the reference results for **nine** models ship with the repo.
+
+</td>
+</tr>
+</table>
+
+<a name="protocol"></a>
+## 🎬 The protocol in 20 seconds
+
+<p align="center"><img src="docs/figures/protocol.gif" width="94%" alt="Animated protocol: full image, evidence masked, size-matched control masked, excess, grounding fraction"></p>
+
+<details>
+<summary><b>Static version of the protocol figure</b></summary>
 <p align="center"><img src="docs/figures/protocol.png" width="94%"></p>
+</details>
 
-## 📰 News
-- **2026-11** · v1.0 public release — labels, regeneration scripts, evaluation harness with the full control ladder, reference results for nine models.
-- **2026-10** · Paper accepted at **ML4H 2026**.
+<a name="results"></a>
+## 📈 Headline results
 
-## 📦 Resources
-
-| | | |
-|---|---|---|
-| 📄 **Paper** | ML4H 2026 | `CITATION.cff` · camera-ready errata in `docs/ERRATA_camera_ready.md` |
-| 🗂️ **Labels** (102,072 QA + hard sets) | Zenodo — DOI pending | `bash scripts/fetch_data.sh <record_id>` · schema in `data/SCHEMA.md` |
-| 🖼️ **Images** | PhysioNet (credentialed) | not redistributed — regenerate with `scripts/prepare_images.py` |
-| 🧪 **Evaluation harness** | this repo | `eval/` — one command per model: `bash eval/run_benchmark.sh <model> <gpu>` |
-| 📊 **Reference results** | this repo | `results/leaderboard.csv` · `results/ci_tables.json` · 80 per-model result files |
-| 📝 **Datasheet** | this repo | `DATASHEET.md` |
-
-## 📊 Results
+<p align="center"><img src="docs/figures/excess_by_tertile.png" width="96%" alt="Excess over the area-matched control by ROI-size tertile for seven models"></p>
+<p align="center"><sub>Evidence-specific reliance (excess over an area-matched random control) grows with the size of the evidence region and is near zero for small findings — in every model, from 4B to 32B. Medians with 95 % paired-bootstrap CIs, n = 1,000 positives per model.</sub></p>
 
 <table align="center"><tr>
-<td width="50%"><img src="docs/figures/grounding_fraction.png" width="100%"></td>
-<td width="50%"><img src="docs/figures/context_dose_response.png" width="100%"></td>
+<td width="50%"><img src="docs/figures/grounding_fraction.png" width="100%" alt="Grounding fraction by tertile"></td>
+<td width="50%"><img src="docs/figures/context_dose_response.png" width="100%" alt="Context false-positive increment vs association strength"></td>
 </tr><tr>
 <td><sub><b>Grounding fraction</b> = excess / image-gain over cases where the image moves the model (> 0.5 nats): 0 for a blind reader, 1 when all image-driven belief lives in the evidence region.</sub></td>
 <td><sub><b>Co-occurrence shortcut</b>: the false-positive increment of correlated over unrelated context rises with association strength for every medically tuned model and stays ≈ 0 for the general ones.</sub></td>
 </tr></table>
 
-**Leaderboard** — release test split, medians (margins are quantized in 0.125-nat steps); full CIs in `results/ci_tables.json`.
+<a name="leaderboard"></a>
+## 🏆 Leaderboard
 
-| model | balanced acc. | excess small / medium / large | GF (image-dependent cases) | context-FPR increment |
-|---|---|---|---|---|
-| MedGemma-4b-it | 0.723 | +0.19 / +0.62 / +2.50 | 0.18 | +0.157 |
-| Lingshu-7B | **0.861** | +0.12 / +0.25 / +0.88 | 0.20 | +0.157 |
-| InternVL3.5-8B | 0.689 | +0.00 / +0.12 / +0.75 | 0.22 | +0.010 |
-| Qwen3-VL-8B-Instruct | 0.654 | +0.00 / +0.12 / +1.75 | 0.13 | +0.041 |
-| MedGemma-27B-it | — | +0.12 / +0.31 / +1.50 | 0.51 (29% image-dependent) | +0.164 |
-| Lingshu-32B | — | +0.12 / +0.12 / +1.00 | 0.29 (42%) | +0.149 |
-| Qwen3-VL-30B-A3B | — | +0.00 / +0.38 / +1.38 | 0.14 | +0.091 |
-| Gemma-3-4b-it (MedGemma's base) | 0.513 | −0.12 / +0.00 / +0.62 | — | +0.120 (near-ceiling FPR) |
-| Qwen2.5-VL-7B (Lingshu's base) | 0.533 | −0.00 / +0.12 / +0.38 | — | +0.068 |
+Release test split, medians (margins are quantized in 0.125-nat steps); full CIs in `results/ci_tables.json`.
+**Higher is better** for accuracy and grounding fraction, **lower is better** for the context-FPR increment — and the two do not move together.
+
+| model | balanced acc. | excess small / medium / large | grounding fraction (image-dependent cases) | context-FPR increment |
+|---|:---:|:---:|:---|:---:|
+| 🩺 MedGemma-4b-it | 0.723 | +0.19 / +0.62 / +2.50 | `██░░░░░░░░` 0.18 | +0.157 |
+| 🩺 Lingshu-7B | **0.861** | +0.12 / +0.25 / +0.88 | `██░░░░░░░░` 0.20 | +0.157 |
+| 🌐 InternVL3.5-8B | 0.689 | +0.00 / +0.12 / +0.75 | `██░░░░░░░░` 0.22 | **+0.010** |
+| 🌐 Qwen3-VL-8B-Instruct | 0.654 | +0.00 / +0.12 / +1.75 | `█░░░░░░░░░` 0.13 | +0.041 |
+| 🩺 MedGemma-27B-it | — | +0.12 / +0.31 / +1.50 | `█████░░░░░` **0.51** (29 % image-dependent) | +0.164 |
+| 🩺 Lingshu-32B | — | +0.12 / +0.12 / +1.00 | `███░░░░░░░` 0.29 (42 %) | +0.149 |
+| 🌐 Qwen3-VL-30B-A3B | — | +0.00 / +0.38 / +1.38 | `█░░░░░░░░░` 0.14 | +0.091 |
+| 🧱 Gemma-3-4b-it (MedGemma's base) | 0.513 | −0.12 / +0.00 / +0.62 | — | +0.120 (near-ceiling FPR) |
+| 🧱 Qwen2.5-VL-7B (Lingshu's base) | 0.533 | −0.00 / +0.12 / +0.38 | — | +0.068 |
+
+<sub>🩺 medically tuned · 🌐 general-purpose · 🧱 base model of a medical fine-tune</sub>
 
 <details>
 <summary><b>More tables (click to expand)</b></summary>
@@ -77,6 +122,27 @@
 - `results/all_tables.md` — base-model pairs, grounding fraction for seven models, scale table, GEMeX text-shortcut check
 </details>
 
+## 📰 News
+
+- **2026-11** · 🎉 v1.0 public release — labels, regeneration scripts, evaluation harness with the full control ladder, reference results for nine models.
+- **2026-10** · 📄 Paper accepted at **ML4H 2026**.
+
+<a name="data"></a>
+## 📦 Resources & data access
+
+| | what | where |
+|---|---|---|
+| 📄 | **Paper** (ML4H 2026) | [`CITATION.cff`](CITATION.cff) · camera-ready errata in [`docs/ERRATA_camera_ready.md`](docs/ERRATA_camera_ready.md) |
+| 🗂️ | **Labels** — 102,072 QA + hard sets | Zenodo (DOI pending) · `bash scripts/fetch_data.sh <record_id>` · schema in [`data/SCHEMA.md`](data/SCHEMA.md) |
+| 🖼️ | **Images** | PhysioNet (credentialed) — not redistributed; regenerate with [`scripts/prepare_images.py`](scripts/prepare_images.py) |
+| 🧪 | **Evaluation harness** | [`eval/`](eval) — one command per model: `bash eval/run_benchmark.sh <model> <gpu>` |
+| 📊 | **Reference results** | [`results/leaderboard.csv`](results/leaderboard.csv) · [`results/ci_tables.json`](results/ci_tables.json) · 80 per-model result files in [`results/reference/`](results/reference) |
+| 📝 | **Datasheet** | [`DATASHEET.md`](DATASHEET.md) |
+
+> [!IMPORTANT]
+> **Images are not redistributed.** VinDr-CXR is distributed by PhysioNet under a credentialed Data Use Agreement; this repository and the Zenodo record contain only what we built on top of it. With credentialed access, `scripts/prepare_images.py` regenerates the exact PNGs (deterministic preprocessing, so the boxes line up).
+
+<a name="quickstart"></a>
 ## 🚀 Quick start
 
 ```bash
@@ -95,6 +161,13 @@ Any model loadable with `transformers.AutoModelForImageTextToText` works — add
 `eval/mjsd_harness.py` or set `VGV_MODEL_<KEY>` to a local path. The harness needs the first-token
 distribution, so closed APIs are not supported.
 
+<details>
+<summary><b>Evaluating your own model — what you get back</b></summary>
+
+`summarize_model.py` appends one leaderboard row (balanced / blind accuracy, excess by tertile, grounding fraction, context-FPR increment) and writes the per-case files that `eval/analysis/ci_and_reslices.py` turns into bootstrap CIs. The control ladder in `eval/controls/` reuses the cached release run and adds one or two forwards per case, so robustness checks cost minutes, not hours.
+</details>
+
+<a name="scoring"></a>
 ## 🧠 How a model is scored
 
 For a positive question with evidence box R, three forwards give the yes/no log-odds margin on the full image
@@ -110,7 +183,7 @@ finding (`m_rand`); a text-only forward gives `m_blind`.
 
 A model is reported as (accuracy, excess/GF by tertile, context increment) and compared on grounding at matched
 accuracy. Protocol details — prompt forms, fills, placement rules, seeds, one control placement per case (five in
-the resize experiment), bootstrap convention — are in `docs/protocol_appendix.md`.
+the resize experiment), bootstrap convention — are in [`docs/protocol_appendix.md`](docs/protocol_appendix.md).
 
 ## 🧰 What's in the repository
 
@@ -123,25 +196,23 @@ VinDr-Ground-VQA/
 │                controls/ (placement rules · fills · inpainting · mirror & k-sensitivity · location/texture/ring ·
 │                lung-field · normal-border · k1-vs-k5) · analysis/ (bootstrap CIs · threshold tables · summaries)
 ├── results/     leaderboard.csv · ci_tables.json · reference/ (80 per-model result files) · tables (.md)
-└── docs/        protocol appendix · GEMeX protocol note · camera-ready errata · figures
+└── docs/        protocol appendix · GEMeX protocol note · camera-ready errata · figures & badges
 ```
 
 Each script in `eval/controls/` reuses the cached release run and adds one or two forwards per case;
 `eval/analysis/ci_and_reslices.py` produces every CI in the paper and `threshold_table.py` the lift-cutoff
-sensitivity of §5.4–5.5.
+sensitivity of §5.4–5.5. All README figures are drawn from the result files (`scripts/make_readme_assets.py`) and contain no radiograph pixels.
 
-## ⚠️ Data access, language-model fields and responsible use
+## ⚠️ Language-model fields and responsible use
 
-- **Images are not redistributed.** VinDr-CXR is distributed by PhysioNet under a credentialed Data Use
-  Agreement; this repository and the Zenodo record contain only what we built on top of it. With credentialed
-  access, `scripts/prepare_images.py` regenerates the exact PNGs (deterministic preprocessing, so the boxes line up).
-- **Language-model fields.** `question` paraphrases, `answer_nl` and `roi_appropriate`/`roi_reason` were produced
-  by Anthropic `claude-fable-5` (August 2026) and are marked per row in `enhancements`. The deterministic core —
-  `question_template`, `answer`, `roi_box`, splits, hard sets — needs no API and is what every number above uses,
-  except the §5.3 stratification by `roi_appropriate`. See `DATASHEET.md`.
-- **Not a clinical tool.** The benchmark measures whether models use marked evidence; it is not validated for, and
-  must not be used in, clinical decision making.
+> [!NOTE]
+> **Language-model fields.** `question` paraphrases, `answer_nl` and `roi_appropriate`/`roi_reason` were produced by Anthropic `claude-fable-5` (August 2026) and are marked per row in `enhancements`. The deterministic core — `question_template`, `answer`, `roi_box`, splits, hard sets — needs no API and is what every number above uses, except the §5.3 stratification by `roi_appropriate`. See [`DATASHEET.md`](DATASHEET.md).
 
+> [!CAUTION]
+> **Not a clinical tool.** The benchmark measures whether models use marked evidence; it is not validated for, and must not be used in, clinical decision making.
+
+<a name="paper"></a>
+<a name="cite"></a>
 ## 📝 Citation
 
 ```bibtex
@@ -152,7 +223,7 @@ sensitivity of §5.4–5.5.
   year      = {2026}
 }
 ```
-Please also cite VinDr-CXR (Nguyen et al., *Scientific Data*, 2022) and PhysioNet. Machine-readable metadata: `CITATION.cff`.
+Please also cite VinDr-CXR (Nguyen et al., *Scientific Data*, 2022) and PhysioNet. Machine-readable metadata: [`CITATION.cff`](CITATION.cff).
 
 ## 🙏 Acknowledgements
 
@@ -163,4 +234,11 @@ Models evaluated: MedGemma, Lingshu, InternVL3.5, Qwen3-VL, Qwen2.5-VL, Gemma 3.
 ## 📄 License
 
 Code: MIT. Labels, derived annotations and results: CC BY-NC 4.0. Images: not included — the PhysioNet
-Credentialed Health Data License applies. See `LICENSE`.
+Credentialed Health Data License applies. See [`LICENSE`](LICENSE).
+
+<div align="center">
+<br>
+<sub>If VinDr-Ground-VQA is useful in your work, a ⭐ on the repository helps others find it.</sub>
+<br><br>
+<a href="#top">⬆ back to top</a>
+</div>
