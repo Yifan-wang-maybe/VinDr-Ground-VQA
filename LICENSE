@@ -1,4 +1,4 @@
-VinDr-Ground-VQA — license summary (TO BE CONFIRMED BY THE AUTHORS BEFORE PUBLICATION)
+VinDr-Ground-VQA — licenses
 
 1. Code (scripts/, eval/): MIT License.
    Copyright (c) 2026 the VinDr-Ground-VQA authors. Permission is hereby granted, free of charge, to any
@@ -15,7 +15,3 @@ VinDr-Ground-VQA — license summary (TO BE CONFIRMED BY THE AUTHORS BEFORE PUBL
 3. Images: NOT included. VinDr-CXR images are available from PhysioNet under the PhysioNet Credentialed
    Health Data License 1.5.0 and its Data Use Agreement. Users must obtain their own credentialed access;
    nothing in this release grants any right to the images.
-
-Note for the authors: if the team prefers to distribute the label files through PhysioNet as a derived
-dataset under the credentialed license (the route used by several MIMIC-derived label sets), replace
-section 2 accordingly and keep this repository to code, statistics and results.
