@@ -13,7 +13,7 @@ uses the radiologist-marked evidence — with the area-matched occlusion protoco
 - **reference results for nine models** (MedGemma-4b/27B, Lingshu-7B/32B, InternVL3.5-8B, Qwen3-VL-8B/30B,
   and the two base models Gemma-3-4b-it and Qwen2.5-VL-7B)
 
-Paper: *VinDr-Ground-VQA: A Grounded …* (ML4H 2026). See `CITATION.cff`.
+Paper: *VinDr-Ground-VQA: A Grounded Chest X-ray VQA Benchmark with an Area-Matched Occlusion Control* (ML4H 2026). See `CITATION.cff`.
 
 ---
 

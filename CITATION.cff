@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use VinDr-Ground-VQA, please cite the paper below and the VinDr-CXR source dataset."
-title: "VinDr-Ground-VQA: a grounded, image-necessary chest X-ray VQA benchmark and the area-matched occlusion protocol"
+title: "VinDr-Ground-VQA: A Grounded Chest X-ray VQA Benchmark with an Area-Matched Occlusion Control — labels, code and reference results"
 type: dataset
 authors:
   - family-names: "Wang"
@@ -11,7 +11,7 @@ date-released: "2026-11-01"
 license: "see LICENSE"
 preferred-citation:
   type: conference-paper
-  title: "VinDr-Ground-VQA: A Grounded Chest X-ray VQA Benchmark"   # TODO: exact title
+  title: "VinDr-Ground-VQA: A Grounded Chest X-ray VQA Benchmark with an Area-Matched Occlusion Control"
   authors:
     - family-names: "Wang"
       given-names: "Yifan"
