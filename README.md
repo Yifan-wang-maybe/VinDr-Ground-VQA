@@ -12,7 +12,7 @@
 
 <p>
 <a href="#paper"><img src="docs/badges/ml4h.svg" alt="ML4H 2026"></a>
-<a href="data/README_DOWNLOAD.md"><img src="docs/badges/zenodo.svg" alt="labels on Zenodo"></a>
+<a href="https://doi.org/10.5281/zenodo.24073784"><img src="docs/badges/zenodo.svg" alt="labels: DOI 10.5281/zenodo.24073784"></a>
 <a href="LICENSE"><img src="docs/badges/mit.svg" alt="code: MIT"></a>
 <a href="LICENSE"><img src="docs/badges/ccbync.svg" alt="labels: CC BY-NC 4.0"></a>
 <a href="eval/requirements.txt"><img src="docs/badges/python.svg" alt="python 3.10"></a>
@@ -124,6 +124,7 @@ Release test split, medians (margins are quantized in 0.125-nat steps); full CIs
 
 ## 📰 News
 
+- **2026-11** · 🗂️ Label archive published on Zenodo: [10.5281/zenodo.24073784](https://doi.org/10.5281/zenodo.24073784).
 - **2026-11** · 🎉 v1.0 public release — labels, regeneration scripts, evaluation harness with the full control ladder, reference results for nine models.
 - **2026-10** · 📄 Paper accepted at **ML4H 2026**.
 
@@ -133,7 +134,7 @@ Release test split, medians (margins are quantized in 0.125-nat steps); full CIs
 | | what | where |
 |---|---|---|
 | 📄 | **Paper** (ML4H 2026) | [`CITATION.cff`](CITATION.cff) · camera-ready errata in [`docs/ERRATA_camera_ready.md`](docs/ERRATA_camera_ready.md) |
-| 🗂️ | **Labels** — 102,072 QA + hard sets | Zenodo (DOI pending) · `bash scripts/fetch_data.sh <record_id>` · schema in [`data/SCHEMA.md`](data/SCHEMA.md) |
+| 🗂️ | **Labels** — 102,072 QA + hard sets | Zenodo [`10.5281/zenodo.24073784`](https://doi.org/10.5281/zenodo.24073784) · `bash scripts/fetch_data.sh` · schema in [`data/SCHEMA.md`](data/SCHEMA.md) |
 | 🖼️ | **Images** | PhysioNet (credentialed) — not redistributed; regenerate with [`scripts/prepare_images.py`](scripts/prepare_images.py) |
 | 🧪 | **Evaluation harness** | [`eval/`](eval) — one command per model: `bash eval/run_benchmark.sh <model> <gpu>` |
 | 📊 | **Reference results** | [`results/leaderboard.csv`](results/leaderboard.csv) · [`results/ci_tables.json`](results/ci_tables.json) · 80 per-model result files in [`results/reference/`](results/reference) |
@@ -147,8 +148,8 @@ Release test split, medians (margins are quantized in 0.125-nat steps); full CIs
 
 ```bash
 pip install -r eval/requirements.txt
-# 0. label files (Zenodo) -> data/                       see data/README_DOWNLOAD.md
-bash scripts/fetch_data.sh <zenodo_record_id>
+# 0. label files from Zenodo (10.5281/zenodo.24073784) -> data/, SHA-256 verified
+bash scripts/fetch_data.sh
 # 1. images — PhysioNet credentials in ~/.netrc, or --dicom_dir pointing at your local DICOMs
 python scripts/prepare_images.py --labels data/train.jsonl data/val.jsonl data/test.jsonl \
        data/hardset_v1.jsonl data/hardset_unrelated_v1.jsonl --out data/images --jobs 8
@@ -218,11 +219,13 @@ sensitivity of §5.4–5.5. All README figures are drawn from the result files (
 ```bibtex
 @inproceedings{wang2026vindrground,
   title     = {VinDr-Ground-VQA: A Grounded Chest X-ray VQA Benchmark with an Area-Matched Occlusion Control},
-  author    = {Wang, Yifan and others},
+  author    = {Wang, Yifan and Wu, Yutong},
   booktitle = {Proceedings of the 6th Machine Learning for Health (ML4H) Symposium},
   year      = {2026}
 }
 ```
+Label archive: Wang, Y. & Wu, Y. (2026). *VinDr-Ground-VQA: labels for a grounded, image-necessary chest X-ray VQA benchmark (v1.0)* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24073784
+
 Please also cite VinDr-CXR (Nguyen et al., *Scientific Data*, 2022) and PhysioNet. Machine-readable metadata: [`CITATION.cff`](CITATION.cff).
 
 ## 🙏 Acknowledgements

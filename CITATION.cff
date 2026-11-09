@@ -1,21 +1,39 @@
 cff-version: 1.2.0
 message: "If you use VinDr-Ground-VQA, please cite the paper below and the VinDr-CXR source dataset."
-title: "VinDr-Ground-VQA: A Grounded Chest X-ray VQA Benchmark with an Area-Matched Occlusion Control — labels, code and reference results"
+title: "VinDr-Ground-VQA: labels for a grounded, image-necessary chest X-ray VQA benchmark"
 type: dataset
 authors:
   - family-names: "Wang"
     given-names: "Yifan"
-  # TODO: add co-authors in paper order
+    affiliation: "University of Michigan"
+  - family-names: "Wu"
+    given-names: "Yutong"
+    affiliation: "Stanford University"
 version: "1.0"
-date-released: "2026-11-01"
-license: "see LICENSE"
+date-released: "2026-11-09"
+doi: "10.5281/zenodo.24073784"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24073784"
+    description: "Zenodo record of the v1.0 label archive"
+  - type: doi
+    value: "10.5281/zenodo.24073783"
+    description: "Zenodo concept DOI (resolves to the latest version)"
+  - type: url
+    value: "https://github.com/Yifan-wang-maybe/VinDr-Ground-VQA"
+    description: "Code, evaluation harness and reference results"
+repository-code: "https://github.com/Yifan-wang-maybe/VinDr-Ground-VQA"
+license:
+  - MIT
+  - CC-BY-NC-4.0
 preferred-citation:
   type: conference-paper
   title: "VinDr-Ground-VQA: A Grounded Chest X-ray VQA Benchmark with an Area-Matched Occlusion Control"
   authors:
     - family-names: "Wang"
       given-names: "Yifan"
-    # TODO: co-authors
+    - family-names: "Wu"
+      given-names: "Yutong"
   collection-title: "Proceedings of the 6th Machine Learning for Health (ML4H) Symposium"
   year: 2026
 references:
