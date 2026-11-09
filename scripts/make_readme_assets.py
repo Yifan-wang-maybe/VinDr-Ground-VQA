@@ -221,7 +221,8 @@ if __name__ == "__main__":
     banner(LIGHT, os.path.join(FIG, "banner_light.png"))
     gif(os.path.join(FIG, "protocol.gif"), "/tmp/protocol_sheet.png")
     for name, label, value, colour in [("questions", "questions", "102,072", "#2f81f7"), ("radiographs", "radiographs", "8,434", "#2f81f7"),
-                                       ("findings", "findings", "22", "#2f81f7"), ("boxes", "evidence boxes", "lesion-level", "#e05d44")]:
+                                       ("findings", "findings", "22", "#2f81f7"), ("boxes", "evidence boxes", "lesion-level", "#e05d44"),
+                                       ("license", "license", "MIT", "#97ca00")]:
         print(name, badge(name, label, value, colour))
     for f in sorted(os.listdir(FIG)):
         print(f"{os.path.getsize(os.path.join(FIG, f)) / 1024:8.0f} KB  {f}")

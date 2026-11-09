@@ -13,8 +13,7 @@
 <p>
 <a href="#paper"><img src="docs/badges/ml4h.svg" alt="ML4H 2026"></a>
 <a href="https://doi.org/10.5281/zenodo.24073784"><img src="docs/badges/zenodo.svg" alt="labels: DOI 10.5281/zenodo.24073784"></a>
-<a href="LICENSE"><img src="docs/badges/mit.svg" alt="code: MIT"></a>
-<a href="LICENSE"><img src="docs/badges/ccbync.svg" alt="labels: CC BY-NC 4.0"></a>
+<a href="LICENSE"><img src="docs/badges/license.svg" alt="license: MIT"></a>
 <a href="eval/requirements.txt"><img src="docs/badges/python.svg" alt="python 3.10"></a>
 <a href="#leaderboard"><img src="docs/badges/models.svg" alt="9 models evaluated"></a>
 </p>
@@ -236,8 +235,10 @@ Models evaluated: MedGemma, Lingshu, InternVL3.5, Qwen3-VL, Qwen2.5-VL, Gemma 3.
 
 ## 📄 License
 
-Code: MIT. Labels, derived annotations and results: CC BY-NC 4.0. Images: not included — the PhysioNet
-Credentialed Health Data License applies. See [`LICENSE`](LICENSE).
+Everything in this repository and in the Zenodo label archive — code, labels, derived annotations, results and
+documentation — is released under the [MIT License](LICENSE). Images are not included: VinDr-CXR images remain
+under the PhysioNet Credentialed Health Data License 1.5.0 and its Data Use Agreement, and nothing here grants
+any right to them.
 
 <div align="center">
 <br>

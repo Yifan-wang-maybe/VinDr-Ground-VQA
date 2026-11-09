@@ -23,9 +23,7 @@ identifiers:
     value: "https://github.com/Yifan-wang-maybe/VinDr-Ground-VQA"
     description: "Code, evaluation harness and reference results"
 repository-code: "https://github.com/Yifan-wang-maybe/VinDr-Ground-VQA"
-license:
-  - MIT
-  - CC-BY-NC-4.0
+license: MIT
 preferred-citation:
   type: conference-paper
   title: "VinDr-Ground-VQA: A Grounded Chest X-ray VQA Benchmark with an Area-Matched Occlusion Control"
