@@ -13,3 +13,6 @@ data/test.jsonl
 data/hardset_v1.jsonl
 data/hardset_unrelated_v1.jsonl
 data/hardset_weakband_lift1.2-1.5.jsonl
+
+# README figures: matplotlib output generated from results/ (no radiograph pixels)
+!docs/figures/*.png
