@@ -39,7 +39,7 @@
 
 > [!TIP]
 > **TL;DR** — VinDr-Ground-VQA pairs every positive chest-X-ray question with a **lesion-level radiologist box** and an **image-necessary matched negative**, then measures grounding as the occlusion effect of that box **in excess of a size-matched random region**. Across nine models from 4B to 32B:
-> - 🎯 only **13–22 %** of a model's image-driven belief comes from the annotated evidence (**0–8 %** on small findings);
+> - 🎯 in the four 4B–8B models only **13–22 %** of image-driven belief comes from the annotated evidence (**0–8 %** on small findings); the 27–32B replications reach 14–51 % overall but still only **2–13 %** on small findings;
 > - 🧩 **correlated context substitutes for direct evidence** — the evidence effect collapses 3–5× while detection is unchanged;
 > - 🩺 the **medically tuned** models carry the largest co-occurrence false-positive increment at every scale tested.
 
