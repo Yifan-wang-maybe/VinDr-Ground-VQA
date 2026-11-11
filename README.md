@@ -88,7 +88,7 @@ Grounding is **budget-stable but weak**, context substitutes for evidence, and m
 <td width="50%"><img src="docs/figures/grounding_fraction.png" width="100%" alt="Grounding fraction by tertile"></td>
 <td width="50%"><img src="docs/figures/context_dose_response.png" width="100%" alt="Context false-positive increment vs association strength"></td>
 </tr><tr>
-<td><sub><b>Grounding fraction</b> = excess / image-gain over cases where the image moves the model (> 0.5 nats): 0 for a blind reader, 1 when all image-driven belief lives in the evidence region.</sub></td>
+<td><sub><b>Grounding fraction</b> = excess / image-gain over cases where the image moves the model (> 0.5 nats): 0 for a blind reader, 1 when all image-driven belief lives in the evidence region. The dashed line at 1 is a reference, not a hard limit: values above it (large boxes, most visibly MedGemma-27B) mean that masking the evidence pushes the model <i>below</i> its text-only belief — the grey patch acts as counter-evidence rather than as image removal — so on large boxes GF reads as evidence-mask sensitivity relative to image gain.</sub></td>
 <td><sub><b>Co-occurrence shortcut</b>: the false-positive increment of correlated over unrelated context rises with association strength for every medically tuned model and stays ≈ 0 for the general ones.</sub></td>
 </tr></table>
 
@@ -177,7 +177,7 @@ finding (`m_rand`); a text-only forward gives `m_blind`.
 | quantity | definition | reads as |
 |---|---|---|
 | **excess** | (m_full − m_roi) − (m_full − m_rand) | evidence-specific effect, by ROI-size tertile |
-| **grounding fraction GF** | excess / (m_full − m_blind), over cases with image-gain > 0.5 nats | share of image-driven belief that lives in the evidence region (0 blind … 1 ceiling) |
+| **grounding fraction GF** | excess / (m_full − m_blind), over cases with image-gain > 0.5 nats | share of image-driven belief that lives in the evidence region (0 blind … 1 reference ceiling; > 1 when the evidence mask drives the margin below the text-only margin) |
 | **context-FPR increment** | FPR on correlated hard negatives − FPR on unrelated-context negatives | co-occurrence shortcut |
 | **balanced / blind accuracy** | matched yes/no set, with and without the image | ability, and the text-shortcut check |
 
